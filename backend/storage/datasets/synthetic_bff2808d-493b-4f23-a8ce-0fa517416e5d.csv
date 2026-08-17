@@ -1,0 +1,995 @@
+transaction_id,customer_id,age,account_type,transaction_type,merchant_category,amount,balance_before,balance_after,transaction_hour,location,device_type,payment_method,is_international,is_fraud
+TXN-100715,CUST-1450,42,Savings,Payment,Electronics,219.75,2453.81,2234.06,10,London,POS Terminal,Wire Transfer,0,0
+TXN-100954,CUST-1408,23,Savings,Payment,Entertainment,69.53,7883.82,7814.29,4,London,Web Browser,UPI / Wallet,0,0
+TXN-100364,CUST-1366,26,Credit,Deposit,Entertainment,16.07,22715.04,22698.97,7,London,POS Terminal,Credit Card,0,0
+TXN-100195,CUST-1445,38,Checking,Payment,Entertainment,256.41,7929.92,7673.51,9,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100530,CUST-1309,30,Savings,Payment,Entertainment,145.15,18693.16,18548.01,3,London,POS Terminal,UPI / Wallet,0,0
+TXN-100399,CUST-1476,21,Savings,Payment,Entertainment,24.42,10614.33,10589.91,17,London,Web Browser,Credit Card,0,0
+TXN-100833,CUST-1444,42,Credit,Payment,Electronics,272.12,5807.62,5535.5,3,London,POS Terminal,Wire Transfer,1,0
+TXN-100264,CUST-1423,25,Savings,Deposit,Entertainment,89.72,15932.05,15842.33,8,London,Web Browser,Credit Card,0,0
+TXN-100496,CUST-1360,28,Savings,Payment,Entertainment,101.61,12239.31,12137.7,4,London,POS Terminal,UPI / Wallet,0,0
+TXN-100687,CUST-1420,20,Savings,Deposit,Entertainment,26.06,7836.59,7810.53,6,London,Web Browser,Debit Card,0,0
+TXN-100659,CUST-1429,31,Savings,Payment,Entertainment,191.96,8037.08,7845.12,13,London,Web Browser,Debit Card,0,0
+TXN-100366,CUST-1330,46,Credit,Payment,Entertainment,1054.05,5209.55,4155.5,4,London,Mobile App,Wire Transfer,1,1
+TXN-100153,CUST-1444,34,Checking,Payment,Entertainment,72.03,3169.05,3097.02,7,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100520,CUST-1415,41,Credit,Payment,Entertainment,269.88,6724.3,6454.42,6,London,POS Terminal,Wire Transfer,1,0
+TXN-100612,CUST-1233,25,Savings,Deposit,Entertainment,45.0,6266.4,6221.4,1,Berlin,Mobile App,Wire Transfer,0,0
+TXN-100846,CUST-1448,29,Savings,Payment,Electronics,152.59,9978.9,9826.31,4,London,Web Browser,UPI / Wallet,0,0
+TXN-100494,CUST-1450,26,Business,Deposit,Entertainment,19.04,2923.5,2904.46,1,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100376,CUST-1260,40,Checking,Deposit,Entertainment,148.92,15086.2,14937.28,2,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100801,CUST-1442,37,Savings,Payment,Electronics,90.37,2052.58,1962.21,11,London,Mobile App,UPI / Wallet,0,0
+TXN-100708,CUST-1420,59,Savings,Payment,Electronics,375.4,4953.85,4578.45,6,London,Mobile App,UPI / Wallet,0,0
+TXN-100673,CUST-1484,21,Checking,Payment,Entertainment,11.35,3506.57,3495.22,15,London,Web Browser,Credit Card,0,0
+TXN-100292,CUST-1461,23,Savings,Payment,Electronics,78.29,5473.62,5395.33,10,Berlin,Web Browser,Debit Card,0,0
+TXN-100118,CUST-1391,49,Credit,Payment,Entertainment,357.47,5736.57,5379.1,6,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100061,CUST-1317,35,Savings,Deposit,Entertainment,126.31,19455.27,19328.96,2,London,Web Browser,UPI / Wallet,0,0
+TXN-100528,CUST-1479,21,Credit,Payment,Entertainment,13.89,6017.29,6003.4,13,Mumbai,POS Terminal,Credit Card,0,0
+TXN-100055,CUST-1299,32,Savings,Payment,Entertainment,112.2,7372.17,7259.97,2,London,Mobile App,Wire Transfer,0,0
+TXN-100737,CUST-1353,35,Savings,Payment,Entertainment,256.71,13307.16,13050.45,5,London,Web Browser,UPI / Wallet,0,0
+TXN-100791,CUST-1455,20,Savings,Payment,Entertainment,11.9,1921.96,2060.06,4,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100577,CUST-1425,24,Savings,Deposit,Entertainment,61.73,20235.37,20173.64,8,Mumbai,Web Browser,Credit Card,0,0
+TXN-100406,CUST-1413,45,Credit,Payment,Entertainment,312.87,6748.12,6435.25,6,London,POS Terminal,Wire Transfer,0,0
+TXN-100430,CUST-1408,59,Credit,Deposit,Electronics,253.0,4699.41,4446.41,4,London,Mobile App,Wire Transfer,1,0
+TXN-100059,CUST-1449,24,Credit,Deposit,Entertainment,89.01,5373.98,5284.97,2,Mumbai,Web Browser,UPI / Wallet,0,0
+TXN-100666,CUST-1329,30,Savings,Payment,Entertainment,219.33,11981.87,11762.54,3,London,POS Terminal,Wire Transfer,0,0
+TXN-100997,CUST-1471,60,Business,Deposit,Electronics,179.12,1036.21,857.09,1,Singapore,Mobile App,Wire Transfer,0,0
+TXN-100490,CUST-1385,41,Credit,Payment,Entertainment,214.07,6940.26,6726.19,4,London,POS Terminal,Wire Transfer,0,0
+TXN-100063,CUST-1470,23,Checking,Payment,Entertainment,32.65,6803.13,6770.48,10,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100620,CUST-1310,32,Credit,Deposit,Entertainment,115.64,16536.97,16421.33,4,London,POS Terminal,UPI / Wallet,0,0
+TXN-100533,CUST-1452,65,Credit,Deposit,Electronics,257.18,1542.68,1285.5,2,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100957,CUST-1387,57,Savings,Payment,Electronics,331.73,7098.02,6766.29,9,London,Mobile App,UPI / Wallet,0,0
+TXN-100818,CUST-1464,19,Credit,Deposit,Groceries,322.38,13815.35,13492.97,3,Mumbai,Web Browser,Credit Card,1,1
+TXN-100904,CUST-1399,50,Savings,Transfer,Electronics,284.26,4698.14,4413.88,10,London,Mobile App,UPI / Wallet,0,0
+TXN-100476,CUST-1419,23,Credit,Deposit,Entertainment,384.92,17095.88,16710.96,5,Mumbai,Web Browser,Credit Card,1,1
+TXN-100925,CUST-1463,48,Credit,Payment,Electronics,368.8,4058.84,3690.04,6,London,POS Terminal,Wire Transfer,1,0
+TXN-100838,CUST-1461,21,Savings,Payment,Entertainment,57.22,6009.96,5952.74,8,Berlin,Web Browser,Debit Card,0,0
+TXN-100078,CUST-1277,54,Savings,Payment,Electronics,141.15,17152.1,17010.95,11,London,Mobile App,Credit Card,0,0
+TXN-100259,CUST-1437,26,Savings,Payment,Electronics,97.86,12522.78,12424.92,7,Berlin,Web Browser,Credit Card,0,0
+TXN-100460,CUST-1471,28,Savings,Payment,Electronics,78.7,2631.51,2552.81,20,Berlin,Web Browser,Credit Card,0,0
+TXN-100177,CUST-1413,24,Savings,Deposit,Electronics,93.14,19429.75,19336.61,2,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100532,CUST-1493,18,Business,Deposit,Groceries,5.6,1603.01,1597.41,4,London,Web Browser,Debit Card,0,0
+TXN-100129,CUST-1391,48,Credit,Payment,Electronics,306.59,11125.88,10819.29,11,London,POS Terminal,Debit Card,0,0
+TXN-100409,CUST-1187,49,Savings,Deposit,Electronics,117.0,23546.85,23429.85,3,London,Mobile App,Debit Card,0,0
+TXN-100744,CUST-1269,29,Savings,Deposit,Electronics,42.3,23609.53,23717.23,5,London,POS Terminal,Credit Card,0,0
+TXN-100767,CUST-1392,29,Savings,Payment,Entertainment,125.13,7208.74,7083.61,6,London,Web Browser,UPI / Wallet,0,0
+TXN-100605,CUST-1237,24,Savings,Deposit,Entertainment,37.47,20960.99,20923.52,1,London,POS Terminal,UPI / Wallet,0,0
+TXN-100343,CUST-1362,37,Savings,Deposit,Electronics,716.07,14677.37,13961.3,1,London,POS Terminal,Wire Transfer,1,1
+TXN-100276,CUST-1477,21,Savings,Payment,Entertainment,374.22,3952.53,3578.31,16,London,Web Browser,Debit Card,1,1
+TXN-100179,CUST-1469,44,Business,Deposit,Entertainment,85.63,2137.72,2052.09,2,Singapore,POS Terminal,Wire Transfer,0,0
+TXN-100466,CUST-1465,59,Credit,Payment,Electronics,884.6,1572.71,688.11,4,Mumbai,Mobile App,Wire Transfer,1,1
+TXN-100425,CUST-1448,20,Savings,Payment,Entertainment,29.86,15314.34,15284.48,5,Berlin,Web Browser,Credit Card,0,0
+TXN-100958,CUST-1227,25,Savings,Payment,Entertainment,108.07,11045.64,10937.57,1,Berlin,POS Terminal,Wire Transfer,0,0
+TXN-100332,CUST-1259,51,Credit,Deposit,Electronics,230.64,18640.04,18409.4,4,London,POS Terminal,UPI / Wallet,0,0
+TXN-100243,CUST-1437,34,Business,Deposit,Entertainment,426.15,14739.19,14313.04,5,Singapore,POS Terminal,Debit Card,1,1
+TXN-100970,CUST-1473,40,Savings,Payment,Electronics,147.07,1291.5,1144.43,7,London,POS Terminal,Wire Transfer,0,0
+TXN-100917,CUST-1467,41,Credit,Payment,Entertainment,165.25,2242.51,2077.26,11,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100793,CUST-1487,19,Savings,Payment,Entertainment,8.57,809.02,800.45,13,London,Web Browser,Debit Card,0,0
+TXN-100667,CUST-1376,34,Business,Deposit,Entertainment,66.19,17974.71,17908.52,1,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100834,CUST-1409,32,Savings,Payment,Entertainment,194.91,6852.4,6657.49,3,London,POS Terminal,Wire Transfer,0,0
+TXN-100373,CUST-1424,19,Savings,Deposit,Entertainment,9.9,19657.66,19647.76,5,London,POS Terminal,Credit Card,0,0
+TXN-100776,CUST-1428,55,Credit,Payment,Electronics,855.4,3587.5,2882.1,4,London,Mobile App,Wire Transfer,1,1
+TXN-100653,CUST-1357,42,Savings,Payment,Electronics,57.13,7274.59,7217.46,8,London,Mobile App,UPI / Wallet,0,0
+TXN-100513,CUST-1398,23,Savings,Deposit,Entertainment,56.83,20377.83,20321.0,3,London,Web Browser,Debit Card,0,0
+TXN-100108,CUST-1455,29,Savings,Payment,Entertainment,188.71,6274.72,6086.01,16,London,Web Browser,Debit Card,0,0
+TXN-100876,CUST-1498,18,Savings,Deposit,Entertainment,5.12,14824.64,14819.52,7,Berlin,Web Browser,Credit Card,0,0
+TXN-100229,CUST-1358,50,Savings,Payment,Electronics,238.92,14244.39,14005.47,11,London,POS Terminal,Debit Card,0,0
+TXN-100656,CUST-1250,35,Savings,Deposit,Entertainment,115.2,10766.23,10651.03,1,London,Mobile App,Wire Transfer,0,0
+TXN-100749,CUST-1485,18,Savings,Deposit,Electronics,5.08,24819.88,24814.8,0,Berlin,Web Browser,Credit Card,0,0
+TXN-100693,CUST-1357,63,Credit,Deposit,Electronics,379.95,9825.14,9445.19,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100474,CUST-1380,21,Savings,Deposit,Electronics,398.38,23476.34,23077.96,1,Berlin,Web Browser,UPI / Wallet,1,1
+TXN-100497,CUST-1486,18,Credit,Deposit,Entertainment,5.5,14773.65,14768.15,3,Berlin,Web Browser,Credit Card,0,0
+TXN-100918,CUST-1201,42,Savings,Payment,Entertainment,144.53,15445.03,15300.5,4,London,Mobile App,Wire Transfer,0,0
+TXN-100625,CUST-1446,52,Credit,Deposit,Electronics,222.83,2833.92,2611.09,2,London,Mobile App,Wire Transfer,1,0
+TXN-100600,CUST-1461,44,Credit,Deposit,Electronics,759.72,2837.3,2077.58,4,London,POS Terminal,Wire Transfer,1,1
+TXN-100363,CUST-1454,31,Savings,Payment,Electronics,76.73,814.05,737.32,2,London,POS Terminal,Wire Transfer,0,0
+TXN-100315,CUST-1497,18,Credit,Deposit,Entertainment,312.85,1721.16,1408.31,11,London,Web Browser,Credit Card,1,1
+TXN-100907,CUST-1349,50,Business,Deposit,Entertainment,125.79,15766.52,15790.73,2,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100665,CUST-1481,19,Savings,Deposit,Entertainment,12.07,3201.65,3189.58,7,London,Web Browser,Debit Card,0,0
+TXN-100455,CUST-1414,21,Savings,Payment,Groceries,50.34,6401.75,6351.41,5,London,Web Browser,UPI / Wallet,0,0
+TXN-100723,CUST-1378,21,Savings,Deposit,Electronics,16.66,24435.59,24418.93,2,Berlin,Web Browser,Credit Card,0,0
+TXN-100503,CUST-1424,27,Savings,Payment,Electronics,72.86,1308.96,1236.1,6,London,POS Terminal,Wire Transfer,0,0
+TXN-100350,CUST-1451,19,Savings,Deposit,Entertainment,7.9,20173.13,20165.23,4,Berlin,Web Browser,Credit Card,0,0
+TXN-100239,CUST-1451,40,Credit,Deposit,Electronics,127.4,1276.77,1149.37,2,London,POS Terminal,Wire Transfer,0,0
+TXN-100274,CUST-1347,34,Checking,Deposit,Entertainment,80.68,19462.45,19381.77,5,Mumbai,Web Browser,Debit Card,0,0
+TXN-100483,CUST-1353,61,Savings,Payment,Electronics,283.08,6337.43,6054.35,4,London,Mobile App,Wire Transfer,0,0
+TXN-100534,CUST-1325,33,Savings,Payment,Entertainment,196.86,18773.38,18576.52,5,London,POS Terminal,UPI / Wallet,0,0
+TXN-100651,CUST-1375,46,Credit,Payment,Entertainment,300.98,12007.88,11706.9,6,London,POS Terminal,UPI / Wallet,0,0
+TXN-100706,CUST-1468,65,Credit,Deposit,Electronics,343.4,2731.42,2388.02,3,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100111,CUST-1484,20,Business,Deposit,Entertainment,8.62,7767.27,7758.65,6,Mumbai,Web Browser,Debit Card,0,0
+TXN-100871,CUST-1380,45,Credit,Payment,Entertainment,870.42,4721.45,3851.03,3,London,POS Terminal,Wire Transfer,1,1
+TXN-100166,CUST-1444,53,Savings,Payment,Electronics,892.25,2774.97,1882.72,8,London,Mobile App,Wire Transfer,1,1
+TXN-100122,CUST-1463,27,Savings,Transfer,Entertainment,72.02,1900.02,1828.0,16,London,Web Browser,Debit Card,0,0
+TXN-100979,CUST-1473,28,Savings,Payment,Electronics,120.59,2329.27,2208.68,12,London,POS Terminal,Wire Transfer,0,0
+TXN-100991,CUST-1472,20,Credit,Deposit,Entertainment,13.17,7828.93,7815.76,14,London,Web Browser,Credit Card,0,0
+TXN-100642,CUST-1382,25,Savings,Payment,Entertainment,93.81,10152.85,10059.04,3,London,POS Terminal,UPI / Wallet,0,0
+TXN-100309,CUST-1422,31,Checking,Deposit,Entertainment,87.23,17868.49,17781.26,3,New York,Web Browser,Debit Card,0,0
+TXN-100434,CUST-1441,22,Credit,Deposit,Entertainment,17.85,12182.86,12165.01,9,London,Web Browser,Credit Card,0,0
+TXN-100117,CUST-1460,50,Savings,Transfer,Electronics,236.83,3108.05,2871.22,15,Berlin,POS Terminal,Debit Card,0,0
+TXN-100248,CUST-1447,48,Checking,Deposit,Electronics,242.06,3902.32,3660.26,4,New York,POS Terminal,Wire Transfer,1,0
+TXN-100772,CUST-1459,34,Checking,Payment,Entertainment,185.05,7081.08,6896.03,9,Mumbai,Web Browser,Wire Transfer,0,0
+TXN-100070,CUST-1431,29,Savings,Payment,Entertainment,64.28,3396.35,3332.07,13,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100733,CUST-1259,53,Credit,Payment,Electronics,250.89,18009.12,17758.23,9,London,Mobile App,Debit Card,0,0
+TXN-100638,CUST-1350,50,Credit,Payment,Electronics,204.8,5401.45,5196.65,5,London,Mobile App,Wire Transfer,0,0
+TXN-100279,CUST-1388,21,Savings,Deposit,Entertainment,24.31,19297.97,19273.66,2,London,POS Terminal,Debit Card,0,0
+TXN-100216,CUST-1417,44,Credit,Payment,Entertainment,177.68,8851.78,8674.1,16,London,POS Terminal,Credit Card,0,0
+TXN-100123,CUST-1438,47,Credit,Payment,Electronics,196.08,2018.25,1822.17,3,London,Mobile App,Wire Transfer,0,0
+TXN-100931,CUST-1428,40,Savings,Payment,Electronics,602.92,899.5,296.58,5,Mumbai,Mobile App,Wire Transfer,1,1
+TXN-100722,CUST-1300,28,Savings,Deposit,Electronics,63.14,23180.04,23116.9,3,London,Web Browser,Credit Card,0,0
+TXN-100318,CUST-1424,49,Savings,Payment,Electronics,298.13,5789.49,5491.36,14,London,POS Terminal,Debit Card,0,0
+TXN-100014,CUST-1458,27,Savings,Payment,Entertainment,123.48,5828.52,5705.04,15,London,Web Browser,Debit Card,0,0
+TXN-100278,CUST-1366,23,Savings,Deposit,Entertainment,42.83,23311.61,23268.78,1,London,Web Browser,UPI / Wallet,0,0
+TXN-100213,CUST-1363,61,Business,Deposit,Electronics,128.05,16629.63,16501.58,5,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100987,CUST-1405,33,Savings,Payment,Electronics,168.07,3645.44,3477.37,2,London,POS Terminal,Wire Transfer,0,0
+TXN-100506,CUST-1430,56,Checking,Deposit,Electronics,404.6,8670.97,8266.37,4,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100712,CUST-1470,48,Credit,Deposit,Electronics,157.14,949.48,792.34,1,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100595,CUST-1414,41,Credit,Payment,Entertainment,225.74,3122.6,2896.86,5,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100215,CUST-1403,51,Checking,Payment,Entertainment,317.15,6430.53,6263.38,4,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100412,CUST-1440,51,Credit,Payment,Electronics,260.72,4563.85,4303.13,5,London,Mobile App,Wire Transfer,1,0
+TXN-100396,CUST-1475,20,Savings,Deposit,Electronics,7.89,15646.39,15638.5,13,Berlin,Web Browser,Credit Card,0,0
+TXN-100420,CUST-1333,52,Savings,Payment,Entertainment,356.7,9231.89,8875.19,6,London,POS Terminal,UPI / Wallet,0,0
+TXN-100981,CUST-1479,19,Checking,Deposit,Entertainment,9.61,9268.08,9258.47,7,London,Web Browser,Debit Card,0,0
+TXN-100788,CUST-1453,20,Credit,Deposit,Entertainment,20.06,19846.78,19826.72,2,Mumbai,Web Browser,Credit Card,0,0
+TXN-100882,CUST-1467,19,Savings,Deposit,Entertainment,9.49,16982.02,16972.53,5,Berlin,Web Browser,Credit Card,0,0
+TXN-100919,CUST-1440,23,Credit,Payment,Entertainment,57.88,2697.12,2639.24,7,London,Web Browser,UPI / Wallet,0,0
+TXN-100668,CUST-1307,32,Savings,Payment,Entertainment,227.93,10806.44,10578.51,5,London,Web Browser,UPI / Wallet,0,0
+TXN-100251,CUST-1405,39,Credit,Payment,Entertainment,336.72,12792.93,12456.21,7,London,POS Terminal,UPI / Wallet,1,0
+TXN-100272,CUST-1354,34,Credit,Payment,Entertainment,250.24,17181.33,16931.09,5,London,Web Browser,Debit Card,0,0
+TXN-100831,CUST-1422,34,Credit,Payment,Groceries,1032.1,10707.12,9825.02,8,New York,Web Browser,Debit Card,1,1
+TXN-100549,CUST-1409,49,Savings,Payment,Electronics,366.38,6887.48,6521.1,13,London,POS Terminal,Debit Card,0,0
+TXN-100432,CUST-1454,56,Credit,Payment,Electronics,210.35,1773.69,1563.34,3,London,Mobile App,Wire Transfer,1,0
+TXN-100413,CUST-1430,21,Checking,Deposit,Entertainment,338.52,3807.85,3469.33,1,London,POS Terminal,Wire Transfer,1,1
+TXN-100564,CUST-1303,36,Credit,Deposit,Entertainment,610.3,21694.35,21084.05,2,London,POS Terminal,UPI / Wallet,1,1
+TXN-100699,CUST-1423,43,Savings,Payment,Electronics,1018.65,4434.89,3416.24,11,London,POS Terminal,UPI / Wallet,1,1
+TXN-100244,CUST-1448,19,Savings,Deposit,Entertainment,12.75,20939.44,20926.69,1,Berlin,Web Browser,Credit Card,0,0
+TXN-100157,CUST-1380,47,Credit,Payment,Entertainment,429.93,9172.26,8742.33,6,Mumbai,POS Terminal,UPI / Wallet,1,0
+TXN-100670,CUST-1178,47,Savings,Payment,Electronics,162.21,14946.13,14783.92,3,London,Mobile App,Wire Transfer,0,0
+TXN-100928,CUST-1419,28,Savings,Payment,Entertainment,51.9,5058.14,5006.24,11,Berlin,POS Terminal,Debit Card,0,0
+TXN-100857,CUST-1368,56,Business,Deposit,Electronics,77.16,23623.08,23545.92,1,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100739,CUST-1362,20,Savings,Deposit,Entertainment,8.02,24202.19,24194.17,1,Berlin,Web Browser,Credit Card,0,0
+TXN-100893,CUST-1433,44,Credit,Payment,Entertainment,426.08,6676.48,6250.4,9,London,POS Terminal,UPI / Wallet,1,0
+TXN-100609,CUST-1470,26,Savings,Payment,Electronics,35.42,1155.02,1119.6,13,London,Mobile App,UPI / Wallet,0,0
+TXN-100734,CUST-1494,18,Savings,Deposit,Entertainment,5.39,12006.48,12151.09,2,London,Web Browser,Credit Card,0,0
+TXN-100487,CUST-1452,20,Checking,Deposit,Entertainment,12.2,7078.39,7066.19,5,London,Web Browser,Debit Card,0,0
+TXN-100221,CUST-1444,31,Savings,Payment,Electronics,208.05,9673.08,9465.03,11,London,Web Browser,Debit Card,0,0
+TXN-100812,CUST-1402,28,Savings,Deposit,Entertainment,134.41,19560.52,19426.11,5,London,Web Browser,UPI / Wallet,0,0
+TXN-100133,CUST-1342,56,Credit,Deposit,Electronics,314.56,10473.36,10158.8,3,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100725,CUST-1389,20,Savings,Payment,Entertainment,22.28,14519.5,14497.22,3,London,POS Terminal,Debit Card,0,0
+TXN-100135,CUST-1397,20,Savings,Deposit,Entertainment,32.57,22101.0,22068.43,5,London,Web Browser,Credit Card,0,0
+TXN-100824,CUST-1451,20,Savings,Deposit,Electronics,19.2,22302.53,22283.33,1,London,Web Browser,Debit Card,0,0
+TXN-100602,CUST-1475,19,Credit,Deposit,Entertainment,16.02,5086.33,5070.31,9,London,Web Browser,Debit Card,0,0
+TXN-100646,CUST-1424,50,Credit,Payment,Electronics,569.03,1095.28,526.25,2,Mumbai,Mobile App,Wire Transfer,1,1
+TXN-100384,CUST-1486,19,Savings,Deposit,Entertainment,7.85,11587.77,11579.92,8,Berlin,Web Browser,Credit Card,0,0
+TXN-100178,CUST-1425,30,Savings,Payment,Entertainment,164.91,5155.43,4990.52,6,London,POS Terminal,UPI / Wallet,0,0
+TXN-100103,CUST-1190,41,Savings,Payment,Electronics,86.86,21499.23,21412.37,1,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100126,CUST-1473,46,Credit,Payment,Electronics,307.98,2831.44,2523.46,10,London,POS Terminal,Wire Transfer,0,0
+TXN-100116,CUST-1469,33,Savings,Transfer,Electronics,113.09,1771.18,1808.09,15,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100671,CUST-1439,42,Savings,Payment,Electronics,169.67,4080.89,3911.22,15,London,POS Terminal,Debit Card,0,0
+TXN-100341,CUST-1474,52,Credit,Deposit,Electronics,124.11,667.08,542.97,1,London,POS Terminal,Wire Transfer,1,0
+TXN-100613,CUST-1435,45,Credit,Payment,Electronics,224.09,3851.0,3626.91,7,London,POS Terminal,Wire Transfer,0,0
+TXN-100175,CUST-1435,37,Savings,Payment,Electronics,201.54,3551.7,3350.16,6,London,POS Terminal,Wire Transfer,0,0
+TXN-100655,CUST-1382,21,Savings,Deposit,Entertainment,15.06,22759.69,22744.63,4,London,Web Browser,Credit Card,0,0
+TXN-100065,CUST-1495,19,Savings,Deposit,Electronics,8.48,7710.64,7702.16,17,Berlin,Web Browser,Credit Card,0,0
+TXN-100465,CUST-1475,40,Savings,Payment,Electronics,94.09,851.42,757.33,7,London,POS Terminal,Wire Transfer,0,0
+TXN-100813,CUST-1492,20,Savings,Payment,Electronics,29.08,2239.44,2210.36,14,Berlin,Web Browser,Credit Card,0,0
+TXN-100811,CUST-1415,31,Checking,Deposit,Entertainment,86.52,1890.24,1803.72,2,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100337,CUST-1330,43,Savings,Payment,Entertainment,329.98,13589.73,13259.75,6,London,POS Terminal,Debit Card,0,0
+TXN-100500,CUST-1436,19,Savings,Deposit,Entertainment,15.14,20777.62,20762.48,4,London,Web Browser,Credit Card,0,0
+TXN-100266,CUST-1330,61,Credit,Payment,Electronics,289.53,10668.53,10529.0,8,London,Mobile App,UPI / Wallet,0,0
+TXN-100941,CUST-1495,21,Credit,Payment,Entertainment,10.33,395.57,385.24,20,London,Web Browser,Debit Card,0,0
+TXN-100884,CUST-1305,46,Checking,Payment,Entertainment,345.65,13617.56,13271.91,6,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100889,CUST-1487,19,Savings,Payment,Entertainment,10.42,3574.12,3563.7,12,London,Web Browser,Credit Card,0,0
+TXN-100470,CUST-1415,28,Checking,Deposit,Entertainment,41.9,14085.82,14043.92,5,New York,Mobile App,Debit Card,0,0
+TXN-100588,CUST-1328,60,Credit,Deposit,Electronics,335.83,11209.92,10874.09,3,London,Mobile App,Wire Transfer,0,0
+TXN-100149,CUST-1411,46,Checking,Payment,Entertainment,428.78,7333.26,6904.48,10,Mumbai,POS Terminal,UPI / Wallet,1,0
+TXN-100603,CUST-1489,20,Savings,Payment,Electronics,25.11,4652.47,4627.36,17,London,Web Browser,Credit Card,0,0
+TXN-100083,CUST-1472,36,Business,Deposit,Entertainment,58.69,1980.5,1921.81,3,Singapore,POS Terminal,Wire Transfer,0,0
+TXN-100641,CUST-1455,28,Business,Deposit,Entertainment,37.31,12465.78,12428.47,4,New York,Web Browser,Debit Card,0,0
+TXN-100584,CUST-1469,37,Savings,Payment,Electronics,236.73,3383.3,3146.57,13,Berlin,Web Browser,Debit Card,0,0
+TXN-100323,CUST-1354,25,Credit,Payment,Entertainment,27.32,14745.36,14718.04,4,London,POS Terminal,UPI / Wallet,0,0
+TXN-100868,CUST-1486,29,Business,Deposit,Entertainment,29.48,796.55,767.07,7,New York,POS Terminal,Wire Transfer,0,0
+TXN-100683,CUST-1429,45,Credit,Payment,Electronics,253.31,4337.59,4084.28,5,London,POS Terminal,Wire Transfer,1,0
+TXN-100841,CUST-1463,21,Savings,Transfer,Electronics,28.24,1030.66,1002.42,12,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100502,CUST-1416,25,Credit,Payment,Groceries,81.51,3985.69,3904.18,4,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100438,CUST-1409,31,Savings,Payment,Electronics,154.13,16030.2,15876.07,7,Berlin,Web Browser,Credit Card,0,0
+TXN-100369,CUST-1391,36,Savings,Payment,Electronics,133.43,13342.68,13209.25,10,Berlin,POS Terminal,Credit Card,0,0
+TXN-100826,CUST-1452,25,Savings,Payment,Electronics,53.77,4918.36,4864.59,18,Berlin,Web Browser,Credit Card,0,0
+TXN-100816,CUST-1391,32,Savings,Payment,Electronics,106.48,14915.73,14809.25,13,London,Web Browser,Credit Card,0,0
+TXN-100934,CUST-1410,40,Credit,Deposit,Entertainment,187.78,12976.99,12789.21,3,London,Web Browser,Wire Transfer,0,0
+TXN-100481,CUST-1419,24,Savings,Deposit,Electronics,41.86,19785.81,19743.95,4,Berlin,Web Browser,Credit Card,0,0
+TXN-100168,CUST-1483,18,Savings,Payment,Electronics,8.42,9788.76,9780.34,6,Berlin,Web Browser,Credit Card,0,0
+TXN-100015,CUST-1467,56,Business,Deposit,Electronics,324.11,3541.66,3217.55,2,New York,POS Terminal,Wire Transfer,1,0
+TXN-100454,CUST-1420,20,Savings,Deposit,Entertainment,376.85,17070.14,16693.29,1,Berlin,Web Browser,Wire Transfer,1,1
+TXN-100955,CUST-1389,56,Savings,Payment,Electronics,1243.52,7724.91,6481.39,9,London,POS Terminal,Debit Card,1,1
+TXN-100012,CUST-1261,25,Savings,Payment,Entertainment,70.87,22010.9,21940.03,1,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100154,CUST-1479,21,Savings,Payment,Entertainment,40.66,4876.49,4835.83,13,London,Web Browser,Credit Card,0,0
+TXN-100669,CUST-1487,19,Credit,Deposit,Entertainment,8.18,11685.99,11677.81,2,London,Web Browser,Credit Card,0,0
+TXN-100887,CUST-1399,42,Checking,Deposit,Entertainment,159.03,16763.86,16754.83,1,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100444,CUST-1481,22,Savings,Payment,Entertainment,51.56,5054.16,5002.6,16,London,Web Browser,Credit Card,0,0
+TXN-100692,CUST-1479,28,Business,Deposit,Entertainment,30.43,1866.56,1836.13,3,Tokyo,POS Terminal,UPI / Wallet,0,0
+TXN-100095,CUST-1407,44,Credit,Payment,Entertainment,284.0,5109.14,4825.14,3,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100056,CUST-1478,18,Savings,Deposit,Entertainment,6.92,19057.58,19050.66,0,Berlin,Web Browser,Debit Card,0,0
+TXN-100293,CUST-1389,45,Savings,Payment,Electronics,180.69,3795.6,3614.91,6,London,Mobile App,Wire Transfer,0,0
+TXN-100387,CUST-1439,42,Savings,Payment,Electronics,1157.82,4687.77,3529.95,7,London,POS Terminal,UPI / Wallet,1,1
+TXN-100096,CUST-1450,28,Credit,Payment,Entertainment,195.55,7819.8,7624.25,7,London,Web Browser,Wire Transfer,0,0
+TXN-100553,CUST-1341,39,Savings,Payment,Electronics,174.38,9897.72,9723.34,5,London,POS Terminal,Wire Transfer,0,0
+TXN-100183,CUST-1413,31,Savings,Payment,Electronics,152.27,5825.79,5673.52,13,London,POS Terminal,Debit Card,0,0
+TXN-100912,CUST-1490,21,Savings,Payment,Electronics,29.14,4105.09,4075.95,19,Berlin,Web Browser,Credit Card,0,0
+TXN-100994,CUST-1439,26,Savings,Payment,Entertainment,117.02,6363.74,6246.72,14,London,POS Terminal,UPI / Wallet,0,0
+TXN-100263,CUST-1248,38,Checking,Deposit,Entertainment,70.75,22282.12,22211.37,1,London,POS Terminal,UPI / Wallet,0,0
+TXN-100321,CUST-1396,26,Credit,Payment,Entertainment,120.63,17722.83,17602.2,6,London,Web Browser,Debit Card,0,0
+TXN-100159,CUST-1223,39,Savings,Deposit,Electronics,97.53,23461.08,23363.55,2,London,POS Terminal,UPI / Wallet,0,0
+TXN-100616,CUST-1389,55,Checking,Deposit,Electronics,248.34,8607.66,8359.32,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100596,CUST-1489,20,Savings,Payment,Electronics,11.82,789.81,777.99,20,Berlin,POS Terminal,Debit Card,0,0
+TXN-100877,CUST-1489,18,Savings,Deposit,Electronics,5.48,20049.46,20043.98,4,Berlin,Web Browser,Credit Card,0,0
+TXN-100962,CUST-1347,22,Savings,Deposit,Electronics,27.02,23938.32,23911.3,1,Berlin,Web Browser,Debit Card,0,0
+TXN-100686,CUST-1319,57,Checking,Deposit,Electronics,717.42,20908.4,20190.98,3,London,POS Terminal,Debit Card,1,1
+TXN-100855,CUST-1493,19,Credit,Deposit,Entertainment,6.04,8185.27,8179.23,15,London,Web Browser,Credit Card,0,0
+TXN-100860,CUST-1411,57,Credit,Payment,Electronics,1140.15,6756.32,5616.17,10,London,Mobile App,UPI / Wallet,1,1
+TXN-100545,CUST-1449,50,Savings,Payment,Electronics,352.57,5016.59,4814.02,10,London,POS Terminal,UPI / Wallet,0,0
+TXN-100082,CUST-1468,24,Savings,Payment,Entertainment,85.92,5192.61,5106.69,18,London,Web Browser,Credit Card,0,0
+TXN-100085,CUST-1307,60,Credit,Deposit,Electronics,377.59,11851.39,11473.8,3,London,Mobile App,Wire Transfer,0,0
+TXN-100182,CUST-1468,53,Credit,Payment,Electronics,336.57,3456.06,3119.49,7,London,POS Terminal,Wire Transfer,0,0
+TXN-100306,CUST-1410,35,Checking,Deposit,Entertainment,199.99,15687.68,15487.69,9,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100701,CUST-1438,28,Savings,Payment,Electronics,78.1,15824.45,15746.35,12,Berlin,Web Browser,Credit Card,0,0
+TXN-100145,CUST-1457,34,Checking,Payment,Entertainment,121.61,4732.88,4611.27,13,London,Web Browser,Debit Card,0,0
+TXN-100988,CUST-1424,40,Savings,Deposit,Electronics,235.42,3672.66,3437.24,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100313,CUST-1353,22,Savings,Payment,Entertainment,410.15,5382.46,4972.31,1,Berlin,Web Browser,Wire Transfer,1,1
+TXN-100160,CUST-1394,51,Checking,Payment,Electronics,908.85,7766.12,6857.27,3,Mumbai,Mobile App,Wire Transfer,1,1
+TXN-100849,CUST-1479,51,Checking,Deposit,Electronics,293.03,3563.68,3270.65,2,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100674,CUST-1496,18,Checking,Deposit,Entertainment,5.66,329.29,323.63,16,London,Web Browser,Debit Card,0,0
+TXN-100522,CUST-1428,46,Savings,Payment,Electronics,312.64,7590.53,7427.89,8,London,POS Terminal,UPI / Wallet,1,0
+TXN-100575,CUST-1423,37,Credit,Deposit,Entertainment,71.49,8894.8,8823.31,16,Mumbai,POS Terminal,Credit Card,0,0
+TXN-100270,CUST-1302,42,Savings,Deposit,Electronics,649.28,22077.83,21428.55,6,London,POS Terminal,Credit Card,1,1
+TXN-100635,CUST-1475,19,Credit,Deposit,Entertainment,6.99,265.34,258.35,2,London,Web Browser,Wire Transfer,0,0
+TXN-100817,CUST-1434,22,Savings,Payment,Entertainment,60.48,10567.78,10507.3,9,London,Web Browser,Debit Card,0,0
+TXN-100150,CUST-1275,51,Savings,Payment,Electronics,162.68,18942.66,18779.98,8,Mumbai,Mobile App,Debit Card,0,0
+TXN-100165,CUST-1437,37,Savings,Payment,Electronics,198.75,6035.62,5836.87,15,London,POS Terminal,Credit Card,0,0
+TXN-100136,CUST-1334,32,Savings,Transfer,Entertainment,178.9,8131.1,7952.2,5,London,POS Terminal,UPI / Wallet,0,0
+TXN-100703,CUST-1435,46,Business,Deposit,Entertainment,307.06,11364.35,11057.29,4,New York,POS Terminal,UPI / Wallet,0,0
+TXN-100205,CUST-1471,22,Business,Deposit,Entertainment,323.35,4911.77,4588.42,7,Mumbai,POS Terminal,Debit Card,1,1
+TXN-100355,CUST-1353,51,Credit,Payment,Electronics,320.5,14659.94,14339.44,4,London,POS Terminal,UPI / Wallet,0,0
+TXN-100942,CUST-1460,35,Business,Deposit,Entertainment,552.95,7342.42,6789.47,9,Singapore,POS Terminal,Debit Card,1,1
+TXN-100719,CUST-1377,61,Savings,Payment,Electronics,320.75,9451.94,9131.19,7,London,POS Terminal,UPI / Wallet,0,0
+TXN-100303,CUST-1439,35,Savings,Payment,Electronics,206.08,7511.45,7305.37,7,London,POS Terminal,UPI / Wallet,0,0
+TXN-100905,CUST-1429,49,Savings,Payment,Electronics,225.69,3378.93,3153.24,8,London,Mobile App,Wire Transfer,0,0
+TXN-100007,CUST-1474,47,Savings,Payment,Electronics,205.61,1431.74,1226.13,7,London,Mobile App,Wire Transfer,0,0
+TXN-100049,CUST-1456,54,Credit,Payment,Electronics,180.46,1471.02,1290.56,3,London,Mobile App,Wire Transfer,1,0
+TXN-100447,CUST-1372,42,Savings,Deposit,Electronics,139.5,16539.82,16400.32,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100944,CUST-1414,43,Savings,Payment,Electronics,215.78,4756.66,4540.88,3,London,POS Terminal,Wire Transfer,1,0
+TXN-100574,CUST-1432,38,Credit,Payment,Entertainment,189.75,6202.15,6012.4,16,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100071,CUST-1412,53,Credit,Payment,Electronics,1164.3,4608.44,3444.14,3,Mumbai,POS Terminal,Wire Transfer,1,1
+TXN-100480,CUST-1420,35,Credit,Payment,Entertainment,241.28,7347.35,7106.07,6,London,POS Terminal,Wire Transfer,0,0
+TXN-100028,CUST-1486,19,Savings,Payment,Entertainment,9.4,1448.31,1438.91,10,Berlin,Web Browser,Debit Card,0,0
+TXN-100702,CUST-1418,31,Checking,Payment,Entertainment,634.05,6938.61,6304.56,9,Mumbai,POS Terminal,UPI / Wallet,1,1
+TXN-100298,CUST-1441,40,Checking,Deposit,Entertainment,317.27,7761.31,7444.04,5,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100916,CUST-1465,18,Savings,Deposit,Entertainment,7.48,16614.86,16607.38,7,London,Web Browser,Credit Card,0,0
+TXN-100842,CUST-1412,56,Credit,Payment,Entertainment,364.6,6554.78,6190.18,11,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100414,CUST-1453,21,Savings,Payment,Entertainment,46.78,13819.97,13773.19,6,Berlin,Web Browser,Credit Card,0,0
+TXN-100587,CUST-1254,46,Credit,Deposit,Electronics,143.94,22822.71,22678.77,6,London,POS Terminal,Credit Card,0,0
+TXN-100068,CUST-1461,52,Checking,Deposit,Electronics,271.79,3176.82,2905.03,3,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100797,CUST-1341,33,Credit,Deposit,Entertainment,87.68,21660.27,21722.59,6,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100185,CUST-1419,39,Credit,Payment,Entertainment,148.5,11858.39,11709.89,14,Mumbai,POS Terminal,Credit Card,0,0
+TXN-100761,CUST-1452,35,Checking,Payment,Entertainment,70.61,8799.41,8728.8,13,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100556,CUST-1458,19,Savings,Payment,Entertainment,23.77,2821.19,2947.42,13,Berlin,Web Browser,Debit Card,0,0
+TXN-100643,CUST-1397,22,Savings,Transfer,Entertainment,54.03,6199.37,6145.34,7,London,POS Terminal,UPI / Wallet,0,0
+TXN-100568,CUST-1478,19,Checking,Deposit,Groceries,8.1,2390.97,2382.87,6,London,POS Terminal,UPI / Wallet,0,0
+TXN-100121,CUST-1442,19,Savings,Deposit,Entertainment,316.9,2580.4,2263.5,2,Berlin,Web Browser,Wire Transfer,1,1
+TXN-100764,CUST-1452,40,Credit,Payment,Electronics,217.93,4147.45,3929.52,9,London,POS Terminal,Wire Transfer,0,0
+TXN-100911,CUST-1478,19,Checking,Deposit,Electronics,5.21,24342.96,24337.75,2,London,Web Browser,Credit Card,0,0
+TXN-100775,CUST-1477,30,Savings,Payment,Electronics,539.58,2394.34,1854.76,17,Berlin,Web Browser,Debit Card,1,1
+TXN-100008,CUST-1385,22,Savings,Deposit,Electronics,43.91,22120.3,22076.39,2,Berlin,Web Browser,Debit Card,0,0
+TXN-100329,CUST-1168,36,Savings,Payment,Entertainment,141.61,12954.29,12962.68,3,London,Mobile App,Wire Transfer,0,0
+TXN-100297,CUST-1420,55,Checking,Deposit,Electronics,71.3,6023.7,5952.4,6,London,Mobile App,UPI / Wallet,0,0
+TXN-100072,CUST-1448,35,Savings,Deposit,Electronics,238.81,5669.17,5430.36,3,London,POS Terminal,Wire Transfer,1,0
+TXN-100948,CUST-1343,31,Savings,Payment,Entertainment,159.96,20107.28,19947.32,3,London,Web Browser,Debit Card,0,0
+TXN-100823,CUST-1353,29,Savings,Payment,Entertainment,168.79,17115.44,16946.65,8,Mumbai,Web Browser,Debit Card,0,0
+TXN-100517,CUST-1355,54,Credit,Deposit,Electronics,279.99,10948.8,10668.81,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100005,CUST-1332,22,Checking,Deposit,Entertainment,12.22,20114.76,20252.54,1,London,Mobile App,UPI / Wallet,0,0
+TXN-100939,CUST-1326,37,Savings,Payment,Entertainment,271.86,12189.9,11918.04,3,London,POS Terminal,Wire Transfer,0,0
+TXN-100445,CUST-1326,55,Savings,Payment,Electronics,288.5,15462.92,15174.42,6,London,POS Terminal,Debit Card,0,0
+TXN-100032,CUST-1465,44,Credit,Deposit,Electronics,247.85,3408.9,3161.05,3,London,POS Terminal,Wire Transfer,1,0
+TXN-100573,CUST-1431,22,Savings,Deposit,Entertainment,71.33,21815.8,21744.47,4,London,Web Browser,Credit Card,0,0
+TXN-100610,CUST-1419,31,Savings,Payment,Electronics,117.94,2872.5,2904.56,1,London,Web Browser,Wire Transfer,0,0
+TXN-100467,CUST-1449,23,Savings,Payment,Electronics,86.3,3607.65,3521.35,4,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100164,CUST-1494,18,Savings,Deposit,Electronics,5.74,2737.69,2731.95,15,Berlin,Web Browser,Credit Card,0,0
+TXN-100097,CUST-1445,36,Savings,Payment,Electronics,255.87,5640.14,5384.27,7,London,POS Terminal,Wire Transfer,0,0
+TXN-100388,CUST-1382,22,Savings,Payment,Entertainment,24.87,3296.55,3271.68,8,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100768,CUST-1345,53,Savings,Payment,Electronics,357.66,11030.0,10672.34,5,London,POS Terminal,UPI / Wallet,1,0
+TXN-100711,CUST-1477,49,Credit,Deposit,Electronics,124.27,881.53,757.26,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100020,CUST-1416,42,Credit,Payment,Entertainment,987.72,8740.49,7752.77,3,London,POS Terminal,Wire Transfer,1,1
+TXN-100030,CUST-1372,42,Credit,Deposit,Electronics,258.7,15277.6,15018.9,4,Mumbai,POS Terminal,UPI / Wallet,1,0
+TXN-100572,CUST-1354,23,Checking,Deposit,Entertainment,10.18,2837.89,2827.71,1,London,Mobile App,Wire Transfer,0,0
+TXN-100477,CUST-1443,19,Savings,Deposit,Entertainment,10.14,20375.98,20365.84,3,Berlin,Web Browser,Credit Card,0,0
+TXN-100792,CUST-1408,49,Credit,Payment,Electronics,330.96,7938.41,7607.45,6,London,POS Terminal,UPI / Wallet,1,0
+TXN-100302,CUST-1413,41,Credit,Payment,Entertainment,99.94,3974.18,3874.24,11,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100945,CUST-1426,35,Business,Deposit,Entertainment,35.49,12608.95,12573.46,7,Mumbai,POS Terminal,Credit Card,0,0
+TXN-100047,CUST-1277,38,Savings,Payment,Entertainment,209.57,8493.68,8284.11,3,Berlin,POS Terminal,Wire Transfer,0,0
+TXN-100033,CUST-1474,21,Savings,Payment,Entertainment,21.81,3710.89,3689.08,18,London,Web Browser,Credit Card,0,0
+TXN-100921,CUST-1394,42,Credit,Deposit,Electronics,283.78,8793.74,8509.96,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100004,CUST-1483,23,Savings,Payment,Electronics,66.48,3565.88,3499.4,19,London,Web Browser,Credit Card,0,0
+TXN-100417,CUST-1468,31,Savings,Payment,Electronics,159.01,2930.09,2771.08,15,Berlin,Web Browser,Debit Card,0,0
+TXN-100426,CUST-1429,26,Savings,Payment,Entertainment,133.77,9684.91,9551.14,3,London,Web Browser,UPI / Wallet,0,0
+TXN-100285,CUST-1397,29,Credit,Deposit,Entertainment,143.87,17429.34,17285.47,2,London,Web Browser,Wire Transfer,0,0
+TXN-100094,CUST-1427,49,Business,Deposit,Electronics,249.9,5932.37,5682.47,2,New York,POS Terminal,Wire Transfer,1,0
+TXN-100115,CUST-1471,19,Savings,Deposit,Electronics,7.94,4608.51,4600.57,12,Berlin,POS Terminal,Credit Card,0,0
+TXN-100090,CUST-1496,18,Credit,Deposit,Entertainment,5.41,813.65,808.24,15,London,Web Browser,Credit Card,0,0
+TXN-100069,CUST-1439,37,Business,Deposit,Entertainment,144.66,18664.96,18520.3,5,Mumbai,Web Browser,Debit Card,0,0
+TXN-100867,CUST-1424,48,Savings,Payment,Electronics,218.19,4273.3,4055.11,11,London,Mobile App,UPI / Wallet,0,0
+TXN-100789,CUST-1450,61,Checking,Deposit,Electronics,358.22,5200.98,4842.76,4,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100940,CUST-1475,20,Savings,Deposit,Entertainment,23.33,12789.88,12766.55,6,Berlin,Web Browser,Credit Card,0,0
+TXN-100985,CUST-1375,24,Savings,Deposit,Entertainment,45.3,21095.82,21050.52,1,London,Web Browser,UPI / Wallet,0,0
+TXN-100427,CUST-1466,38,Credit,Deposit,Electronics,661.48,2865.14,2203.66,1,London,POS Terminal,Wire Transfer,1,1
+TXN-100439,CUST-1437,58,Checking,Payment,Electronics,386.26,4256.89,3870.63,6,New York,Mobile App,Wire Transfer,1,0
+TXN-100695,CUST-1466,21,Savings,Payment,Entertainment,17.49,562.56,545.07,5,London,Web Browser,Wire Transfer,0,0
+TXN-100630,CUST-1456,28,Checking,Payment,Entertainment,37.94,3814.95,3777.01,11,Mumbai,Mobile App,Debit Card,0,0
+TXN-100403,CUST-1448,21,Business,Deposit,Entertainment,9.6,17266.56,17256.96,1,New York,Web Browser,UPI / Wallet,0,0
+TXN-100926,CUST-1466,24,Savings,Deposit,Electronics,41.92,14769.88,14727.96,15,Berlin,Web Browser,Credit Card,0,0
+TXN-100514,CUST-1494,19,Credit,Deposit,Entertainment,7.53,1269.75,1262.22,11,London,Web Browser,Credit Card,0,0
+TXN-100923,CUST-1449,37,Savings,Transfer,Electronics,161.27,2094.01,1932.74,12,London,Mobile App,Wire Transfer,0,0
+TXN-100301,CUST-1460,21,Checking,Deposit,Entertainment,9.03,17800.2,17791.17,3,London,Web Browser,Credit Card,0,0
+TXN-100499,CUST-1335,38,Credit,Deposit,Entertainment,95.83,21166.64,21070.81,8,London,POS Terminal,Credit Card,0,0
+TXN-100255,CUST-1387,69,Credit,Deposit,Electronics,308.22,7398.86,7090.64,4,London,Mobile App,UPI / Wallet,0,0
+TXN-100141,CUST-1442,31,Credit,Deposit,Entertainment,174.48,13322.3,13147.82,5,London,Web Browser,Debit Card,0,0
+TXN-100851,CUST-1379,28,Savings,Payment,Entertainment,143.3,15604.6,15461.3,3,London,Web Browser,UPI / Wallet,0,0
+TXN-100093,CUST-1452,41,Credit,Payment,Electronics,383.38,6339.16,5955.78,10,London,POS Terminal,UPI / Wallet,1,0
+TXN-100102,CUST-1485,21,Savings,Payment,Electronics,410.45,1665.05,1254.6,17,Berlin,Web Browser,Credit Card,1,1
+TXN-100664,CUST-1275,47,Savings,Payment,Electronics,202.39,5853.68,5651.29,2,London,Mobile App,Wire Transfer,0,0
+TXN-100190,CUST-1247,21,Savings,Deposit,Entertainment,27.77,18274.91,18247.14,0,London,POS Terminal,Wire Transfer,0,0
+TXN-100176,CUST-1461,41,Credit,Payment,Electronics,93.3,824.68,731.38,5,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100317,CUST-1381,26,Savings,Payment,Entertainment,120.49,18950.51,18830.02,8,London,Web Browser,Debit Card,0,0
+TXN-100354,CUST-1410,22,Savings,Deposit,Groceries,23.4,11875.63,11852.23,4,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100073,CUST-1471,38,Savings,Payment,Electronics,215.35,3380.63,3165.28,14,Berlin,POS Terminal,Debit Card,0,0
+TXN-100778,CUST-1357,60,Checking,Deposit,Electronics,289.1,17016.62,16727.52,5,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100590,CUST-1479,19,Savings,Deposit,Electronics,12.85,15035.06,15022.21,4,Berlin,Web Browser,Credit Card,0,0
+TXN-100235,CUST-1453,20,Savings,Payment,Entertainment,38.78,7985.06,7946.28,2,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100362,CUST-1473,39,Savings,Payment,Electronics,277.65,3901.07,3623.42,6,London,POS Terminal,Wire Transfer,0,0
+TXN-100079,CUST-1417,36,Credit,Payment,Entertainment,314.19,8684.81,8370.62,15,London,POS Terminal,Debit Card,0,0
+TXN-100393,CUST-1323,40,Credit,Payment,Entertainment,257.94,15563.32,15305.38,5,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100795,CUST-1435,21,Savings,Payment,Entertainment,42.68,14110.5,14067.82,2,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100001,CUST-1373,54,Savings,Payment,Electronics,1086.3,6486.36,5400.06,6,London,Mobile App,UPI / Wallet,1,1
+TXN-100738,CUST-1473,21,Savings,Payment,Entertainment,39.6,3385.74,3346.14,16,London,Web Browser,Debit Card,0,0
+TXN-100066,CUST-1191,34,Savings,Payment,Entertainment,133.39,17605.98,17472.59,3,London,Mobile App,UPI / Wallet,0,0
+TXN-100486,CUST-1447,48,Business,Deposit,Entertainment,263.25,7457.55,7194.3,5,New York,POS Terminal,Wire Transfer,0,0
+TXN-100619,CUST-1369,32,Checking,Deposit,Entertainment,80.61,2111.29,2030.68,1,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100241,CUST-1364,48,Credit,Payment,Electronics,864.58,5210.19,4345.61,2,London,POS Terminal,Wire Transfer,1,1
+TXN-100829,CUST-1365,51,Savings,Payment,Electronics,289.84,8599.12,8309.28,3,London,POS Terminal,Wire Transfer,0,0
+TXN-100139,CUST-1356,46,Savings,Payment,Electronics,229.46,8593.61,8364.15,6,London,POS Terminal,UPI / Wallet,0,0
+TXN-100029,CUST-1410,21,Credit,Deposit,Groceries,16.17,13862.35,13846.18,4,London,Web Browser,Debit Card,0,0
+TXN-100777,CUST-1468,25,Savings,Payment,Electronics,64.36,9526.43,9462.07,11,Berlin,Web Browser,Credit Card,0,0
+TXN-100544,CUST-1452,58,Checking,Deposit,Electronics,322.34,4769.32,4446.98,1,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100299,CUST-1485,19,Savings,Payment,Entertainment,6.38,902.71,896.33,7,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100628,CUST-1313,21,Savings,Payment,Entertainment,40.68,13738.82,13698.14,1,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100611,CUST-1457,22,Savings,Payment,Entertainment,29.49,9090.42,9060.93,11,London,Web Browser,Credit Card,0,0
+TXN-100198,CUST-1487,18,Savings,Deposit,Entertainment,7.0,23802.45,23795.45,0,Berlin,Web Browser,Debit Card,0,0
+TXN-100181,CUST-1437,61,Savings,Payment,Electronics,219.19,3616.13,3396.94,7,London,Mobile App,Wire Transfer,0,0
+TXN-100604,CUST-1491,54,Business,Deposit,Electronics,96.35,1590.58,1494.23,3,Singapore,POS Terminal,Wire Transfer,0,0
+TXN-100191,CUST-1444,23,Savings,Payment,Entertainment,382.08,586.74,204.66,5,London,Web Browser,Wire Transfer,1,1
+TXN-100672,CUST-1391,30,Credit,Payment,Entertainment,156.98,10178.96,10021.98,10,London,POS Terminal,UPI / Wallet,0,0
+TXN-100218,CUST-1451,48,Credit,Deposit,Electronics,252.85,2526.87,2274.02,4,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100227,CUST-1494,19,Savings,Deposit,Electronics,8.13,8921.18,8913.05,10,London,Web Browser,Credit Card,0,0
+TXN-100760,CUST-1440,44,Credit,Payment,Entertainment,353.37,7481.37,7128.0,5,London,POS Terminal,Wire Transfer,1,0
+TXN-100543,CUST-1458,30,Savings,Payment,Electronics,126.79,1855.45,1728.66,10,London,POS Terminal,Wire Transfer,0,0
+TXN-100964,CUST-1357,27,Savings,Payment,Entertainment,171.4,15245.56,15074.16,3,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100328,CUST-1410,42,Savings,Payment,Entertainment,313.27,5973.22,5659.95,12,London,POS Terminal,UPI / Wallet,0,0
+TXN-100741,CUST-1409,57,Business,Deposit,Entertainment,189.95,5944.95,5755.0,5,New York,Mobile App,UPI / Wallet,0,0
+TXN-100700,CUST-1381,24,Savings,Payment,Electronics,492.92,20798.82,20305.9,7,Berlin,Web Browser,Credit Card,1,1
+TXN-100469,CUST-1317,61,Credit,Deposit,Electronics,249.51,15499.76,15250.25,10,London,POS Terminal,Debit Card,0,0
+TXN-100910,CUST-1403,35,Credit,Payment,Entertainment,303.96,13286.6,12982.64,6,London,POS Terminal,UPI / Wallet,0,0
+TXN-100897,CUST-1409,22,Credit,Deposit,Groceries,364.22,20337.91,19973.69,3,Berlin,Web Browser,Debit Card,1,1
+TXN-100540,CUST-1312,30,Savings,Deposit,Entertainment,72.94,21680.22,21607.28,2,London,Web Browser,Debit Card,0,0
+TXN-100463,CUST-1436,26,Savings,Payment,Entertainment,114.73,3549.79,3435.06,6,London,POS Terminal,Wire Transfer,0,0
+TXN-100025,CUST-1455,27,Savings,Deposit,Electronics,26.72,12151.22,12124.5,17,London,Web Browser,Credit Card,0,0
+TXN-100277,CUST-1473,18,Savings,Deposit,Entertainment,10.12,14731.69,14721.57,3,London,Web Browser,Credit Card,0,0
+TXN-100623,CUST-1328,32,Savings,Payment,Entertainment,135.21,6536.15,6400.94,1,London,Web Browser,Wire Transfer,0,0
+TXN-100529,CUST-1327,44,Savings,Payment,Electronics,228.08,6227.35,5999.27,4,London,POS Terminal,Wire Transfer,0,0
+TXN-100892,CUST-1314,43,Business,Deposit,Entertainment,50.0,18940.94,18890.94,1,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100690,CUST-1458,19,Savings,Deposit,Entertainment,21.1,9685.99,9664.89,7,Berlin,Web Browser,Credit Card,0,0
+TXN-100024,CUST-1403,40,Savings,Payment,Electronics,242.1,7877.47,7635.37,14,London,POS Terminal,Debit Card,0,0
+TXN-100621,CUST-1449,34,Savings,Payment,Entertainment,230.44,6900.76,6670.32,12,London,Web Browser,Debit Card,0,0
+TXN-100748,CUST-1310,56,Credit,Payment,Electronics,234.95,15035.34,14800.39,6,London,Mobile App,UPI / Wallet,0,0
+TXN-100119,CUST-1347,47,Credit,Payment,Electronics,190.98,10015.29,9824.31,4,London,POS Terminal,Wire Transfer,0,0
+TXN-100548,CUST-1258,25,Savings,Deposit,Entertainment,85.4,21780.9,21695.5,5,London,POS Terminal,Debit Card,0,0
+TXN-100510,CUST-1463,42,Savings,Deposit,Electronics,554.3,940.38,386.08,2,London,POS Terminal,Wire Transfer,1,1
+TXN-100287,CUST-1417,21,Savings,Deposit,Entertainment,23.01,7762.92,7739.91,7,Berlin,Web Browser,Debit Card,0,0
+TXN-100859,CUST-1417,42,Credit,Payment,Electronics,212.08,2914.74,2702.66,6,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100167,CUST-1165,35,Credit,Deposit,Electronics,14.52,24204.97,24340.45,0,London,Mobile App,UPI / Wallet,0,0
+TXN-100504,CUST-1385,31,Credit,Payment,Entertainment,747.72,17207.55,16459.83,3,London,POS Terminal,UPI / Wallet,1,1
+TXN-100949,CUST-1329,32,Savings,Deposit,Entertainment,118.16,19076.88,18958.72,1,London,POS Terminal,UPI / Wallet,0,0
+TXN-100172,CUST-1464,37,Savings,Payment,Electronics,193.39,3406.29,3212.9,4,London,POS Terminal,Wire Transfer,1,0
+TXN-100968,CUST-1476,26,Savings,Transfer,Electronics,52.01,1519.58,1467.57,17,London,POS Terminal,UPI / Wallet,0,0
+TXN-100461,CUST-1444,32,Savings,Payment,Entertainment,227.24,7622.09,7394.85,10,London,Web Browser,UPI / Wallet,0,0
+TXN-100491,CUST-1449,19,Savings,Deposit,Entertainment,332.05,20727.29,20395.24,1,Berlin,Web Browser,Credit Card,1,1
+TXN-100193,CUST-1457,25,Checking,Payment,Entertainment,42.45,5046.9,5004.45,9,New York,POS Terminal,Debit Card,0,0
+TXN-100615,CUST-1410,30,Savings,Payment,Entertainment,161.64,8520.85,8359.21,4,London,POS Terminal,Wire Transfer,0,0
+TXN-100360,CUST-1495,18,Savings,Deposit,Entertainment,5.04,17368.16,17363.12,4,London,Web Browser,Credit Card,0,0
+TXN-100983,CUST-1335,34,Savings,Deposit,Entertainment,53.91,21546.02,21492.11,8,London,POS Terminal,Credit Card,0,0
+TXN-100858,CUST-1404,31,Credit,Payment,Entertainment,98.02,2712.53,2614.51,9,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100888,CUST-1347,34,Credit,Payment,Entertainment,205.29,7261.92,7056.63,4,London,Mobile App,Wire Transfer,0,0
+TXN-100192,CUST-1479,50,Savings,Payment,Electronics,224.95,1282.22,1057.27,6,London,Mobile App,Wire Transfer,1,0
+TXN-100562,CUST-1379,57,Credit,Payment,Electronics,1041.48,5318.14,4276.66,6,Mumbai,Mobile App,Wire Transfer,1,1
+TXN-100338,CUST-1459,21,Savings,Payment,Entertainment,41.07,8565.99,8524.92,8,Berlin,Web Browser,Credit Card,0,0
+TXN-100682,CUST-1453,67,Business,Deposit,Electronics,380.83,4675.91,4295.08,2,New York,POS Terminal,Wire Transfer,1,0
+TXN-100240,CUST-1381,68,Business,Deposit,Electronics,291.48,15011.37,14719.89,4,New York,Mobile App,UPI / Wallet,0,0
+TXN-100843,CUST-1397,40,Savings,Payment,Entertainment,329.78,10740.14,10410.36,9,London,POS Terminal,Debit Card,0,0
+TXN-100865,CUST-1438,47,Checking,Payment,Electronics,130.83,3127.02,2996.19,7,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100853,CUST-1170,37,Savings,Deposit,Entertainment,108.32,23890.82,23932.5,2,London,Mobile App,Debit Card,0,0
+TXN-100180,CUST-1485,21,Savings,Deposit,Entertainment,41.39,11404.69,11363.3,7,Berlin,Web Browser,Credit Card,0,0
+TXN-100809,CUST-1403,32,Savings,Deposit,Entertainment,157.9,10937.98,10780.08,2,London,Web Browser,Wire Transfer,0,0
+TXN-100932,CUST-1409,22,Savings,Payment,Entertainment,39.12,14370.83,14331.71,9,Berlin,Web Browser,Credit Card,0,0
+TXN-100518,CUST-1432,53,Savings,Payment,Electronics,231.75,2966.02,2734.27,6,London,Mobile App,Wire Transfer,0,0
+TXN-100903,CUST-1419,51,Credit,Deposit,Electronics,277.47,6965.16,6687.69,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100663,CUST-1494,18,Savings,Deposit,Electronics,313.92,13950.5,13636.58,15,Berlin,Web Browser,Credit Card,1,1
+TXN-100685,CUST-1392,19,Credit,Deposit,Groceries,8.69,18308.44,18449.75,1,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100234,CUST-1467,43,Credit,Payment,Electronics,235.92,2060.07,1974.15,7,London,POS Terminal,Wire Transfer,1,0
+TXN-100525,CUST-1453,27,Savings,Payment,Electronics,101.36,4000.34,4048.98,12,Berlin,Web Browser,Debit Card,0,0
+TXN-100629,CUST-1304,53,Credit,Payment,Entertainment,255.01,7578.63,7323.62,4,London,POS Terminal,Wire Transfer,0,0
+TXN-100380,CUST-1380,28,Savings,Payment,Entertainment,113.78,11203.44,11089.66,10,London,Web Browser,Debit Card,0,0
+TXN-100034,CUST-1423,25,Checking,Deposit,Entertainment,460.65,15622.36,15161.71,9,Mumbai,POS Terminal,Debit Card,1,1
+TXN-100730,CUST-1328,31,Savings,Payment,Entertainment,175.38,16527.05,16351.67,4,London,POS Terminal,UPI / Wallet,0,0
+TXN-100110,CUST-1388,53,Business,Deposit,Entertainment,180.37,12370.68,12190.31,4,New York,POS Terminal,UPI / Wallet,0,0
+TXN-100137,CUST-1422,28,Checking,Deposit,Entertainment,21.62,5138.6,5116.98,7,London,Mobile App,Debit Card,0,0
+TXN-100731,CUST-1267,28,Savings,Deposit,Entertainment,67.18,22808.68,22741.5,4,London,POS Terminal,Debit Card,0,0
+TXN-100398,CUST-1349,67,Savings,Deposit,Electronics,298.07,12833.89,12535.82,7,London,Mobile App,Debit Card,0,0
+TXN-100300,CUST-1468,49,Credit,Payment,Electronics,185.0,1713.06,1528.06,5,London,Mobile App,Wire Transfer,1,0
+TXN-100802,CUST-1484,22,Credit,Payment,Entertainment,17.01,2822.66,2955.65,17,Mumbai,Web Browser,Credit Card,0,0
+TXN-100330,CUST-1430,18,Savings,Deposit,Entertainment,316.72,8406.36,8089.64,1,Berlin,Web Browser,UPI / Wallet,1,1
+TXN-100275,CUST-1470,22,Savings,Payment,Entertainment,32.45,1484.66,1452.21,17,London,Web Browser,Debit Card,0,0
+TXN-100631,CUST-1433,67,Checking,Deposit,Electronics,252.45,3981.0,3728.55,3,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100632,CUST-1446,21,Savings,Payment,Entertainment,16.81,3022.64,3005.83,15,Berlin,POS Terminal,Debit Card,0,0
+TXN-100758,CUST-1470,35,Credit,Payment,Electronics,100.8,1344.74,1243.94,13,London,POS Terminal,Wire Transfer,0,0
+TXN-100260,CUST-1377,26,Savings,Payment,Electronics,100.72,17919.19,17818.47,1,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100930,CUST-1417,49,Credit,Deposit,Electronics,281.4,7683.64,7402.24,3,London,POS Terminal,Wire Transfer,1,0
+TXN-100647,CUST-1444,41,Credit,Payment,Electronics,230.74,3384.82,3154.08,9,London,Mobile App,Wire Transfer,0,0
+TXN-100057,CUST-1413,32,Savings,Payment,Electronics,195.99,9894.82,9698.83,4,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100582,CUST-1482,22,Checking,Payment,Entertainment,19.3,1161.03,1141.73,11,New York,POS Terminal,UPI / Wallet,0,0
+TXN-100011,CUST-1456,34,Savings,Payment,Entertainment,208.86,4756.98,4548.12,16,London,POS Terminal,Debit Card,0,0
+TXN-100284,CUST-1470,28,Checking,Payment,Entertainment,23.3,1683.72,1660.42,8,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100652,CUST-1457,19,Credit,Deposit,Entertainment,8.87,4231.83,4222.96,3,London,Web Browser,UPI / Wallet,0,0
+TXN-100443,CUST-1494,19,Credit,Payment,Entertainment,7.27,893.0,1035.73,17,London,Web Browser,Credit Card,0,0
+TXN-100050,CUST-1406,57,Business,Deposit,Electronics,140.06,6142.89,6002.83,1,Singapore,POS Terminal,Wire Transfer,0,0
+TXN-100043,CUST-1411,47,Savings,Payment,Electronics,222.85,5731.9,5659.05,12,London,POS Terminal,UPI / Wallet,0,0
+TXN-100648,CUST-1333,45,Credit,Payment,Entertainment,418.85,10098.97,9680.12,12,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100464,CUST-1299,54,Business,Deposit,Electronics,77.48,18993.76,18916.28,1,London,POS Terminal,Wire Transfer,0,0
+TXN-100209,CUST-1405,20,Savings,Deposit,Electronics,16.08,24107.99,24091.91,2,Berlin,Web Browser,Credit Card,0,0
+TXN-100822,CUST-1287,54,Savings,Payment,Electronics,279.07,11382.07,11103.0,3,London,POS Terminal,UPI / Wallet,0,0
+TXN-100844,CUST-1489,19,Credit,Payment,Entertainment,14.07,3381.39,3367.32,13,London,Web Browser,Credit Card,0,0
+TXN-100224,CUST-1447,37,Savings,Payment,Electronics,301.86,6980.99,6679.13,8,London,POS Terminal,UPI / Wallet,0,0
+TXN-100966,CUST-1353,37,Credit,Payment,Entertainment,239.36,11469.07,11229.71,5,London,Mobile App,Wire Transfer,0,0
+TXN-100009,CUST-1495,19,Business,Deposit,Entertainment,6.48,1879.54,1873.06,14,Mumbai,Web Browser,Credit Card,0,0
+TXN-100581,CUST-1390,38,Savings,Payment,Entertainment,280.33,12265.72,11985.39,7,London,POS Terminal,UPI / Wallet,0,0
+TXN-100339,CUST-1476,19,Checking,Deposit,Entertainment,317.0,20940.37,20623.37,2,London,Web Browser,Credit Card,1,1
+TXN-100973,CUST-1303,27,Savings,Deposit,Electronics,14.57,24773.15,24758.58,1,London,POS Terminal,Credit Card,0,0
+TXN-100870,CUST-1244,40,Savings,Payment,Entertainment,150.47,16705.6,16555.13,4,London,Mobile App,UPI / Wallet,0,0
+TXN-100288,CUST-1467,30,Business,Deposit,Electronics,20.0,415.36,395.36,1,New York,Mobile App,Wire Transfer,0,0
+TXN-100946,CUST-1465,20,Savings,Deposit,Electronics,30.45,18852.43,18821.98,4,London,Web Browser,Credit Card,0,0
+TXN-100411,CUST-1346,39,Savings,Deposit,Electronics,229.14,15383.9,15154.76,3,London,Web Browser,UPI / Wallet,0,0
+TXN-100938,CUST-1382,39,Savings,Payment,Entertainment,278.27,8076.15,7797.88,5,London,POS Terminal,UPI / Wallet,0,0
+TXN-100352,CUST-1469,21,Savings,Deposit,Entertainment,33.59,18045.49,18011.9,3,London,Web Browser,Credit Card,0,0
+TXN-100367,CUST-1421,41,Credit,Deposit,Electronics,225.1,5759.87,5534.77,3,London,POS Terminal,Wire Transfer,1,0
+TXN-100424,CUST-1397,57,Credit,Payment,Entertainment,377.01,6655.63,6278.62,5,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100567,CUST-1409,24,Credit,Deposit,Groceries,26.99,17347.59,17320.6,6,London,Web Browser,Debit Card,0,0
+TXN-100565,CUST-1332,39,Savings,Payment,Electronics,649.75,17959.67,17309.92,3,London,Web Browser,UPI / Wallet,1,1
+TXN-100397,CUST-1389,69,Credit,Deposit,Electronics,262.37,6953.9,6691.53,4,London,Mobile App,UPI / Wallet,0,0
+TXN-100231,CUST-1386,63,Credit,Deposit,Electronics,436.34,10122.36,9686.02,4,London,POS Terminal,UPI / Wallet,1,0
+TXN-100878,CUST-1497,18,Business,Deposit,Entertainment,5.85,3131.26,3125.41,13,Mumbai,Web Browser,Credit Card,0,0
+TXN-100742,CUST-1419,23,Savings,Deposit,Entertainment,93.58,20101.66,20008.08,2,London,Web Browser,UPI / Wallet,0,0
+TXN-100217,CUST-1437,39,Credit,Payment,Entertainment,306.57,8185.04,7878.47,8,London,POS Terminal,UPI / Wallet,1,0
+TXN-100960,CUST-1419,32,Business,Deposit,Entertainment,9.54,16602.76,16593.22,0,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100100,CUST-1448,20,Credit,Deposit,Entertainment,7.74,23087.22,23079.48,3,London,Web Browser,Credit Card,0,0
+TXN-100538,CUST-1471,22,Business,Deposit,Entertainment,11.69,3052.0,3040.31,1,Singapore,POS Terminal,Wire Transfer,0,0
+TXN-100771,CUST-1464,24,Checking,Payment,Entertainment,401.25,7943.16,7541.91,12,Mumbai,Web Browser,Credit Card,1,1
+TXN-100214,CUST-1477,21,Savings,Payment,Electronics,344.08,2698.06,2353.98,20,Berlin,Web Browser,Credit Card,1,1
+TXN-100935,CUST-1341,55,Savings,Deposit,Electronics,194.13,11233.79,11039.66,1,London,POS Terminal,Wire Transfer,0,0
+TXN-100456,CUST-1348,20,Savings,Deposit,Groceries,13.05,21215.75,21352.7,1,London,Web Browser,Debit Card,0,0
+TXN-100475,CUST-1451,38,Savings,Payment,Electronics,571.85,1062.61,490.76,9,London,POS Terminal,Wire Transfer,1,1
+TXN-100681,CUST-1251,59,Savings,Payment,Electronics,1008.57,14703.28,13694.71,6,London,Mobile App,UPI / Wallet,1,1
+TXN-100536,CUST-1477,31,Checking,Payment,Entertainment,40.23,656.44,616.21,6,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100866,CUST-1458,22,Savings,Payment,Entertainment,40.81,1769.22,1728.41,12,London,POS Terminal,UPI / Wallet,0,0
+TXN-100442,CUST-1406,35,Savings,Payment,Electronics,107.33,3007.97,2900.64,9,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100709,CUST-1410,20,Savings,Payment,Entertainment,34.69,10201.16,10166.47,4,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100416,CUST-1272,40,Credit,Deposit,Electronics,61.35,17879.77,17818.42,3,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100579,CUST-1158,23,Savings,Deposit,Entertainment,38.48,23146.55,23108.07,0,Berlin,POS Terminal,Wire Transfer,0,0
+TXN-100521,CUST-1421,64,Credit,Deposit,Electronics,278.22,4710.06,4431.84,3,London,Mobile App,Wire Transfer,1,0
+TXN-100342,CUST-1475,24,Checking,Deposit,Entertainment,63.4,3526.69,3463.29,11,New York,POS Terminal,UPI / Wallet,0,0
+TXN-100589,CUST-1334,52,Checking,Deposit,Electronics,83.34,7012.92,6929.58,1,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100394,CUST-1455,26,Savings,Deposit,Electronics,88.92,12283.58,12194.66,3,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100228,CUST-1469,23,Savings,Payment,Electronics,82.51,2006.07,1923.56,9,London,Web Browser,Wire Transfer,0,0
+TXN-100785,CUST-1472,34,Checking,Payment,Entertainment,191.16,4387.14,4195.98,11,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100282,CUST-1450,48,Savings,Payment,Electronics,361.9,5034.78,4672.88,14,London,POS Terminal,Debit Card,0,0
+TXN-100320,CUST-1372,30,Credit,Payment,Entertainment,197.35,11482.26,11284.91,10,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100039,CUST-1245,43,Savings,Deposit,Electronics,130.6,21821.7,21691.1,5,London,POS Terminal,Debit Card,0,0
+TXN-100468,CUST-1374,60,Savings,Payment,Electronics,228.91,4057.96,3829.05,3,London,Mobile App,Wire Transfer,0,0
+TXN-100170,CUST-1307,31,Savings,Deposit,Electronics,84.67,22451.65,22366.98,3,London,Web Browser,Debit Card,0,0
+TXN-100732,CUST-1220,25,Savings,Payment,Entertainment,66.26,13899.55,13833.29,1,Berlin,POS Terminal,Wire Transfer,0,0
+TXN-100378,CUST-1471,18,Savings,Deposit,Entertainment,6.19,14680.56,14674.37,1,Berlin,Web Browser,Debit Card,0,0
+TXN-100808,CUST-1409,23,Savings,Deposit,Electronics,46.72,20152.81,20106.09,5,London,Web Browser,Credit Card,0,0
+TXN-100290,CUST-1385,37,Savings,Payment,Entertainment,188.52,4441.77,4253.25,3,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100880,CUST-1494,19,Savings,Payment,Entertainment,6.92,493.21,486.29,16,Berlin,Web Browser,Debit Card,0,0
+TXN-100854,CUST-1459,55,Credit,Payment,Electronics,192.84,1536.19,1343.35,6,London,Mobile App,Wire Transfer,0,0
+TXN-100697,CUST-1364,36,Savings,Payment,Electronics,224.78,18087.68,17862.9,6,London,Web Browser,Debit Card,0,0
+TXN-100881,CUST-1453,54,Checking,Payment,Electronics,275.52,2596.36,2320.84,6,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100031,CUST-1480,27,Savings,Transfer,Electronics,58.57,1575.51,1516.94,18,London,POS Terminal,UPI / Wallet,0,0
+TXN-100372,CUST-1460,41,Savings,Payment,Electronics,1046.32,4478.0,3431.68,8,London,POS Terminal,UPI / Wallet,1,1
+TXN-100896,CUST-1455,49,Checking,Deposit,Electronics,284.01,4459.99,4175.98,3,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100162,CUST-1480,24,Savings,Payment,Electronics,70.37,4934.41,4864.04,17,Berlin,Web Browser,Credit Card,0,0
+TXN-100713,CUST-1391,32,Credit,Payment,Entertainment,65.92,10831.17,10765.25,10,London,Mobile App,Debit Card,0,0
+TXN-100307,CUST-1489,19,Checking,Deposit,Groceries,6.47,2642.83,2636.36,2,Mumbai,Web Browser,UPI / Wallet,0,0
+TXN-100187,CUST-1421,44,Savings,Payment,Entertainment,343.45,9671.28,9477.83,7,London,POS Terminal,UPI / Wallet,0,0
+TXN-100769,CUST-1450,49,Credit,Payment,Electronics,932.25,2325.78,1393.53,6,London,Mobile App,Wire Transfer,1,1
+TXN-100519,CUST-1413,60,Credit,Payment,Entertainment,393.83,7128.53,6734.7,8,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100675,CUST-1489,19,Savings,Payment,Electronics,10.29,3570.42,3560.13,17,Berlin,Web Browser,Credit Card,0,0
+TXN-100691,CUST-1398,36,Savings,Payment,Entertainment,275.93,9780.43,9504.5,8,London,Web Browser,Debit Card,0,0
+TXN-100003,CUST-1473,21,Savings,Payment,Entertainment,26.8,3563.58,3536.78,17,London,Web Browser,Credit Card,0,0
+TXN-100311,CUST-1493,20,Savings,Payment,Electronics,9.4,4237.91,4228.51,21,Berlin,Web Browser,Credit Card,0,0
+TXN-100873,CUST-1475,27,Savings,Payment,Electronics,67.13,1640.93,1573.8,17,London,POS Terminal,Debit Card,0,0
+TXN-100765,CUST-1483,21,Savings,Payment,Entertainment,20.92,2325.74,2304.82,13,London,Web Browser,Debit Card,0,0
+TXN-100256,CUST-1370,28,Savings,Deposit,Electronics,35.76,20778.44,20742.68,7,Berlin,Web Browser,Credit Card,0,0
+TXN-100558,CUST-1486,19,Business,Deposit,Groceries,6.15,2397.76,2391.61,0,New York,Web Browser,Wire Transfer,0,0
+TXN-100105,CUST-1264,32,Credit,Deposit,Entertainment,524.22,20046.51,19522.29,1,London,Mobile App,UPI / Wallet,1,1
+TXN-100375,CUST-1435,28,Savings,Deposit,Electronics,107.78,4356.58,4248.8,1,London,Web Browser,Wire Transfer,0,0
+TXN-100013,CUST-1436,25,Credit,Deposit,Entertainment,372.72,19478.38,19105.66,10,London,Web Browser,Credit Card,1,1
+TXN-100861,CUST-1426,65,Checking,Payment,Electronics,263.3,4252.64,3989.34,6,New York,Mobile App,Wire Transfer,0,0
+TXN-100845,CUST-1482,47,Checking,Deposit,Electronics,183.99,1503.97,1319.98,6,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100219,CUST-1485,18,Credit,Deposit,Entertainment,5.2,13599.62,13744.42,1,London,Web Browser,Credit Card,0,0
+TXN-100000,CUST-1491,19,Credit,Deposit,Entertainment,6.04,6381.52,6375.48,15,London,Web Browser,Credit Card,0,0
+TXN-100578,CUST-1408,33,Savings,Payment,Entertainment,196.08,6909.76,6713.68,2,London,Web Browser,Wire Transfer,0,0
+TXN-100091,CUST-1420,22,Savings,Payment,Entertainment,446.78,18661.87,18215.09,7,London,Web Browser,Debit Card,1,1
+TXN-100952,CUST-1406,31,Savings,Payment,Entertainment,185.47,15026.65,14841.18,12,London,Web Browser,Credit Card,0,0
+TXN-100552,CUST-1234,35,Savings,Payment,Entertainment,176.39,21005.92,20829.53,2,London,POS Terminal,UPI / Wallet,0,0
+TXN-100753,CUST-1433,21,Savings,Payment,Entertainment,32.38,2994.82,2962.44,7,London,Mobile App,Wire Transfer,0,0
+TXN-100479,CUST-1494,19,Savings,Payment,Entertainment,9.37,2472.86,2463.49,18,Berlin,Web Browser,Credit Card,0,0
+TXN-100120,CUST-1469,20,Checking,Deposit,Groceries,16.48,3165.73,3149.25,7,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100132,CUST-1388,27,Savings,Payment,Entertainment,146.02,13757.5,13611.48,3,London,Web Browser,Wire Transfer,0,0
+TXN-100883,CUST-1394,31,Checking,Deposit,Entertainment,41.82,23059.57,23017.75,3,New York,POS Terminal,Credit Card,0,0
+TXN-100098,CUST-1443,28,Checking,Deposit,Entertainment,57.72,1668.61,1610.89,3,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100781,CUST-1441,22,Credit,Deposit,Entertainment,19.5,20268.24,20248.74,3,London,Web Browser,Credit Card,0,0
+TXN-100400,CUST-1349,25,Savings,Deposit,Electronics,19.34,23981.01,23961.67,7,Berlin,Web Browser,Credit Card,0,0
+TXN-100597,CUST-1464,48,Savings,Payment,Electronics,305.85,2976.95,2671.1,5,London,POS Terminal,Wire Transfer,1,0
+TXN-100101,CUST-1312,27,Savings,Payment,Entertainment,114.77,18744.04,18629.27,1,London,Web Browser,UPI / Wallet,0,0
+TXN-100280,CUST-1406,42,Credit,Payment,Electronics,248.58,6651.35,6402.77,3,London,POS Terminal,Wire Transfer,1,0
+TXN-100173,CUST-1428,36,Savings,Deposit,Electronics,189.76,3077.38,2887.62,2,London,POS Terminal,Wire Transfer,0,0
+TXN-100754,CUST-1494,18,Savings,Deposit,Entertainment,5.18,5086.64,5081.46,3,Berlin,Web Browser,Credit Card,0,0
+TXN-100130,CUST-1471,19,Business,Deposit,Entertainment,317.33,22467.76,22150.43,1,Mumbai,Web Browser,Credit Card,1,1
+TXN-100869,CUST-1385,48,Credit,Payment,Entertainment,332.97,10870.79,10687.82,12,London,POS Terminal,Debit Card,0,0
+TXN-100654,CUST-1389,25,Savings,Deposit,Electronics,52.38,22020.82,21968.44,6,London,Web Browser,Credit Card,0,0
+TXN-100381,CUST-1425,38,Savings,Payment,Electronics,246.6,3247.95,3001.35,7,London,POS Terminal,Wire Transfer,0,0
+TXN-100314,CUST-1473,18,Savings,Deposit,Electronics,5.33,21352.27,21346.94,3,Berlin,Web Browser,Credit Card,0,0
+TXN-100782,CUST-1475,59,Business,Deposit,Electronics,1078.02,2523.55,1445.53,3,New York,POS Terminal,Wire Transfer,1,1
+TXN-100286,CUST-1419,22,Savings,Deposit,Electronics,62.87,18790.86,18727.99,1,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100436,CUST-1488,21,Savings,Payment,Electronics,14.96,2388.52,2373.56,21,Berlin,Web Browser,Credit Card,0,0
+TXN-100996,CUST-1420,45,Savings,Payment,Electronics,154.09,1801.09,1647.0,7,London,Mobile App,Wire Transfer,0,0
+TXN-100906,CUST-1462,19,Savings,Deposit,Electronics,8.72,23604.45,23595.73,2,London,Web Browser,Credit Card,0,0
+TXN-100026,CUST-1350,35,Checking,Deposit,Entertainment,62.08,20369.8,20307.72,2,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100650,CUST-1430,31,Business,Deposit,Entertainment,47.0,19543.28,19496.28,1,London,Web Browser,UPI / Wallet,0,0
+TXN-100125,CUST-1447,35,Savings,Payment,Entertainment,94.0,3638.56,3544.56,15,London,POS Terminal,Debit Card,0,0
+TXN-100927,CUST-1445,21,Savings,Payment,Entertainment,48.02,10613.22,10565.2,8,London,Web Browser,Debit Card,0,0
+TXN-100836,CUST-1492,19,Business,Deposit,Entertainment,7.66,3018.31,3010.65,6,Singapore,Web Browser,Credit Card,0,0
+TXN-100204,CUST-1426,33,Credit,Payment,Electronics,123.65,13079.4,12955.75,14,London,Web Browser,Credit Card,0,0
+TXN-100498,CUST-1379,64,Checking,Deposit,Electronics,175.92,7236.69,7060.77,2,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100837,CUST-1338,56,Savings,Payment,Electronics,315.0,13345.37,13030.37,8,London,POS Terminal,Debit Card,0,0
+TXN-100210,CUST-1399,23,Credit,Payment,Entertainment,31.4,3552.74,3521.34,6,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100452,CUST-1458,30,Savings,Payment,Electronics,131.94,2765.8,2633.86,14,London,POS Terminal,UPI / Wallet,0,0
+TXN-100957,CUST-1387,57,Savings,Payment,Electronics,1129.32,7098.02,5968.7,9,London,Mobile App,UPI / Wallet,1,1
+TXN-100894,CUST-1288,31,Savings,Deposit,Electronics,68.73,23072.12,23003.39,2,London,Web Browser,Debit Card,0,0
+TXN-100206,CUST-1394,57,Savings,Payment,Electronics,262.67,3936.63,3673.96,7,London,Mobile App,Wire Transfer,0,0
+TXN-100312,CUST-1396,47,Credit,Payment,Entertainment,184.34,9911.43,9727.09,16,London,POS Terminal,Credit Card,0,0
+TXN-100169,CUST-1493,19,Checking,Deposit,Entertainment,6.51,6350.63,6344.12,9,Mumbai,Web Browser,Credit Card,0,0
+TXN-100155,CUST-1455,62,Credit,Payment,Electronics,317.11,4547.66,4230.55,8,London,Mobile App,UPI / Wallet,0,0
+TXN-100551,CUST-1381,20,Savings,Deposit,Electronics,7.88,24343.1,24335.22,2,Berlin,Web Browser,Credit Card,0,0
+TXN-100305,CUST-1477,56,Checking,Deposit,Electronics,157.43,1259.85,1102.42,2,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100931,CUST-1428,40,Savings,Payment,Electronics,121.17,899.5,778.33,5,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100746,CUST-1478,21,Savings,Payment,Entertainment,43.44,2745.19,2701.75,16,London,Web Browser,Credit Card,0,0
+TXN-100720,CUST-1433,30,Credit,Deposit,Entertainment,178.2,12898.77,12720.57,4,London,Web Browser,Wire Transfer,0,0
+TXN-100576,CUST-1405,54,Savings,Payment,Electronics,280.74,4722.88,4442.14,6,London,Mobile App,Wire Transfer,0,0
+TXN-100368,CUST-1429,28,Savings,Payment,Entertainment,147.92,9197.01,9049.09,5,London,Web Browser,UPI / Wallet,0,0
+TXN-100356,CUST-1419,26,Credit,Deposit,Entertainment,83.15,17336.13,17252.98,5,Mumbai,Web Browser,Debit Card,0,0
+TXN-100560,CUST-1458,27,Savings,Deposit,Electronics,356.3,14519.53,14163.23,18,London,Web Browser,Credit Card,1,1
+TXN-100289,CUST-1458,38,Savings,Payment,Electronics,253.54,4124.54,4021.0,14,London,POS Terminal,UPI / Wallet,0,0
+TXN-100914,CUST-1379,49,Savings,Payment,Electronics,368.27,9839.38,9471.11,9,London,POS Terminal,Debit Card,0,0
+TXN-100202,CUST-1347,28,Credit,Deposit,Entertainment,34.62,16902.25,16867.63,5,London,POS Terminal,Debit Card,0,0
+TXN-100304,CUST-1328,33,Savings,Deposit,Electronics,66.97,20750.46,20683.49,6,London,Web Browser,Credit Card,0,0
+TXN-100969,CUST-1465,29,Savings,Payment,Electronics,64.03,6275.49,6211.46,18,Berlin,Web Browser,Credit Card,0,0
+TXN-100441,CUST-1438,41,Checking,Deposit,Entertainment,355.8,10050.66,9844.86,6,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100023,CUST-1481,27,Savings,Payment,Electronics,92.9,1401.95,1309.05,16,London,Web Browser,UPI / Wallet,0,0
+TXN-100365,CUST-1444,36,Savings,Payment,Electronics,128.31,5691.9,5563.59,17,London,POS Terminal,Credit Card,0,0
+TXN-100395,CUST-1329,32,Savings,Payment,Entertainment,221.2,13516.32,13295.12,4,London,POS Terminal,UPI / Wallet,0,0
+TXN-100457,CUST-1454,30,Savings,Payment,Entertainment,187.1,3675.83,3488.73,14,London,POS Terminal,UPI / Wallet,0,0
+TXN-100965,CUST-1462,59,Credit,Deposit,Electronics,256.43,2673.97,2417.54,3,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100986,CUST-1359,44,Savings,Deposit,Electronics,149.7,18025.99,17876.29,6,Berlin,Web Browser,Debit Card,0,0
+TXN-100975,CUST-1366,22,Savings,Deposit,Electronics,29.27,23357.06,23327.79,0,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100462,CUST-1497,19,Business,Deposit,Entertainment,5.72,1444.96,1439.24,14,London,Web Browser,Credit Card,0,0
+TXN-100268,CUST-1313,31,Credit,Deposit,Electronics,43.64,23186.82,23143.18,7,London,Web Browser,Credit Card,0,0
+TXN-100391,CUST-1459,32,Savings,Payment,Electronics,163.66,6753.46,6589.8,9,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100382,CUST-1271,32,Savings,Payment,Entertainment,53.99,11294.39,11240.4,3,London,Mobile App,Wire Transfer,0,0
+TXN-100899,CUST-1443,40,Credit,Payment,Entertainment,295.73,6927.04,6631.31,7,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100222,CUST-1413,25,Savings,Payment,Entertainment,102.73,8070.92,7968.19,9,London,POS Terminal,Debit Card,0,0
+TXN-100684,CUST-1485,20,Credit,Payment,Entertainment,14.35,4706.0,4691.65,17,London,Web Browser,Credit Card,0,0
+TXN-100679,CUST-1474,21,Savings,Payment,Electronics,34.67,3562.84,3528.17,8,Berlin,Web Browser,Debit Card,0,0
+TXN-100535,CUST-1444,23,Savings,Payment,Electronics,79.34,10507.59,10428.25,4,Berlin,Web Browser,Debit Card,0,0
+TXN-100908,CUST-1444,18,Savings,Deposit,Entertainment,6.48,20334.67,20328.19,4,Berlin,Web Browser,Credit Card,0,0
+TXN-100759,CUST-1444,20,Savings,Deposit,Entertainment,22.7,11919.41,11896.71,2,London,Web Browser,UPI / Wallet,0,0
+TXN-100171,CUST-1443,43,Credit,Deposit,Electronics,235.16,6464.11,6228.95,3,London,POS Terminal,Wire Transfer,1,0
+TXN-100407,CUST-1346,64,Credit,Deposit,Electronics,280.82,10668.6,10387.78,2,London,Mobile App,Wire Transfer,0,0
+TXN-100156,CUST-1488,19,Credit,Deposit,Groceries,9.21,6842.25,6833.04,9,London,Web Browser,Credit Card,0,0
+TXN-100832,CUST-1404,41,Checking,Payment,Entertainment,241.41,6231.18,5989.77,6,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100763,CUST-1323,54,Credit,Payment,Entertainment,354.02,15463.57,15109.55,8,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100975,CUST-1366,22,Savings,Deposit,Electronics,373.18,23357.06,23133.88,0,Berlin,Web Browser,Wire Transfer,1,1
+TXN-100035,CUST-1442,21,Savings,Deposit,Electronics,46.0,19912.6,19866.6,2,Berlin,Web Browser,Debit Card,0,0
+TXN-100010,CUST-1435,34,Savings,Payment,Electronics,226.43,4910.42,4683.99,5,London,POS Terminal,Wire Transfer,0,0
+TXN-100874,CUST-1459,40,Savings,Payment,Electronics,231.97,3048.88,2816.91,11,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100493,CUST-1478,32,Credit,Payment,Entertainment,92.35,1355.08,1262.73,14,London,POS Terminal,Wire Transfer,0,0
+TXN-100099,CUST-1423,31,Savings,Payment,Entertainment,743.78,8120.55,7376.77,7,London,Web Browser,UPI / Wallet,1,1
+TXN-100920,CUST-1299,64,Credit,Deposit,Electronics,283.76,13455.78,13172.02,6,London,Mobile App,Debit Card,0,0
+TXN-100128,CUST-1154,30,Savings,Deposit,Entertainment,63.77,21986.68,21922.91,1,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100546,CUST-1452,35,Credit,Deposit,Electronics,155.13,2215.57,2060.44,4,London,POS Terminal,Wire Transfer,0,0
+TXN-100710,CUST-1490,47,Business,Deposit,Electronics,216.7,1381.66,1164.96,1,New York,POS Terminal,Wire Transfer,1,0
+TXN-100839,CUST-1350,30,Savings,Deposit,Entertainment,47.58,22024.08,21976.5,11,London,POS Terminal,Credit Card,0,0
+TXN-100238,CUST-1471,19,Savings,Payment,Entertainment,16.22,5480.45,5464.23,15,Berlin,Web Browser,Credit Card,0,0
+TXN-100526,CUST-1282,48,Savings,Deposit,Electronics,237.71,17428.71,17341.0,4,London,POS Terminal,UPI / Wallet,0,0
+TXN-100984,CUST-1487,18,Savings,Deposit,Entertainment,6.17,1875.71,1869.54,8,Berlin,Web Browser,Credit Card,0,0
+TXN-100358,CUST-1333,56,Savings,Payment,Electronics,273.3,13802.41,13679.11,12,London,POS Terminal,Debit Card,0,0
+TXN-100559,CUST-1490,20,Business,Deposit,Entertainment,8.13,3477.39,3469.26,11,Mumbai,Web Browser,Credit Card,0,0
+TXN-100805,CUST-1467,51,Savings,Payment,Electronics,977.62,2325.71,1348.09,7,London,Mobile App,Wire Transfer,1,1
+TXN-100134,CUST-1350,30,Checking,Deposit,Entertainment,18.8,21862.65,21843.85,3,London,Mobile App,Credit Card,0,0
+TXN-100547,CUST-1402,23,Savings,Deposit,Electronics,74.45,12597.58,12523.13,0,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100779,CUST-1429,50,Checking,Payment,Entertainment,325.79,7348.23,7022.44,5,London,POS Terminal,Wire Transfer,1,0
+TXN-100357,CUST-1425,38,Credit,Payment,Entertainment,359.83,6552.71,6192.88,9,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100800,CUST-1469,45,Credit,Deposit,Electronics,126.58,760.19,633.61,3,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100856,CUST-1212,40,Savings,Payment,Electronics,576.4,15158.83,14732.43,5,Berlin,POS Terminal,Debit Card,1,1
+TXN-100592,CUST-1324,34,Savings,Deposit,Electronics,147.77,20693.54,20545.77,4,London,POS Terminal,Debit Card,0,0
+TXN-100523,CUST-1300,50,Savings,Payment,Electronics,263.47,8258.97,7995.5,2,London,POS Terminal,Wire Transfer,0,0
+TXN-100852,CUST-1340,30,Credit,Payment,Entertainment,76.9,2431.93,2355.03,2,London,Mobile App,Wire Transfer,0,0
+TXN-100138,CUST-1369,21,Savings,Payment,Electronics,33.39,15974.87,16091.48,6,Berlin,Web Browser,Credit Card,0,0
+TXN-100624,CUST-1469,22,Business,Deposit,Entertainment,20.38,1327.87,1307.49,4,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100657,CUST-1447,24,Savings,Payment,Entertainment,42.18,2581.79,2539.61,17,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100770,CUST-1493,18,Savings,Deposit,Entertainment,5.11,2689.54,2834.43,3,Berlin,Web Browser,Debit Card,0,0
+TXN-100787,CUST-1403,41,Savings,Payment,Electronics,259.51,7379.09,7119.58,8,London,POS Terminal,UPI / Wallet,0,0
+TXN-100972,CUST-1407,60,Checking,Deposit,Electronics,381.98,5836.78,5454.8,3,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100607,CUST-1434,49,Savings,Payment,Electronics,200.8,2179.31,1978.51,6,London,Mobile App,Wire Transfer,0,0
+TXN-100531,CUST-1391,66,Checking,Deposit,Electronics,326.71,16109.51,15782.8,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100471,CUST-1391,30,Savings,Deposit,Electronics,136.71,14676.14,14539.43,10,London,Web Browser,Debit Card,0,0
+TXN-100246,CUST-1479,52,Checking,Deposit,Electronics,223.33,1241.05,1017.72,2,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100593,CUST-1484,19,Checking,Deposit,Groceries,6.15,3803.79,3797.64,2,Mumbai,Web Browser,Debit Card,0,0
+TXN-100062,CUST-1453,20,Savings,Payment,Entertainment,30.29,11641.4,11611.11,6,Berlin,Web Browser,Credit Card,0,0
+TXN-100542,CUST-1476,19,Savings,Deposit,Electronics,19.91,17656.73,17636.82,9,London,Web Browser,Credit Card,0,0
+TXN-100524,CUST-1376,41,Savings,Payment,Electronics,242.62,14906.14,14663.52,11,London,POS Terminal,Debit Card,0,0
+TXN-100261,CUST-1486,18,Savings,Deposit,Entertainment,5.54,6116.36,6110.82,4,Berlin,Web Browser,Credit Card,0,0
+TXN-100640,CUST-1370,42,Credit,Payment,Entertainment,264.83,4705.52,4440.69,6,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100295,CUST-1466,26,Savings,Payment,Entertainment,98.27,3944.53,3846.26,14,London,Web Browser,UPI / Wallet,0,0
+TXN-100830,CUST-1413,28,Savings,Payment,Entertainment,172.02,7237.24,7065.22,5,London,Web Browser,Wire Transfer,0,0
+TXN-100076,CUST-1463,43,Checking,Deposit,Electronics,42.97,1001.1,958.13,5,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100583,CUST-1484,60,Business,Deposit,Electronics,259.89,1414.32,1154.43,2,New York,POS Terminal,Wire Transfer,1,0
+TXN-100038,CUST-1372,55,Credit,Payment,Electronics,287.98,6980.79,6692.81,4,London,POS Terminal,Wire Transfer,0,0
+TXN-100660,CUST-1431,29,Savings,Deposit,Entertainment,125.72,11659.56,11533.84,2,London,Web Browser,Wire Transfer,0,0
+TXN-100148,CUST-1194,43,Savings,Deposit,Electronics,98.3,22909.26,22810.96,2,London,POS Terminal,UPI / Wallet,0,0
+TXN-100212,CUST-1464,20,Checking,Deposit,Groceries,9.96,5687.6,5677.64,1,New York,Web Browser,Wire Transfer,0,0
+TXN-100194,CUST-1481,31,Business,Deposit,Electronics,40.38,381.45,341.07,1,New York,Web Browser,Wire Transfer,0,0
+TXN-100042,CUST-1484,19,Checking,Deposit,Entertainment,8.68,6396.67,6387.99,8,Mumbai,Web Browser,Credit Card,0,0
+TXN-100658,CUST-1436,22,Savings,Deposit,Entertainment,27.84,23730.04,23702.2,1,Berlin,Web Browser,Debit Card,0,0
+TXN-100786,CUST-1409,56,Checking,Deposit,Electronics,270.05,7749.65,7479.6,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100319,CUST-1424,40,Savings,Payment,Electronics,177.97,4676.19,4498.22,12,London,POS Terminal,UPI / Wallet,0,0
+TXN-100566,CUST-1412,40,Credit,Payment,Entertainment,1155.7,9996.17,8840.47,5,London,POS Terminal,Wire Transfer,1,1
+TXN-100879,CUST-1433,37,Savings,Payment,Electronics,213.33,5249.61,5036.28,14,London,POS Terminal,Debit Card,0,0
+TXN-100422,CUST-1357,26,Credit,Deposit,Entertainment,23.81,12816.23,12792.42,3,London,POS Terminal,UPI / Wallet,0,0
+TXN-100727,CUST-1459,41,Credit,Deposit,Electronics,140.63,2028.54,1887.91,2,London,POS Terminal,Wire Transfer,1,0
+TXN-100959,CUST-1480,23,Savings,Payment,Electronics,27.42,1069.58,1042.16,18,London,Web Browser,Debit Card,0,0
+TXN-100046,CUST-1461,56,Savings,Deposit,Electronics,278.27,2737.58,2459.31,5,London,POS Terminal,Wire Transfer,1,0
+TXN-100913,CUST-1491,20,Savings,Payment,Electronics,16.53,2452.69,2436.16,20,Berlin,Web Browser,Credit Card,0,0
+TXN-100993,CUST-1407,50,Credit,Payment,Electronics,194.19,4583.21,4539.02,8,London,Mobile App,Wire Transfer,0,0
+TXN-100614,CUST-1415,34,Savings,Payment,Entertainment,910.3,11926.45,11016.15,9,London,Web Browser,Debit Card,1,1
+TXN-100146,CUST-1455,19,Savings,Payment,Electronics,23.07,11110.72,11087.65,8,Berlin,Web Browser,Credit Card,0,0
+TXN-100747,CUST-1450,62,Checking,Deposit,Electronics,893.65,3652.74,2759.09,1,London,POS Terminal,Wire Transfer,1,1
+TXN-100895,CUST-1441,19,Savings,Deposit,Entertainment,7.7,23627.54,23619.84,1,Berlin,Web Browser,Credit Card,0,0
+TXN-100473,CUST-1437,27,Checking,Payment,Groceries,61.0,7079.24,7018.24,3,Mumbai,Web Browser,Wire Transfer,0,0
+TXN-100429,CUST-1472,50,Credit,Payment,Electronics,194.65,1261.93,1067.28,4,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100557,CUST-1465,22,Credit,Payment,Groceries,51.14,2005.45,1954.31,8,Mumbai,Web Browser,UPI / Wallet,0,0
+TXN-100967,CUST-1405,36,Savings,Payment,Entertainment,217.3,10132.42,9915.12,6,London,POS Terminal,UPI / Wallet,0,0
+TXN-100092,CUST-1311,39,Checking,Deposit,Entertainment,115.02,19165.52,19050.5,2,London,Mobile App,Debit Card,0,0
+TXN-100340,CUST-1382,21,Savings,Deposit,Entertainment,20.04,23680.55,23660.51,1,Berlin,Web Browser,Debit Card,0,0
+TXN-100283,CUST-1476,43,Savings,Payment,Electronics,107.93,953.9,845.97,10,London,POS Terminal,Wire Transfer,0,0
+TXN-100639,CUST-1485,18,Credit,Deposit,Entertainment,5.7,8618.16,8612.46,7,London,Web Browser,Credit Card,0,0
+TXN-100649,CUST-1483,20,Checking,Deposit,Groceries,16.21,2535.4,2519.19,10,New York,Web Browser,Debit Card,0,0
+TXN-100257,CUST-1482,19,Savings,Payment,Entertainment,11.69,1360.75,1349.06,16,Berlin,Web Browser,Debit Card,0,0
+TXN-100208,CUST-1477,23,Savings,Payment,Electronics,70.51,3639.06,3568.55,18,London,Web Browser,Credit Card,0,0
+TXN-100448,CUST-1465,22,Savings,Deposit,Entertainment,16.22,10383.62,10367.4,16,London,Web Browser,Credit Card,0,0
+TXN-100570,CUST-1282,37,Savings,Deposit,Electronics,122.1,22258.31,22136.21,2,London,Web Browser,UPI / Wallet,0,0
+TXN-100253,CUST-1426,44,Checking,Payment,Entertainment,308.41,5147.43,4839.02,7,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100188,CUST-1388,45,Credit,Payment,Entertainment,384.45,7868.4,7483.95,5,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100347,CUST-1438,48,Credit,Payment,Entertainment,314.8,6222.12,5907.32,11,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100585,CUST-1390,40,Credit,Payment,Entertainment,213.59,3814.47,3600.88,8,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100953,CUST-1332,54,Credit,Payment,Entertainment,366.55,13141.58,12775.03,5,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100990,CUST-1492,19,Checking,Payment,Entertainment,7.93,845.79,837.86,15,London,POS Terminal,Debit Card,0,0
+TXN-100601,CUST-1431,48,Credit,Payment,Entertainment,407.05,8202.88,7795.83,5,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100924,CUST-1473,32,Savings,Payment,Electronics,166.54,3399.08,3232.54,10,Berlin,Web Browser,Debit Card,0,0
+TXN-100909,CUST-1475,19,Credit,Deposit,Entertainment,6.51,21757.74,21751.23,2,London,Web Browser,Credit Card,0,0
+TXN-100766,CUST-1339,19,Savings,Deposit,Groceries,7.93,21365.91,21357.98,0,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100951,CUST-1449,26,Savings,Payment,Entertainment,117.57,5387.88,5270.31,9,London,Web Browser,UPI / Wallet,0,0
+TXN-100349,CUST-1424,48,Credit,Payment,Electronics,284.51,5451.1,5166.59,11,London,Mobile App,UPI / Wallet,0,0
+TXN-100084,CUST-1457,18,Credit,Deposit,Groceries,7.03,11409.04,11402.01,2,London,Web Browser,Debit Card,0,0
+TXN-100450,CUST-1442,38,Business,Deposit,Entertainment,51.62,7365.66,7314.04,8,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100002,CUST-1422,47,Credit,Payment,Electronics,368.44,7494.44,7126.0,4,London,POS Terminal,Wire Transfer,1,0
+TXN-100998,CUST-1422,52,Credit,Payment,Electronics,186.29,3765.66,3579.37,7,London,Mobile App,Wire Transfer,0,0
+TXN-100527,CUST-1467,30,Credit,Payment,Entertainment,106.84,3195.23,3088.39,18,London,POS Terminal,Debit Card,0,0
+TXN-100386,CUST-1496,18,Savings,Deposit,Entertainment,5.07,13884.23,13879.16,1,Berlin,Web Browser,Credit Card,0,0
+TXN-100956,CUST-1489,21,Savings,Payment,Electronics,31.93,1827.9,1795.97,20,Berlin,Web Browser,Credit Card,0,0
+TXN-100974,CUST-1359,23,Credit,Payment,Entertainment,51.13,10253.33,10202.2,3,London,POS Terminal,Wire Transfer,0,0
+TXN-100489,CUST-1268,48,Credit,Payment,Entertainment,352.52,16709.67,16357.15,10,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100088,CUST-1453,23,Savings,Transfer,Entertainment,49.68,2484.15,2434.47,11,London,Web Browser,UPI / Wallet,0,0
+TXN-100751,CUST-1381,31,Savings,Deposit,Electronics,84.36,21423.93,21489.57,2,London,Web Browser,UPI / Wallet,0,0
+TXN-100677,CUST-1489,27,Credit,Payment,Electronics,16.44,331.61,315.17,16,London,POS Terminal,Wire Transfer,0,0
+TXN-100199,CUST-1455,71,Business,Deposit,Electronics,380.7,5084.3,4703.6,1,New York,POS Terminal,Wire Transfer,1,0
+TXN-100541,CUST-1259,30,Savings,Deposit,Entertainment,42.27,24192.37,24300.1,2,London,POS Terminal,Credit Card,0,0
+TXN-100371,CUST-1220,30,Savings,Deposit,Entertainment,96.11,11845.12,11749.01,3,London,Mobile App,Wire Transfer,0,0
+TXN-100067,CUST-1471,66,Business,Deposit,Electronics,235.77,2909.96,2674.19,1,New York,POS Terminal,Wire Transfer,0,0
+TXN-100936,CUST-1420,45,Business,Deposit,Entertainment,109.35,11882.52,11773.17,7,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100872,CUST-1333,41,Checking,Deposit,Entertainment,105.23,17938.2,17832.97,1,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100810,CUST-1461,34,Savings,Payment,Electronics,188.28,5916.7,5728.42,4,London,Web Browser,Wire Transfer,1,0
+TXN-100453,CUST-1403,42,Checking,Deposit,Entertainment,123.64,12411.44,12437.8,10,New York,POS Terminal,Debit Card,0,0
+TXN-100848,CUST-1471,21,Savings,Payment,Electronics,25.14,4159.77,4134.63,17,Berlin,Web Browser,Credit Card,0,0
+TXN-100226,CUST-1428,21,Credit,Deposit,Entertainment,15.72,21762.16,21746.44,3,London,Web Browser,Credit Card,0,0
+TXN-100698,CUST-1399,45,Business,Deposit,Entertainment,94.23,9464.86,9370.63,4,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100835,CUST-1171,27,Savings,Payment,Entertainment,70.8,16383.41,16312.61,1,Berlin,Mobile App,Wire Transfer,0,0
+TXN-100814,CUST-1440,41,Savings,Payment,Entertainment,233.93,5741.06,5507.13,14,London,POS Terminal,Debit Card,0,0
+TXN-100947,CUST-1417,36,Credit,Payment,Entertainment,219.81,9360.77,9140.96,4,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100075,CUST-1469,18,Savings,Deposit,Entertainment,6.24,20088.12,20081.88,0,Berlin,Web Browser,Debit Card,0,0
+TXN-100482,CUST-1496,18,Savings,Deposit,Entertainment,5.17,14619.62,14614.45,8,Berlin,Web Browser,Credit Card,0,0
+TXN-100807,CUST-1446,52,Credit,Payment,Electronics,304.05,3570.8,3416.75,7,London,Mobile App,Wire Transfer,0,0
+TXN-100750,CUST-1456,43,Credit,Payment,Electronics,296.4,6443.37,6146.97,5,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100225,CUST-1474,20,Savings,Payment,Electronics,24.07,10012.88,9988.81,13,Berlin,Web Browser,Credit Card,0,0
+TXN-100890,CUST-1454,46,Savings,Payment,Electronics,221.22,2658.86,2587.64,2,London,POS Terminal,Wire Transfer,0,0
+TXN-100294,CUST-1435,31,Savings,Deposit,Electronics,118.02,1551.23,1433.21,1,London,POS Terminal,Wire Transfer,0,0
+TXN-100271,CUST-1204,31,Savings,Deposit,Entertainment,81.12,18433.75,18352.63,1,Berlin,POS Terminal,Wire Transfer,0,0
+TXN-100847,CUST-1480,20,Savings,Payment,Entertainment,36.1,2270.23,2234.13,9,Berlin,Web Browser,Debit Card,0,0
+TXN-100864,CUST-1421,57,Checking,Deposit,Electronics,232.11,6730.16,6498.05,1,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100147,CUST-1414,44,Savings,Payment,Electronics,355.5,8063.55,7708.05,11,London,POS Terminal,Debit Card,0,0
+TXN-100563,CUST-1461,18,Credit,Deposit,Groceries,5.53,3398.7,3393.17,1,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100431,CUST-1449,29,Savings,Payment,Electronics,137.36,9313.85,9176.49,11,Berlin,Web Browser,Credit Card,0,0
+TXN-100410,CUST-1373,40,Credit,Deposit,Entertainment,142.25,3592.36,3450.11,3,London,POS Terminal,Wire Transfer,0,0
+TXN-100152,CUST-1458,20,Savings,Deposit,Entertainment,21.24,15477.05,15455.81,4,Berlin,Web Browser,Credit Card,0,0
+TXN-100359,CUST-1170,37,Credit,Deposit,Electronics,72.43,19083.27,19010.84,0,London,Mobile App,Wire Transfer,0,0
+TXN-100976,CUST-1350,31,Credit,Deposit,Entertainment,49.86,20214.18,20164.32,5,London,Web Browser,Credit Card,0,0
+TXN-100507,CUST-1432,20,Savings,Payment,Electronics,28.35,11012.34,10983.99,8,Berlin,Web Browser,Credit Card,0,0
+TXN-100689,CUST-1454,21,Savings,Payment,Electronics,49.88,7178.43,7128.55,9,Berlin,Web Browser,Credit Card,0,0
+TXN-100143,CUST-1385,31,Savings,Payment,Electronics,94.71,16603.03,16508.32,14,London,Web Browser,Credit Card,0,0
+TXN-100404,CUST-1324,48,Credit,Payment,Entertainment,399.43,13611.98,13362.55,8,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100405,CUST-1258,33,Savings,Payment,Entertainment,56.55,12726.58,12670.03,6,Berlin,Mobile App,Wire Transfer,0,0
+TXN-100636,CUST-1374,34,Savings,Payment,Electronics,152.93,14062.34,13909.41,9,London,Web Browser,Credit Card,0,0
+TXN-100828,CUST-1448,41,Savings,Payment,Electronics,278.16,4625.42,4347.26,12,London,POS Terminal,UPI / Wallet,0,0
+TXN-100265,CUST-1382,44,Checking,Deposit,Electronics,217.88,12738.03,12670.15,2,London,POS Terminal,Wire Transfer,0,0
+TXN-100233,CUST-1439,31,Savings,Payment,Entertainment,164.68,11603.2,11438.52,4,London,Web Browser,UPI / Wallet,0,0
+TXN-100383,CUST-1429,25,Savings,Payment,Entertainment,94.69,3803.48,3708.79,6,London,Web Browser,Wire Transfer,0,0
+TXN-100124,CUST-1394,41,Credit,Deposit,Electronics,119.36,20864.38,20895.02,9,Mumbai,POS Terminal,Credit Card,0,0
+TXN-100250,CUST-1428,21,Savings,Deposit,Entertainment,46.81,23306.92,23260.11,1,London,Web Browser,Debit Card,0,0
+TXN-100492,CUST-1440,38,Savings,Payment,Electronics,174.86,5036.02,5011.16,7,London,POS Terminal,Wire Transfer,0,0
+TXN-100735,CUST-1324,34,Credit,Deposit,Electronics,65.51,23673.11,23607.6,7,London,POS Terminal,Credit Card,0,0
+TXN-100995,CUST-1237,57,Credit,Deposit,Entertainment,266.28,15143.3,14877.02,5,London,Mobile App,UPI / Wallet,0,0
+TXN-100036,CUST-1471,22,Checking,Payment,Groceries,29.92,2517.21,2487.29,9,Mumbai,Web Browser,UPI / Wallet,0,0
+TXN-100142,CUST-1435,26,Business,Deposit,Entertainment,32.73,7637.03,7604.3,6,New York,POS Terminal,UPI / Wallet,0,0
+TXN-100249,CUST-1262,63,Credit,Payment,Electronics,261.6,15757.2,15495.6,7,London,Mobile App,UPI / Wallet,0,0
+TXN-100591,CUST-1478,20,Savings,Deposit,Electronics,20.61,16025.29,16004.68,10,Mumbai,Web Browser,Credit Card,0,0
+TXN-100594,CUST-1283,41,Savings,Deposit,Electronics,160.46,19449.54,19439.08,3,London,POS Terminal,UPI / Wallet,0,0
+TXN-100645,CUST-1309,22,Savings,Deposit,Entertainment,46.82,20260.54,20213.72,1,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100606,CUST-1406,32,Savings,Payment,Entertainment,224.56,9064.35,8839.79,13,London,POS Terminal,Credit Card,0,0
+TXN-100922,CUST-1295,40,Credit,Deposit,Entertainment,118.71,22827.24,22708.53,4,London,POS Terminal,Debit Card,0,0
+TXN-100060,CUST-1391,64,Business,Deposit,Electronics,213.99,6680.24,6466.25,4,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100374,CUST-1206,54,Savings,Deposit,Electronics,144.53,22534.32,22389.79,5,London,POS Terminal,Debit Card,0,0
+TXN-100203,CUST-1363,61,Credit,Payment,Entertainment,301.44,11725.38,11423.94,11,London,Mobile App,Debit Card,0,0
+TXN-100622,CUST-1353,42,Savings,Payment,Electronics,247.96,13177.76,12929.8,10,London,POS Terminal,Debit Card,0,0
+TXN-100377,CUST-1401,33,Savings,Payment,Entertainment,249.89,12695.94,12446.05,5,London,POS Terminal,UPI / Wallet,0,0
+TXN-100196,CUST-1360,55,Checking,Deposit,Electronics,194.95,11471.53,11276.58,1,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100211,CUST-1364,27,Credit,Deposit,Entertainment,45.14,10673.68,10628.54,4,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100237,CUST-1393,37,Savings,Payment,Entertainment,169.66,11214.29,11044.63,14,London,POS Terminal,Debit Card,0,0
+TXN-100200,CUST-1391,62,Credit,Payment,Electronics,325.11,7698.73,7373.62,7,London,Mobile App,UPI / Wallet,0,0
+TXN-100325,CUST-1266,53,Savings,Payment,Electronics,257.29,15093.4,14836.11,5,London,Mobile App,UPI / Wallet,0,0
+TXN-100140,CUST-1477,20,Savings,Payment,Entertainment,33.8,11823.65,11789.85,2,London,Web Browser,Credit Card,0,0
+TXN-100077,CUST-1444,27,Savings,Deposit,Entertainment,136.01,8083.17,7947.16,8,London,Web Browser,UPI / Wallet,0,0
+TXN-100694,CUST-1408,31,Savings,Deposit,Electronics,110.46,17969.02,17858.56,7,London,Web Browser,Credit Card,0,0
+TXN-100446,CUST-1447,34,Savings,Payment,Electronics,245.66,7842.8,7597.14,11,London,Web Browser,Debit Card,0,0
+TXN-100052,CUST-1496,18,Savings,Payment,Electronics,5.85,1625.06,1619.21,20,Berlin,Web Browser,Credit Card,0,0
+TXN-100392,CUST-1361,21,Savings,Deposit,Entertainment,47.08,19660.4,19613.32,4,Berlin,Web Browser,Debit Card,0,0
+TXN-100242,CUST-1473,22,Checking,Deposit,Entertainment,37.64,9591.22,9703.58,9,London,Web Browser,Debit Card,0,0
+TXN-100022,CUST-1338,29,Savings,Deposit,Electronics,41.13,22881.23,22840.1,3,London,Web Browser,Credit Card,0,0
+TXN-100509,CUST-1422,37,Savings,Payment,Entertainment,215.49,3691.19,3625.7,4,London,POS Terminal,Wire Transfer,0,0
+TXN-100550,CUST-1339,48,Credit,Payment,Electronics,306.87,9494.38,9187.51,4,London,Mobile App,Wire Transfer,0,0
+TXN-100943,CUST-1440,30,Savings,Deposit,Electronics,135.17,4904.41,4769.24,3,London,POS Terminal,Wire Transfer,0,0
+TXN-100915,CUST-1475,32,Business,Deposit,Entertainment,75.96,6252.74,6176.78,6,Singapore,Web Browser,UPI / Wallet,0,0
+TXN-100885,CUST-1486,19,Savings,Deposit,Entertainment,10.42,10820.86,10810.44,5,London,Web Browser,Credit Card,0,0
+TXN-100230,CUST-1346,30,Savings,Deposit,Electronics,57.86,24048.54,23990.68,3,London,Web Browser,Credit Card,0,0
+TXN-100933,CUST-1491,19,Savings,Deposit,Electronics,7.15,12346.26,12339.11,18,Berlin,Web Browser,Credit Card,0,0
+TXN-100262,CUST-1304,28,Savings,Deposit,Electronics,124.45,18681.12,18556.67,1,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100080,CUST-1451,23,Checking,Payment,Entertainment,407.75,5680.32,5272.57,7,Mumbai,Web Browser,UPI / Wallet,1,1
+TXN-100721,CUST-1407,42,Credit,Deposit,Electronics,184.32,3767.67,3583.35,3,London,Mobile App,Wire Transfer,0,0
+TXN-100569,CUST-1412,23,Savings,Deposit,Entertainment,92.23,14878.9,14786.67,1,London,Web Browser,Wire Transfer,0,0
+TXN-100820,CUST-1409,19,Savings,Payment,Entertainment,17.76,6309.35,6291.59,5,London,POS Terminal,UPI / Wallet,0,0
+TXN-100433,CUST-1323,43,Savings,Payment,Electronics,220.42,12706.51,12486.09,2,London,POS Terminal,Wire Transfer,0,0
+TXN-100252,CUST-1335,57,Savings,Deposit,Electronics,613.65,2240.29,1626.64,1,London,Mobile App,Wire Transfer,1,1
+TXN-100223,CUST-1418,32,Savings,Payment,Electronics,136.31,9806.32,9820.01,11,London,Web Browser,Credit Card,0,0
+TXN-100107,CUST-1405,42,Credit,Payment,Entertainment,276.15,7513.6,7387.45,13,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100863,CUST-1407,40,Savings,Payment,Electronics,209.77,5330.25,5120.48,11,London,POS Terminal,UPI / Wallet,0,0
+TXN-100505,CUST-1430,48,Credit,Payment,Entertainment,324.14,8492.91,8168.77,5,London,POS Terminal,Wire Transfer,1,0
+TXN-100819,CUST-1389,24,Credit,Payment,Entertainment,38.98,13625.44,13586.46,4,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100752,CUST-1475,37,Savings,Payment,Electronics,134.15,1617.26,1483.11,16,London,POS Terminal,UPI / Wallet,0,0
+TXN-100804,CUST-1426,41,Credit,Payment,Entertainment,280.18,5852.45,5572.27,8,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100718,CUST-1464,56,Checking,Deposit,Electronics,106.07,807.57,701.5,1,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100821,CUST-1423,40,Savings,Payment,Electronics,902.65,7169.24,6266.59,12,London,POS Terminal,Debit Card,1,1
+TXN-100961,CUST-1491,18,Savings,Deposit,Entertainment,5.37,1148.09,1142.72,10,Berlin,Web Browser,Credit Card,0,0
+TXN-100044,CUST-1298,50,Checking,Deposit,Entertainment,93.37,20067.41,20124.04,2,London,POS Terminal,UPI / Wallet,0,0
+TXN-100037,CUST-1392,26,Business,Deposit,Entertainment,26.93,15192.26,15165.33,2,Mumbai,Web Browser,UPI / Wallet,0,0
+TXN-100336,CUST-1415,51,Credit,Deposit,Electronics,166.75,2020.05,1853.3,2,London,Mobile App,Wire Transfer,0,0
+TXN-100245,CUST-1283,40,Savings,Payment,Entertainment,153.58,19183.61,19030.03,8,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100423,CUST-1498,18,Credit,Deposit,Entertainment,5.04,469.17,464.13,9,Berlin,Web Browser,Credit Card,0,0
+TXN-100163,CUST-1496,18,Savings,Payment,Entertainment,6.24,673.99,817.75,15,Berlin,Web Browser,Credit Card,0,0
+TXN-100472,CUST-1443,67,Checking,Deposit,Electronics,309.25,3330.95,3021.7,4,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100554,CUST-1364,31,Credit,Payment,Entertainment,125.31,5858.52,5733.21,4,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100501,CUST-1446,42,Checking,Payment,Entertainment,143.63,2802.19,2658.56,8,New York,POS Terminal,Wire Transfer,0,0
+TXN-100891,CUST-1478,21,Savings,Deposit,Entertainment,14.95,12574.8,12559.85,16,London,Web Browser,Credit Card,0,0
+TXN-100428,CUST-1402,28,Savings,Deposit,Entertainment,109.7,17864.47,17754.77,5,London,Web Browser,Credit Card,0,0
+TXN-100688,CUST-1470,55,Savings,Payment,Electronics,275.69,2553.21,2277.52,9,London,Mobile App,Wire Transfer,0,0
+TXN-100806,CUST-1410,44,Credit,Deposit,Entertainment,305.64,12521.71,12216.07,12,London,POS Terminal,Debit Card,0,0
+TXN-100978,CUST-1468,18,Savings,Deposit,Groceries,5.94,703.29,697.35,1,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100106,CUST-1424,32,Savings,Payment,Electronics,514.55,3109.62,2595.07,14,Berlin,POS Terminal,UPI / Wallet,1,1
+TXN-100421,CUST-1459,50,Credit,Payment,Electronics,119.07,1112.64,993.57,8,London,Mobile App,Wire Transfer,0,0
+TXN-100236,CUST-1462,42,Savings,Payment,Electronics,110.53,576.61,466.08,1,London,Mobile App,Wire Transfer,0,0
+TXN-100794,CUST-1378,35,Checking,Deposit,Entertainment,119.24,20566.21,20446.97,5,Mumbai,Web Browser,Debit Card,0,0
+TXN-100335,CUST-1274,27,Savings,Payment,Entertainment,98.58,3821.71,3723.13,1,Berlin,POS Terminal,Wire Transfer,0,0
+TXN-100437,CUST-1432,51,Checking,Deposit,Electronics,215.22,4367.54,4152.32,1,London,POS Terminal,Wire Transfer,1,0
+TXN-100633,CUST-1477,19,Savings,Deposit,Entertainment,7.83,7449.52,7591.69,7,Berlin,Web Browser,Credit Card,0,0
+TXN-100511,CUST-1385,43,Checking,Payment,Electronics,199.23,6635.5,6436.27,3,London,Mobile App,Wire Transfer,0,0
+TXN-100790,CUST-1492,19,Savings,Deposit,Electronics,10.2,10913.03,10902.83,7,Berlin,Web Browser,Credit Card,0,0
+TXN-100401,CUST-1459,42,Savings,Payment,Electronics,802.92,4686.56,3883.64,16,Berlin,POS Terminal,Credit Card,1,1
+TXN-100886,CUST-1356,53,Savings,Payment,Entertainment,341.27,10649.06,10307.79,13,London,Mobile App,Debit Card,0,0
+TXN-100971,CUST-1378,23,Savings,Deposit,Entertainment,56.59,18970.88,18914.29,3,London,Web Browser,Debit Card,0,0
+TXN-100089,CUST-1451,50,Checking,Deposit,Electronics,178.61,2513.7,2335.09,3,New York,Mobile App,Wire Transfer,0,0
+TXN-100334,CUST-1481,19,Savings,Payment,Electronics,29.48,8502.68,8473.2,6,London,Web Browser,Credit Card,0,0
+TXN-100539,CUST-1438,30,Savings,Payment,Entertainment,137.45,1973.3,1835.85,7,London,POS Terminal,Wire Transfer,0,0
+TXN-100189,CUST-1427,39,Savings,Payment,Electronics,825.42,3663.79,2838.37,11,London,POS Terminal,UPI / Wallet,1,1
+TXN-100459,CUST-1368,21,Savings,Deposit,Entertainment,408.52,20273.17,19864.65,1,Berlin,Web Browser,UPI / Wallet,1,1
+TXN-100207,CUST-1487,19,Savings,Deposit,Electronics,7.49,7894.46,7886.97,18,London,Web Browser,Credit Card,0,0
+TXN-100402,CUST-1467,21,Checking,Deposit,Entertainment,8.73,13597.59,13588.86,8,London,Web Browser,Credit Card,0,0
+TXN-100716,CUST-1281,50,Savings,Payment,Electronics,322.47,13120.01,12797.54,3,London,Mobile App,UPI / Wallet,0,0
+TXN-100370,CUST-1375,69,Credit,Deposit,Electronics,322.27,9742.4,9420.13,7,London,Mobile App,UPI / Wallet,0,0
+TXN-100385,CUST-1371,55,Savings,Payment,Electronics,1161.6,5414.9,4253.3,7,London,Mobile App,UPI / Wallet,1,1
+TXN-100627,CUST-1422,21,Savings,Payment,Entertainment,60.14,3596.53,3536.39,10,London,POS Terminal,Wire Transfer,0,0
+TXN-100599,CUST-1225,52,Credit,Deposit,Entertainment,155.66,21484.62,21328.96,4,London,POS Terminal,Debit Card,0,0
+TXN-100774,CUST-1480,21,Savings,Payment,Entertainment,47.12,2570.45,2523.33,9,London,Web Browser,Debit Card,0,0
+TXN-100780,CUST-1396,48,Savings,Payment,Electronics,194.14,3652.49,3458.35,4,London,Mobile App,Wire Transfer,0,0
+TXN-100081,CUST-1352,63,Credit,Deposit,Electronics,379.23,11202.42,10823.19,4,London,Mobile App,UPI / Wallet,1,0
+TXN-100942,CUST-1460,35,Business,Deposit,Entertainment,101.18,7342.42,7241.24,9,Singapore,POS Terminal,Debit Card,0,0
+TXN-100728,CUST-1348,23,Savings,Deposit,Entertainment,50.14,22649.56,22599.42,0,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100353,CUST-1355,20,Savings,Deposit,Entertainment,11.92,9178.45,9166.53,1,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100796,CUST-1276,44,Credit,Payment,Entertainment,157.82,18250.76,18092.94,9,London,Mobile App,Debit Card,0,0
+TXN-100756,CUST-1435,27,Savings,Payment,Electronics,97.05,4641.83,4544.78,4,London,Web Browser,Wire Transfer,0,0
+TXN-100757,CUST-1277,57,Savings,Deposit,Electronics,223.49,18951.95,18728.46,4,London,POS Terminal,Debit Card,0,0
+TXN-100901,CUST-1358,44,Savings,Payment,Entertainment,250.98,11142.99,10892.01,15,London,Mobile App,Debit Card,0,0
+TXN-100840,CUST-1460,38,Credit,Payment,Electronics,651.38,1820.8,1169.42,10,London,POS Terminal,Wire Transfer,1,1
+TXN-100705,CUST-1308,29,Credit,Deposit,Entertainment,68.85,19055.38,18986.53,2,London,POS Terminal,Wire Transfer,0,0
+TXN-100825,CUST-1444,47,Credit,Payment,Entertainment,330.99,4761.68,4430.69,9,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100902,CUST-1376,34,Savings,Deposit,Electronics,134.66,6674.99,6690.33,1,London,POS Terminal,Wire Transfer,0,0
+TXN-100064,CUST-1380,26,Savings,Deposit,Entertainment,104.69,11783.35,11678.66,2,London,Web Browser,UPI / Wallet,0,0
+TXN-100018,CUST-1311,41,Savings,Payment,Entertainment,232.41,8266.54,8034.13,4,London,Mobile App,Wire Transfer,0,0
+TXN-100637,CUST-1465,23,Savings,Payment,Entertainment,35.08,8504.57,8469.49,15,London,Web Browser,Credit Card,0,0
+TXN-100418,CUST-1383,56,Savings,Payment,Electronics,260.76,4995.93,4735.17,6,London,Mobile App,Wire Transfer,0,0
+TXN-100273,CUST-1298,52,Credit,Payment,Entertainment,1093.4,12762.33,11668.93,5,Mumbai,Mobile App,UPI / Wallet,1,1
+TXN-100348,CUST-1375,33,Savings,Deposit,Electronics,117.69,18984.12,18866.43,1,London,Web Browser,Wire Transfer,0,0
+TXN-100087,CUST-1412,25,Credit,Payment,Entertainment,507.42,6065.7,5558.28,11,Mumbai,POS Terminal,Wire Transfer,1,1
+TXN-100617,CUST-1298,60,Credit,Payment,Electronics,226.62,8102.36,7875.74,6,London,Mobile App,UPI / Wallet,0,0
+TXN-100058,CUST-1385,57,Credit,Deposit,Electronics,908.7,3385.65,2476.95,2,Mumbai,Mobile App,Wire Transfer,1,1
+TXN-100696,CUST-1417,47,Credit,Payment,Entertainment,316.51,3919.21,3602.7,6,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100783,CUST-1456,32,Savings,Transfer,Electronics,132.91,2189.46,2056.55,13,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100714,CUST-1463,21,Credit,Deposit,Entertainment,34.51,16747.19,16712.68,4,London,Web Browser,Debit Card,0,0
+TXN-100755,CUST-1476,38,Savings,Payment,Electronics,108.13,1155.25,1047.12,11,London,Mobile App,Wire Transfer,0,0
+TXN-100184,CUST-1362,32,Savings,Deposit,Entertainment,134.86,4436.03,4301.17,1,London,Web Browser,Wire Transfer,0,0
+TXN-100571,CUST-1444,52,Credit,Payment,Electronics,317.79,4166.2,3848.41,6,London,Mobile App,Wire Transfer,1,0
+TXN-100875,CUST-1369,31,Savings,Payment,Entertainment,616.72,3596.84,2980.12,3,London,POS Terminal,Wire Transfer,1,1
+TXN-100258,CUST-1438,66,Credit,Payment,Electronics,263.8,4167.4,3903.6,6,London,Mobile App,UPI / Wallet,0,0
+TXN-100963,CUST-1490,18,Savings,Deposit,Entertainment,5.2,14502.01,14496.81,2,Berlin,Web Browser,Credit Card,0,0
+TXN-100704,CUST-1446,33,Savings,Payment,Electronics,182.91,3873.48,3690.57,11,London,Web Browser,UPI / Wallet,0,0
+TXN-100045,CUST-1446,45,Credit,Payment,Electronics,172.87,5223.46,5050.59,14,London,POS Terminal,UPI / Wallet,0,0
+TXN-100016,CUST-1456,32,Savings,Payment,Electronics,119.6,5442.46,5322.86,15,Berlin,POS Terminal,Debit Card,0,0
+TXN-100408,CUST-1405,32,Checking,Payment,Entertainment,115.52,16676.38,16560.86,7,New York,POS Terminal,Debit Card,0,0
+TXN-100127,CUST-1370,19,Savings,Deposit,Groceries,12.4,9700.87,9688.47,1,Berlin,Web Browser,Wire Transfer,0,0
+TXN-100158,CUST-1377,28,Savings,Payment,Entertainment,137.0,13567.13,13430.13,1,London,Web Browser,Wire Transfer,0,0
+TXN-100048,CUST-1476,30,Savings,Payment,Electronics,81.68,1429.68,1348.0,17,London,POS Terminal,UPI / Wallet,0,0
+TXN-100580,CUST-1312,24,Savings,Deposit,Electronics,29.74,24352.56,24322.82,1,Berlin,Web Browser,Debit Card,0,0
+TXN-100131,CUST-1175,59,Credit,Deposit,Electronics,102.97,21801.88,21698.91,1,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100726,CUST-1461,31,Savings,Transfer,Electronics,107.99,1786.79,1678.8,14,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100186,CUST-1431,47,Savings,Payment,Electronics,420.01,5562.16,5142.15,10,London,POS Terminal,UPI / Wallet,0,0
+TXN-100232,CUST-1452,28,Savings,Payment,Electronics,59.11,7638.97,7579.86,17,Berlin,Web Browser,Credit Card,0,0
+TXN-100310,CUST-1425,41,Savings,Payment,Electronics,283.03,3603.12,3470.09,6,London,POS Terminal,Wire Transfer,0,0
+TXN-100351,CUST-1237,56,Savings,Deposit,Electronics,255.23,17423.99,17168.76,11,London,Mobile App,Debit Card,0,0
+TXN-100054,CUST-1268,46,Savings,Deposit,Electronics,180.96,16526.11,16345.15,1,London,POS Terminal,Wire Transfer,0,0
+TXN-100634,CUST-1491,20,Savings,Payment,Entertainment,14.48,1320.69,1306.21,19,London,POS Terminal,Credit Card,0,0
+TXN-100515,CUST-1457,43,Savings,Payment,Electronics,156.54,2472.67,2316.13,13,London,Mobile App,Wire Transfer,0,0
+TXN-100440,CUST-1366,44,Savings,Payment,Electronics,237.93,14589.18,14351.25,11,London,POS Terminal,Debit Card,0,0
+TXN-100322,CUST-1475,18,Savings,Payment,Entertainment,8.08,2982.38,2974.3,5,Berlin,Web Browser,Debit Card,0,0
+TXN-100478,CUST-1171,50,Credit,Deposit,Electronics,73.53,14491.25,14417.72,1,London,ATM,Wire Transfer,0,0
+TXN-100197,CUST-1407,39,Credit,Payment,Electronics,268.0,11109.31,10841.31,6,London,POS Terminal,UPI / Wallet,0,0
+TXN-100586,CUST-1447,26,Savings,Payment,Electronics,79.34,11799.53,11720.19,8,London,Web Browser,Debit Card,0,0
+TXN-100678,CUST-1469,36,Checking,Payment,Entertainment,116.78,3497.89,3381.11,15,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100104,CUST-1459,23,Savings,Payment,Entertainment,90.24,9091.73,9001.49,4,London,Web Browser,UPI / Wallet,0,0
+TXN-100950,CUST-1427,49,Credit,Payment,Electronics,372.03,5413.45,5041.42,6,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100435,CUST-1168,23,Savings,Deposit,Entertainment,376.02,21038.78,20662.76,0,Berlin,Mobile App,Wire Transfer,1,1
+TXN-100929,CUST-1408,39,Savings,Payment,Entertainment,206.22,10977.19,10770.97,12,London,POS Terminal,Credit Card,0,0
+TXN-100379,CUST-1349,40,Savings,Payment,Entertainment,284.63,15244.32,14959.69,6,London,POS Terminal,Debit Card,0,0
+TXN-100113,CUST-1331,39,Credit,Deposit,Entertainment,113.95,10022.73,9908.78,1,London,POS Terminal,Wire Transfer,0,0
+TXN-100508,CUST-1365,29,Credit,Deposit,Electronics,406.55,24280.75,23874.2,3,Mumbai,POS Terminal,Credit Card,1,1
+TXN-100644,CUST-1368,45,Credit,Payment,Entertainment,419.25,9905.07,9485.82,9,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100021,CUST-1494,19,Savings,Payment,Electronics,353.52,1572.28,1218.76,18,Berlin,Web Browser,Credit Card,1,1
+TXN-100053,CUST-1266,34,Checking,Deposit,Entertainment,77.4,15243.1,15165.7,5,London,Mobile App,UPI / Wallet,0,0
+TXN-100051,CUST-1462,26,Business,Payment,Entertainment,53.83,3224.09,3170.26,7,New York,POS Terminal,Wire Transfer,0,0
+TXN-100485,CUST-1433,39,Savings,Payment,Electronics,238.56,9054.64,8816.08,9,Berlin,POS Terminal,Debit Card,0,0
+TXN-100291,CUST-1487,23,Savings,Transfer,Electronics,37.97,920.95,882.98,17,Berlin,Web Browser,Credit Card,0,0
+TXN-100798,CUST-1498,18,Savings,Payment,Entertainment,5.09,305.64,300.55,19,Berlin,Web Browser,Credit Card,0,0
+TXN-100389,CUST-1492,19,Checking,Deposit,Groceries,319.52,3110.38,2790.86,8,London,Web Browser,Debit Card,1,1
+TXN-100333,CUST-1497,18,Credit,Deposit,Entertainment,5.31,14564.05,14558.74,5,London,Web Browser,Credit Card,0,0
+TXN-100803,CUST-1337,35,Checking,Deposit,Entertainment,42.22,20040.67,19998.45,2,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100390,CUST-1372,46,Credit,Deposit,Entertainment,198.05,8864.28,8666.23,1,London,POS Terminal,Wire Transfer,0,0
+TXN-100109,CUST-1409,56,Savings,Payment,Electronics,264.55,5226.47,4961.92,9,Berlin,POS Terminal,UPI / Wallet,0,0
+TXN-100151,CUST-1496,18,Savings,Deposit,Entertainment,5.05,15110.18,15105.13,1,London,Web Browser,Credit Card,0,0
+TXN-100247,CUST-1450,22,Savings,Payment,Entertainment,49.98,1750.74,1700.76,10,London,Web Browser,UPI / Wallet,0,0
+TXN-100458,CUST-1429,46,Checking,Deposit,Entertainment,609.15,1653.32,1044.17,2,Mumbai,POS Terminal,Wire Transfer,1,1
+TXN-100331,CUST-1414,53,Savings,Transfer,Electronics,218.7,4350.39,4131.69,10,London,Mobile App,UPI / Wallet,0,0
+TXN-100680,CUST-1249,35,Savings,Deposit,Entertainment,125.69,22559.68,22433.99,3,London,POS Terminal,UPI / Wallet,0,0
+TXN-100449,CUST-1359,36,Credit,Payment,Entertainment,244.33,14474.02,14229.69,6,London,POS Terminal,UPI / Wallet,0,0
+TXN-100989,CUST-1487,18,Checking,Deposit,Entertainment,5.93,6797.91,6791.98,5,London,Web Browser,Credit Card,0,0
+TXN-100662,CUST-1328,36,Credit,Payment,Entertainment,223.47,9473.84,9250.37,2,Mumbai,POS Terminal,Wire Transfer,0,0
+TXN-100784,CUST-1410,34,Business,Deposit,Entertainment,21.11,4220.75,4199.64,0,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100724,CUST-1474,21,Savings,Deposit,Electronics,15.89,12213.36,12197.47,16,Berlin,Web Browser,Credit Card,0,0
+TXN-100512,CUST-1340,58,Business,Deposit,Electronics,131.43,21532.89,21401.46,1,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100608,CUST-1453,40,Savings,Payment,Electronics,205.37,4208.26,4002.89,16,London,POS Terminal,Debit Card,0,0
+TXN-100220,CUST-1424,40,Credit,Payment,Entertainment,309.65,7825.55,7515.9,5,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100040,CUST-1482,23,Savings,Payment,Electronics,56.68,3142.61,3085.93,14,Berlin,Web Browser,Credit Card,0,0
+TXN-100618,CUST-1481,18,Savings,Deposit,Entertainment,5.22,17540.5,17535.28,3,Berlin,Web Browser,Credit Card,0,0
+TXN-100415,CUST-1459,50,Savings,Payment,Electronics,250.32,2567.64,2317.32,11,London,Mobile App,Wire Transfer,0,0
+TXN-100281,CUST-1478,57,Credit,Deposit,Electronics,222.42,1940.62,1718.2,1,London,POS Terminal,Wire Transfer,1,0
+TXN-100114,CUST-1416,21,Savings,Deposit,Entertainment,12.99,9621.24,9608.25,8,Berlin,POS Terminal,Debit Card,0,0
+TXN-100898,CUST-1420,62,Checking,Deposit,Electronics,247.29,4234.93,3987.64,3,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100598,CUST-1498,18,Business,Deposit,Entertainment,5.06,1171.25,1166.19,8,New York,Web Browser,Credit Card,0,0
+TXN-100537,CUST-1396,51,Savings,Payment,Electronics,369.02,9088.91,8719.89,12,London,POS Terminal,Debit Card,0,0
+TXN-100327,CUST-1456,37,Business,Deposit,Entertainment,184.41,10539.28,10354.87,5,New York,POS Terminal,UPI / Wallet,0,0
+TXN-100762,CUST-1371,19,Savings,Deposit,Entertainment,7.92,21694.97,21687.05,0,Berlin,Web Browser,Debit Card,0,0
+TXN-100743,CUST-1424,27,Savings,Payment,Entertainment,161.92,17311.83,17149.91,7,London,Web Browser,Debit Card,0,0
+TXN-100745,CUST-1465,25,Savings,Payment,Electronics,55.5,7051.7,6996.2,18,Berlin,Web Browser,Credit Card,0,0
+TXN-100019,CUST-1480,21,Savings,Transfer,Electronics,21.1,787.72,766.62,16,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100516,CUST-1469,19,Credit,Deposit,Entertainment,12.47,12529.14,12516.67,4,London,Web Browser,Credit Card,0,0
+TXN-100484,CUST-1452,26,Credit,Payment,Entertainment,432.9,5733.17,5300.27,15,Mumbai,POS Terminal,Debit Card,1,1
+TXN-100006,CUST-1235,65,Credit,Deposit,Electronics,257.56,18053.27,17795.71,4,London,Mobile App,UPI / Wallet,0,0
+TXN-100074,CUST-1491,24,Credit,Payment,Entertainment,19.39,770.83,751.44,20,London,Web Browser,Credit Card,0,0
+TXN-100267,CUST-1305,48,Savings,Payment,Electronics,210.03,14078.11,13868.08,9,London,Mobile App,Debit Card,0,0
+TXN-100850,CUST-1398,45,Credit,Payment,Entertainment,289.57,6860.47,6570.9,4,London,POS Terminal,Wire Transfer,0,0
+TXN-100977,CUST-1447,59,Credit,Payment,Electronics,208.37,1719.37,1511.0,5,London,Mobile App,Wire Transfer,0,0
+TXN-100308,CUST-1494,19,Credit,Deposit,Entertainment,317.05,1933.53,1616.48,16,Berlin,Web Browser,Credit Card,1,1
+TXN-100827,CUST-1435,19,Credit,Payment,Groceries,10.06,6321.55,6311.49,2,Berlin,Web Browser,UPI / Wallet,0,0
+TXN-100144,CUST-1449,53,Business,Deposit,Electronics,164.72,3160.1,2995.38,2,New York,POS Terminal,Wire Transfer,0,0
+TXN-100296,CUST-1466,19,Checking,Deposit,Groceries,6.71,14503.33,14496.62,2,London,Web Browser,Debit Card,0,0
+TXN-100254,CUST-1310,24,Savings,Deposit,Entertainment,25.67,15483.59,15457.92,2,London,POS Terminal,UPI / Wallet,0,0
+TXN-100027,CUST-1496,18,Savings,Payment,Electronics,5.98,395.79,389.81,21,Berlin,Web Browser,Credit Card,0,0
+TXN-100451,CUST-1452,23,Savings,Payment,Entertainment,106.24,9257.97,9301.73,4,London,Web Browser,UPI / Wallet,0,0
+TXN-100717,CUST-1448,51,Checking,Payment,Entertainment,255.97,5055.78,4799.81,14,Mumbai,Mobile App,UPI / Wallet,0,0
+TXN-100488,CUST-1288,39,Credit,Deposit,Electronics,71.05,23808.86,23737.81,4,Mumbai,POS Terminal,Debit Card,0,0
+TXN-100707,CUST-1411,36,Credit,Payment,Entertainment,265.82,10903.74,10637.92,9,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100041,CUST-1337,42,Credit,Payment,Electronics,217.39,14401.53,14184.14,4,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100799,CUST-1488,18,Checking,Deposit,Groceries,5.55,11971.3,11965.75,2,London,Web Browser,Credit Card,0,0
+TXN-100419,CUST-1386,60,Business,Deposit,Entertainment,237.27,8168.43,7931.16,5,New York,POS Terminal,UPI / Wallet,0,0
+TXN-100495,CUST-1379,30,Savings,Payment,Entertainment,157.95,5824.73,5666.78,6,London,Web Browser,Wire Transfer,0,0
+TXN-100999,CUST-1465,28,Savings,Payment,Entertainment,127.08,4801.37,4674.29,15,Berlin,Web Browser,Debit Card,0,0
+TXN-100346,CUST-1362,36,Credit,Payment,Entertainment,278.43,13529.27,13250.84,12,London,POS Terminal,UPI / Wallet,0,0
+TXN-100736,CUST-1481,62,Credit,Deposit,Electronics,184.9,910.66,725.76,1,Mumbai,Mobile App,Wire Transfer,1,0
+TXN-100676,CUST-1382,66,Credit,Deposit,Electronics,360.03,6166.08,5806.05,4,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100729,CUST-1460,27,Credit,Payment,Entertainment,531.9,3705.3,3173.4,16,London,Web Browser,Debit Card,1,1
+TXN-100900,CUST-1490,20,Credit,Payment,Entertainment,12.36,1326.25,1313.89,18,London,Web Browser,Credit Card,0,0
+TXN-100561,CUST-1445,36,Business,Deposit,Electronics,337.65,20403.84,20066.19,1,Singapore,POS Terminal,Debit Card,1,1
+TXN-100326,CUST-1494,18,Savings,Payment,Electronics,6.63,4068.32,4061.69,9,Berlin,Web Browser,Credit Card,0,0
+TXN-100344,CUST-1450,39,Checking,Payment,Electronics,99.67,1773.54,1823.87,6,Mumbai,Mobile App,Wire Transfer,0,0
+TXN-100086,CUST-1477,22,Savings,Payment,Entertainment,37.96,2273.32,2235.36,12,London,Web Browser,Credit Card,0,0
+TXN-100773,CUST-1472,21,Savings,Payment,Entertainment,22.39,2095.47,2073.08,15,London,Web Browser,Credit Card,0,0
+TXN-100174,CUST-1459,53,Savings,Payment,Electronics,115.93,425.47,309.54,1,London,Mobile App,Wire Transfer,0,0
+TXN-100324,CUST-1458,24,Savings,Payment,Entertainment,90.37,5466.4,5376.03,13,Berlin,Web Browser,Credit Card,0,0
+TXN-100661,CUST-1445,60,Checking,Payment,Electronics,1378.35,5168.44,3790.09,6,New York,Mobile App,Wire Transfer,1,1
+TXN-100017,CUST-1479,27,Checking,Payment,Entertainment,30.09,2895.44,2865.35,13,Mumbai,POS Terminal,UPI / Wallet,0,0
+TXN-100345,CUST-1264,54,Savings,Deposit,Electronics,677.0,7368.72,6691.72,1,London,Mobile App,Wire Transfer,1,1
+TXN-100626,CUST-1462,22,Credit,Deposit,Entertainment,29.82,12269.21,12239.39,14,Mumbai,Web Browser,Credit Card,0,0
+TXN-100361,CUST-1450,27,Savings,Payment,Electronics,131.91,4643.32,4511.41,14,Berlin,Web Browser,Debit Card,0,0
+TXN-100112,CUST-1432,50,Checking,Payment,Entertainment,336.22,4675.52,4489.3,5,Mumbai,POS Terminal,Wire Transfer,1,0
+TXN-100316,CUST-1468,36,Checking,Deposit,Entertainment,177.3,7557.77,7380.47,10,Mumbai,Web Browser,UPI / Wallet,0,0
+TXN-100740,CUST-1436,47,Business,Deposit,Entertainment,64.88,3980.76,3915.88,6,Mumbai,POS Terminal,Wire Transfer,0,0

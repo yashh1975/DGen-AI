@@ -1,0 +1,101 @@
+age,account_type,transaction_type,merchant_category,amount,balance_before,balance_after,transaction_hour,location,device_type,payment_method,is_international,is_fraud,transaction_id,customer_id
+49,Credit,Transfer,Groceries,166.7644,13580.74,13543.534,11,New York,POS Terminal,UPI / Wallet,0,0,TXN_100049,CUST_10049
+47,Credit,Transfer,Groceries,164.85895,10483.023,10787.851,10,New York,Mobile App,UPI / Wallet,0,0,TXN_100096,CUST_10096
+40,Credit,Payment,Groceries,151.65352,8381.55,9728.043,10,New York,Mobile App,Debit Card,0,0,TXN_100057,CUST_10057
+53,Credit,Transfer,Retail,107.04294,15532.897,14677.087,11,New York,POS Terminal,UPI / Wallet,0,0,TXN_100006,CUST_10006
+43,Checking,Payment,Groceries,97.332794,9816.775,9117.242,9,New York,Mobile App,Debit Card,0,0,TXN_100094,CUST_10094
+44,Credit,Payment,Groceries,117.27823,10603.629,12032.175,12,New York,Mobile App,Debit Card,0,0,TXN_100073,CUST_10073
+50,Credit,Transfer,Retail,162.40901,13773.816,13548.949,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100074,CUST_10074
+45,Credit,Transfer,Retail,224.12769,12745.911,12455.659,13,Singapore,POS Terminal,UPI / Wallet,0,0,TXN_100080,CUST_10080
+44,Credit,Transfer,Groceries,118.15865,11343.763,10129.568,11,New York,Mobile App,Debit Card,0,0,TXN_100084,CUST_10084
+43,Credit,Payment,Groceries,576.39,10435.894,11483.423,11,New York,Mobile App,Debit Card,1,1,TXN_100052,CUST_10052
+44,Credit,Transfer,Groceries,136.6101,11936.289,11558.269,11,New York,Mobile App,Debit Card,0,0,TXN_100011,CUST_10011
+46,Credit,Transfer,Groceries,180.7337,13598.78,12673.697,11,New York,POS Terminal,UPI / Wallet,0,0,TXN_100056,CUST_10056
+45,Credit,Transfer,Retail,173.0357,11842.669,11508.278,12,New York,Mobile App,Debit Card,0,0,TXN_100044,CUST_10044
+44,Credit,Payment,Groceries,137.79956,11024.522,10860.361,11,New York,Mobile App,Debit Card,0,0,TXN_100043,CUST_10043
+44,Credit,Payment,Groceries,162.4812,10095.708,12092.227,12,New York,Mobile App,Debit Card,0,0,TXN_100064,CUST_10064
+49,Credit,Transfer,Retail,626.78,15439.775,13998.044,13,New York,POS Terminal,UPI / Wallet,1,1,TXN_100061,CUST_10061
+50,Savings,Transfer,Retail,159.35216,14461.705,15214.209,13,New York,POS Terminal,UPI / Wallet,0,0,TXN_100047,CUST_10047
+42,Credit,Transfer,Groceries,162.82378,11712.0625,11196.585,10,New York,Mobile App,Debit Card,0,0,TXN_100069,CUST_10069
+44,Credit,Payment,Groceries,187.09198,12043.334,12719.311,10,New York,Mobile App,Debit Card,0,0,TXN_100071,CUST_10071
+48,Credit,Transfer,Groceries,104.71017,12068.465,11103.962,10,New York,Mobile App,Debit Card,0,0,TXN_100089,CUST_10089
+51,Credit,Transfer,Retail,122.00519,15873.544,15161.974,14,New York,POS Terminal,UPI / Wallet,0,0,TXN_100020,CUST_10020
+50,Credit,Transfer,Retail,106.73597,13861.969,13982.602,10,New York,POS Terminal,UPI / Wallet,0,0,TXN_100095,CUST_10095
+42,Checking,Payment,Groceries,119.486824,10754.348,10005.789,9,Mumbai,Mobile App,Debit Card,0,0,TXN_100077,CUST_10077
+47,Credit,Payment,Groceries,176.81656,13027.702,12960.933,12,New York,POS Terminal,Debit Card,0,0,TXN_100086,CUST_10086
+43,Checking,Payment,Groceries,113.71082,9743.864,9377.121,9,Mumbai,Mobile App,Debit Card,0,0,TXN_100090,CUST_10090
+47,Credit,Transfer,Retail,180.27654,12303.801,14620.529,13,New York,POS Terminal,UPI / Wallet,0,0,TXN_100040,CUST_10040
+46,Credit,Payment,Groceries,115.136795,13283.287,10919.726,14,New York,Mobile App,Debit Card,0,0,TXN_100012,CUST_10012
+40,Checking,Payment,Groceries,159.26378,9019.899,10032.964,10,New York,Mobile App,Debit Card,0,0,TXN_100022,CUST_10022
+48,Credit,Transfer,Retail,606.74,12735.605,12020.785,12,New York,Mobile App,UPI / Wallet,1,1,TXN_100075,CUST_10075
+43,Credit,Transfer,Groceries,113.39437,11977.472,10712.849,12,New York,Mobile App,Debit Card,0,0,TXN_100055,CUST_10055
+45,Credit,Payment,Groceries,140.32782,12122.265,11260.625,9,New York,Mobile App,UPI / Wallet,0,0,TXN_100054,CUST_10054
+49,Credit,Transfer,Retail,143.94353,15182.043,14014.597,13,Singapore,POS Terminal,UPI / Wallet,0,0,TXN_100066,CUST_10066
+45,Credit,Transfer,Groceries,108.17063,12062.483,10663.121,11,New York,Mobile App,Debit Card,0,0,TXN_100058,CUST_10058
+44,Credit,Transfer,Retail,118.47329,12769.982,12303.474,10,New York,Mobile App,UPI / Wallet,0,0,TXN_100013,CUST_10013
+42,Credit,Payment,Groceries,127.09941,10421.505,11565.701,10,New York,Mobile App,Debit Card,0,0,TXN_100030,CUST_10030
+47,Credit,Transfer,Retail,700.48,13144.7705,12823.423,11,New York,POS Terminal,UPI / Wallet,1,1,TXN_100021,CUST_10021
+43,Credit,Transfer,Groceries,141.42607,11646.374,12115.647,13,New York,Mobile App,Debit Card,0,0,TXN_100007,CUST_10007
+47,Credit,Transfer,Groceries,153.63658,12341.675,11993.929,12,New York,Mobile App,UPI / Wallet,0,0,TXN_100079,CUST_10079
+43,Credit,Payment,Groceries,129.67842,9770.687,9950.504,11,Mumbai,Mobile App,Debit Card,0,0,TXN_100016,CUST_10016
+47,Credit,Payment,Groceries,137.55862,12280.539,12030.798,10,New York,POS Terminal,Debit Card,0,0,TXN_100023,CUST_10023
+48,Credit,Transfer,Retail,124.68431,15411.591,14550.9375,11,New York,POS Terminal,UPI / Wallet,0,0,TXN_100017,CUST_10017
+46,Credit,Payment,Groceries,104.755135,10970.911,12911.552,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100070,CUST_10070
+46,Credit,Transfer,Groceries,737.21,10902.406,11444.325,11,New York,Mobile App,Debit Card,1,1,TXN_100087,CUST_10087
+52,Credit,Transfer,Retail,142.90341,13667.014,13468.53,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100053,CUST_10053
+52,Credit,Transfer,Retail,104.731125,14822.866,12745.412,13,New York,POS Terminal,UPI / Wallet,0,0,TXN_100078,CUST_10078
+49,Credit,Transfer,Groceries,138.31837,11027.186,11474.886,10,New York,POS Terminal,Debit Card,0,0,TXN_100001,CUST_10001
+45,Credit,Transfer,Groceries,164.5477,12642.228,12438.685,11,New York,Mobile App,Debit Card,0,0,TXN_100042,CUST_10042
+46,Credit,Payment,Groceries,171.1058,13059.721,13406.039,13,New York,POS Terminal,Debit Card,0,0,TXN_100005,CUST_10005
+43,Credit,Transfer,Groceries,167.01617,11100.943,12545.848,10,New York,Mobile App,UPI / Wallet,0,0,TXN_100018,CUST_10018
+51,Credit,Transfer,Retail,112.289154,13871.587,13177.612,14,New York,POS Terminal,UPI / Wallet,0,0,TXN_100046,CUST_10046
+46,Credit,Transfer,Groceries,165.16202,10343.718,11062.253,10,New York,Mobile App,UPI / Wallet,0,0,TXN_100091,CUST_10091
+41,Credit,Payment,Groceries,715.27,9382.4375,10052.622,12,Mumbai,Mobile App,Debit Card,1,1,TXN_100072,CUST_10072
+43,Credit,Transfer,Groceries,149.04782,12386.98,11059.375,10,New York,POS Terminal,UPI / Wallet,0,0,TXN_100081,CUST_10081
+45,Credit,Transfer,Groceries,151.71564,11159.116,10709.059,11,New York,Mobile App,Debit Card,0,0,TXN_100010,CUST_10010
+48,Credit,Transfer,Retail,606.74,12735.605,12020.785,12,New York,Mobile App,UPI / Wallet,1,1,TXN_100075,CUST_10075
+45,Credit,Transfer,Groceries,152.92334,12457.134,11591.078,12,New York,POS Terminal,Debit Card,0,0,TXN_100062,CUST_10062
+47,Credit,Payment,Groceries,768.76,12902.518,12001.535,12,New York,POS Terminal,UPI / Wallet,1,1,TXN_100083,CUST_10083
+52,Savings,Transfer,Retail,198.28033,17746.643,15091.056,14,Singapore,POS Terminal,UPI / Wallet,0,0,TXN_100009,CUST_10009
+44,Credit,Payment,Groceries,169.57094,10669.643,10211.179,10,New York,Mobile App,Debit Card,0,0,TXN_100041,CUST_10041
+52,Savings,Transfer,Retail,134.94595,17327.78,16364.116,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100060,CUST_10060
+49,Credit,Transfer,Groceries,219.1751,11456.886,10780.604,11,New York,Mobile App,Debit Card,0,0,TXN_100082,CUST_10082
+42,Credit,Payment,Groceries,153.36554,10477.424,10659.058,11,Mumbai,Mobile App,Debit Card,0,0,TXN_100088,CUST_10088
+39,Checking,Payment,Groceries,114.689804,8285.492,8554.903,9,Mumbai,Mobile App,Debit Card,0,0,TXN_100028,CUST_10028
+51,Credit,Transfer,Retail,165.5649,14563.257,14352.81,13,New York,POS Terminal,UPI / Wallet,0,0,TXN_100029,CUST_10029
+46,Credit,Transfer,Groceries,165.53911,12877.421,10965.683,11,New York,POS Terminal,Debit Card,0,0,TXN_100050,CUST_10050
+44,Credit,Payment,Groceries,155.20984,12215.086,10335.1455,11,New York,Mobile App,Debit Card,0,0,TXN_100065,CUST_10065
+44,Checking,Payment,Groceries,90.12025,10023.762,9882.591,10,Mumbai,Mobile App,Debit Card,0,0,TXN_100067,CUST_10067
+43,Credit,Payment,Groceries,123.8751,9950.702,10811.525,11,New York,Mobile App,Debit Card,0,0,TXN_100037,CUST_10037
+42,Credit,Payment,Groceries,164.58012,9117.16,9440.687,11,New York,Mobile App,Debit Card,0,0,TXN_100004,CUST_10004
+48,Credit,Transfer,Retail,210.18251,14525.901,15045.153,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100003,CUST_10003
+46,Credit,Transfer,Retail,122.48064,15031.612,13840.395,10,Singapore,POS Terminal,UPI / Wallet,0,0,TXN_100098,CUST_10098
+49,Credit,Transfer,Retail,157.44756,12469.919,11125.893,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100048,CUST_10048
+42,Credit,Payment,Groceries,128.89003,9999.533,9873.6,10,Mumbai,Mobile App,Debit Card,0,0,TXN_100063,CUST_10063
+50,Credit,Transfer,Retail,151.96185,14041.061,14596.999,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100036,CUST_10036
+49,Credit,Payment,Retail,100.19685,12930.032,12232.812,13,New York,POS Terminal,Debit Card,0,0,TXN_100024,CUST_10024
+43,Credit,Payment,Groceries,171.47556,9749.032,9179.284,11,New York,Mobile App,Debit Card,0,0,TXN_100026,CUST_10026
+46,Credit,Payment,Groceries,130.05217,12464.079,11734.674,12,New York,Mobile App,UPI / Wallet,0,0,TXN_100068,CUST_10068
+46,Credit,Transfer,Groceries,110.36271,10761.013,10535.106,11,New York,Mobile App,Debit Card,0,0,TXN_100027,CUST_10027
+50,Credit,Transfer,Retail,136.57466,15642.414,14082.523,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100002,CUST_10002
+43,Credit,Transfer,Groceries,135.17123,12608.428,12654.622,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100014,CUST_10014
+46,Credit,Transfer,Groceries,131.46408,11872.115,11675.1875,11,New York,POS Terminal,Debit Card,0,0,TXN_100039,CUST_10039
+43,Credit,Payment,Groceries,135.98131,11728.338,11711.109,11,New York,Mobile App,Debit Card,0,0,TXN_100099,CUST_10099
+45,Credit,Transfer,Groceries,109.6106,11645.087,10940.388,11,New York,Mobile App,Debit Card,0,0,TXN_100097,CUST_10097
+43,Credit,Payment,Groceries,145.64061,11630.649,11876.604,10,Mumbai,Mobile App,Debit Card,0,0,TXN_100032,CUST_10032
+47,Credit,Transfer,Retail,854.13,14736.49,13078.74,12,New York,POS Terminal,UPI / Wallet,1,1,TXN_100093,CUST_10093
+50,Credit,Transfer,Groceries,138.24834,12314.246,12641.27,10,New York,POS Terminal,UPI / Wallet,0,0,TXN_100008,CUST_10008
+44,Credit,Payment,Groceries,146.31763,10852.559,10776.89,10,New York,Mobile App,Debit Card,0,0,TXN_100031,CUST_10031
+44,Credit,Payment,Groceries,567.62,12621.184,11757.756,12,New York,Mobile App,Debit Card,1,1,TXN_100015,CUST_10015
+50,Credit,Transfer,Retail,136.40785,13147.314,14191.197,11,Singapore,POS Terminal,UPI / Wallet,0,0,TXN_100034,CUST_10034
+56,Credit,Transfer,Retail,128.96672,15973.351,14849.267,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100033,CUST_10033
+47,Credit,Transfer,Groceries,154.59435,10890.074,10969.607,11,New York,Mobile App,UPI / Wallet,0,0,TXN_100085,CUST_10085
+48,Credit,Transfer,Retail,142.29738,13216.711,13748.807,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100051,CUST_10051
+47,Credit,Transfer,Retail,165.9055,12026.682,12737.796,11,New York,POS Terminal,Debit Card,0,0,TXN_100076,CUST_10076
+48,Credit,Transfer,Retail,143.29509,14295.414,14453.823,11,New York,POS Terminal,UPI / Wallet,0,0,TXN_100059,CUST_10059
+48,Credit,Transfer,Retail,106.69677,12590.693,13235.847,10,New York,POS Terminal,UPI / Wallet,0,0,TXN_100019,CUST_10019
+48,Credit,Transfer,Retail,192.53595,13333.491,12810.388,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100025,CUST_10025
+48,Credit,Transfer,Retail,116.523445,12501.691,12496.599,12,New York,POS Terminal,UPI / Wallet,0,0,TXN_100100,CUST_10100
+47,Credit,Transfer,Groceries,114.54214,13498.394,12714.548,12,New York,Mobile App,Debit Card,0,0,TXN_100045,CUST_10045
+46,Credit,Transfer,Groceries,85.27044,12595.59,12181.501,11,New York,POS Terminal,UPI / Wallet,0,0,TXN_100038,CUST_10038
+46,Credit,Transfer,Retail,162.07425,12119.739,11837.561,12,New York,Mobile App,Debit Card,0,0,TXN_100035,CUST_10035

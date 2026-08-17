@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  # FastAPI Backend Service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: dgen_ai_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+      - DEBUG=false
+      - PORT=8000
+      - HOST=0.0.0.0
+      - JWT_SECRET=dgen-ai-super-secret-key-change-in-production-2026
+      - USE_MONGO_MOCK=true
+    volumes:
+      - ./backend/storage:/app/storage
+    restart: unless-stopped
+
+  # MongoDB Service (Optional when USE_MONGO_MOCK=false)
+  mongodb:
+    image: mongo:6.0
+    container_name: dgen_ai_mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo_data:

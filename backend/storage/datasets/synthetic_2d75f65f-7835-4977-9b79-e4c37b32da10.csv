@@ -1,0 +1,11 @@
+transaction_id,customer_id,age,account_type,transaction_type,merchant_category,amount,balance_before,balance_after,transaction_hour,location,device_type,payment_method,is_international,is_fraud
+TXN-100000,CUST-1131,26,Business,Deposit,Entertainment,6.89,8377.85,8370.96,23,Toronto,Mobile App,Wire Transfer,0,0
+TXN-100001,CUST-1031,56,Savings,Deposit,Electronics,85.83,1516.56,1430.73,18,Tokyo,POS Terminal,UPI / Wallet,0,0
+TXN-100002,CUST-1373,51,Credit,Deposit,Retail,181.24,10716.88,10535.64,13,Singapore,POS Terminal,UPI / Wallet,1,0
+TXN-100003,CUST-1194,74,Savings,Deposit,Electronics,110.8,1282.5,1171.7,20,Mumbai,Web Browser,Debit Card,0,0
+TXN-100004,CUST-1307,40,Credit,Payment,Utilities,21.63,5186.83,5165.2,2,Mumbai,Web Browser,Credit Card,1,0
+TXN-100005,CUST-1338,30,Credit,Transfer,Utilities,21.49,4790.1,4768.61,2,London,Web Browser,Credit Card,1,0
+TXN-100006,CUST-1079,72,Savings,Deposit,Retail,108.37,10445.13,10336.76,12,Mumbai,Web Browser,Credit Card,1,0
+TXN-100007,CUST-1493,38,Checking,Transfer,Travel,14.2,10925.85,10911.65,20,New York,Mobile App,Credit Card,0,0
+TXN-100008,CUST-1272,69,Credit,Deposit,Travel,75.34,16816.81,16741.47,21,Tokyo,Mobile App,Debit Card,1,0
+TXN-100009,CUST-1299,23,Credit,Transfer,Travel,16.39,4750.46,4734.07,14,Tokyo,Mobile App,UPI / Wallet,0,0

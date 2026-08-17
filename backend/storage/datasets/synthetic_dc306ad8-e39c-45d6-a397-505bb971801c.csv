@@ -1,0 +1,101 @@
+transaction_id,customer_id,age,account_type,transaction_type,merchant_category,amount,balance_before,balance_after,transaction_hour,location,device_type,payment_method,is_international,is_fraud
+TXN-100000,CUST-1131,26,Business,Deposit,Entertainment,6.89,8377.85,8370.96,23,Toronto,Mobile App,Wire Transfer,0,0
+TXN-100001,CUST-1031,56,Savings,Deposit,Electronics,85.83,1516.56,1430.73,18,Tokyo,POS Terminal,UPI / Wallet,0,0
+TXN-100002,CUST-1373,51,Credit,Deposit,Retail,181.24,10716.88,10535.64,13,Singapore,POS Terminal,UPI / Wallet,1,0
+TXN-100003,CUST-1194,74,Savings,Deposit,Electronics,110.8,1282.5,1171.7,20,Mumbai,Web Browser,Debit Card,0,0
+TXN-100004,CUST-1307,40,Credit,Payment,Utilities,21.63,5186.83,5165.2,2,Mumbai,Web Browser,Credit Card,1,0
+TXN-100005,CUST-1338,30,Credit,Transfer,Utilities,21.49,4790.1,4768.61,2,London,Web Browser,Credit Card,1,0
+TXN-100006,CUST-1079,72,Savings,Deposit,Retail,108.37,10445.13,10336.76,12,Mumbai,Web Browser,Credit Card,1,0
+TXN-100007,CUST-1493,38,Checking,Transfer,Travel,14.2,10925.85,10911.65,20,New York,Mobile App,Credit Card,0,0
+TXN-100008,CUST-1272,69,Credit,Deposit,Travel,75.34,16816.81,16741.47,21,Tokyo,Mobile App,Debit Card,1,0
+TXN-100009,CUST-1299,23,Credit,Transfer,Travel,16.39,4750.46,4734.07,14,Tokyo,Mobile App,UPI / Wallet,0,0
+TXN-100010,CUST-1187,42,Savings,Deposit,Entertainment,71.58,5263.28,5191.7,6,Tokyo,POS Terminal,Wire Transfer,1,0
+TXN-100011,CUST-1400,30,Checking,Deposit,Groceries,60.01,9530.69,9470.68,16,Tokyo,POS Terminal,UPI / Wallet,0,0
+TXN-100012,CUST-1056,66,Savings,Deposit,Electronics,83.87,2719.94,2636.07,17,Tokyo,Web Browser,UPI / Wallet,0,0
+TXN-100013,CUST-1300,39,Credit,Payment,Retail,108.74,5161.48,5052.74,12,Tokyo,Mobile App,UPI / Wallet,0,0
+TXN-100014,CUST-1266,55,Savings,Deposit,Groceries,130.38,6006.64,5876.26,12,Tokyo,Mobile App,UPI / Wallet,0,0
+TXN-100015,CUST-1143,73,Credit,Deposit,Entertainment,110.6,9232.46,9121.86,21,New York,POS Terminal,Debit Card,0,0
+TXN-100016,CUST-1284,63,Checking,Deposit,Electronics,17.97,4826.02,4808.05,23,Toronto,Mobile App,UPI / Wallet,0,0
+TXN-100017,CUST-1273,54,Savings,Deposit,Electronics,53.21,854.93,801.72,17,Singapore,Web Browser,UPI / Wallet,0,0
+TXN-100018,CUST-1414,63,Credit,Transfer,Utilities,19.19,5491.49,5472.3,21,Toronto,ATM,Credit Card,0,0
+TXN-100019,CUST-1199,41,Savings,Deposit,Entertainment,87.85,6848.04,6760.19,11,Tokyo,POS Terminal,Wire Transfer,0,0
+TXN-100020,CUST-1364,54,Credit,Deposit,Retail,210.23,12737.48,12527.25,13,New York,POS Terminal,Debit Card,1,0
+TXN-100021,CUST-1061,64,Credit,Deposit,Retail,169.98,11221.47,11051.49,18,Tokyo,Mobile App,Debit Card,0,0
+TXN-100022,CUST-1484,40,Credit,Deposit,Groceries,147.26,11379.48,11232.22,8,New York,Web Browser,UPI / Wallet,1,0
+TXN-100023,CUST-1132,33,Savings,Deposit,Electronics,16.54,1122.17,1105.63,18,Toronto,Web Browser,Wire Transfer,0,0
+TXN-100024,CUST-1387,46,Credit,Deposit,Retail,105.12,7177.65,7072.53,4,Singapore,Web Browser,UPI / Wallet,1,0
+TXN-100025,CUST-1413,39,Checking,Payment,Entertainment,78.42,11725.95,11647.53,18,Singapore,POS Terminal,UPI / Wallet,0,0
+TXN-100026,CUST-1112,67,Savings,Deposit,Entertainment,194.92,10085.59,9890.67,7,New York,Web Browser,UPI / Wallet,1,0
+TXN-100027,CUST-1422,19,Checking,Withdrawal,Travel,5.67,619.12,763.45,1,Berlin,Web Browser,Debit Card,0,0
+TXN-100028,CUST-1334,63,Credit,Deposit,Entertainment,53.75,8325.56,8271.81,21,Toronto,Mobile App,Wire Transfer,0,0
+TXN-100029,CUST-1350,54,Credit,Deposit,Retail,43.51,18268.08,18224.57,22,Tokyo,ATM,UPI / Wallet,0,0
+TXN-100030,CUST-1199,69,Savings,Deposit,Entertainment,173.22,6531.74,6358.52,14,Singapore,POS Terminal,Debit Card,1,0
+TXN-100031,CUST-1041,50,Business,Deposit,Electronics,16.06,8551.69,8535.63,23,Singapore,POS Terminal,UPI / Wallet,0,0
+TXN-100032,CUST-1327,61,Savings,Deposit,Travel,148.34,13449.61,13301.27,11,Singapore,POS Terminal,Debit Card,1,0
+TXN-100033,CUST-1313,60,Credit,Payment,Travel,166.59,12978.08,12811.49,17,Tokyo,Mobile App,Debit Card,1,0
+TXN-100034,CUST-1381,66,Savings,Deposit,Utilities,45.15,8956.13,8910.98,11,Tokyo,Mobile App,Credit Card,1,0
+TXN-100035,CUST-1130,18,Checking,Withdrawal,Travel,5.35,1612.42,1607.07,3,London,Web Browser,Debit Card,0,0
+TXN-100036,CUST-1338,57,Credit,Transfer,Retail,8.62,1486.49,1477.87,19,London,Web Browser,Credit Card,0,0
+TXN-100037,CUST-1275,73,Savings,Deposit,Travel,52.73,10986.09,10933.36,18,New York,POS Terminal,Credit Card,1,0
+TXN-100038,CUST-1022,44,Savings,Withdrawal,Utilities,7.9,789.75,781.85,2,London,Web Browser,Credit Card,1,0
+TXN-100039,CUST-1003,66,Savings,Deposit,Travel,148.54,14624.93,14476.39,15,Tokyo,Mobile App,Debit Card,1,0
+TXN-100040,CUST-1057,46,Credit,Deposit,Electronics,83.49,11848.36,11764.87,20,Tokyo,POS Terminal,Wire Transfer,0,0
+TXN-100041,CUST-1377,25,Credit,Payment,Utilities,46.43,12221.09,12174.66,8,Singapore,POS Terminal,Debit Card,1,0
+TXN-100042,CUST-1474,73,Savings,Deposit,Entertainment,186.88,9949.26,9762.38,18,New York,Web Browser,Debit Card,1,0
+TXN-100043,CUST-1302,74,Credit,Deposit,Electronics,21.77,387.89,366.12,23,New York,Web Browser,Debit Card,0,0
+TXN-100044,CUST-1224,65,Credit,Withdrawal,Retail,6.99,194.46,187.47,10,Berlin,Web Browser,Credit Card,0,0
+TXN-100045,CUST-1087,73,Credit,Payment,Entertainment,42.19,3519.72,3477.53,22,New York,Web Browser,Credit Card,0,0
+TXN-100046,CUST-1255,64,Credit,Deposit,Travel,174.39,16064.91,15890.52,12,Singapore,Mobile App,Debit Card,1,0
+TXN-100047,CUST-1095,51,Savings,Deposit,Travel,109.59,9305.04,9195.45,7,Tokyo,POS Terminal,Debit Card,1,0
+TXN-100048,CUST-1058,35,Credit,Deposit,Electronics,11.59,1211.81,1200.22,22,Toronto,Web Browser,Wire Transfer,0,0
+TXN-100049,CUST-1369,64,Credit,Deposit,Groceries,265.24,10002.56,9737.32,13,Singapore,POS Terminal,Debit Card,1,0
+TXN-100050,CUST-1059,74,Savings,Payment,Entertainment,38.38,2655.82,2617.44,22,New York,Web Browser,Credit Card,0,0
+TXN-100051,CUST-1222,67,Credit,Payment,Travel,96.17,11449.4,11503.23,16,Singapore,POS Terminal,Credit Card,1,0
+TXN-100052,CUST-1325,28,Business,Payment,Entertainment,23.41,11336.19,11312.78,22,Tokyo,Mobile App,UPI / Wallet,0,0
+TXN-100053,CUST-1139,63,Credit,Deposit,Entertainment,86.55,5997.26,5910.71,22,Tokyo,POS Terminal,UPI / Wallet,0,0
+TXN-100054,CUST-1089,65,Credit,Deposit,Electronics,60.81,4062.39,4001.58,22,Tokyo,Mobile App,UPI / Wallet,0,0
+TXN-100055,CUST-1170,68,Savings,Deposit,Utilities,77.36,11743.0,11665.64,6,New York,POS Terminal,Credit Card,1,0
+TXN-100056,CUST-1334,72,Credit,Payment,Travel,37.55,5275.36,5237.81,21,New York,Mobile App,Credit Card,0,0
+TXN-100057,CUST-1105,63,Savings,Deposit,Retail,205.53,8353.01,8147.48,10,Tokyo,POS Terminal,Debit Card,1,0
+TXN-100058,CUST-1251,69,Savings,Payment,Retail,117.01,3303.94,3186.93,19,Tokyo,Mobile App,Debit Card,0,0
+TXN-100059,CUST-1013,70,Savings,Deposit,Groceries,193.4,9422.99,9229.59,14,New York,Web Browser,Debit Card,1,0
+TXN-100060,CUST-1439,68,Credit,Payment,Travel,50.19,12956.57,12906.38,21,Singapore,Mobile App,Credit Card,0,0
+TXN-100061,CUST-1435,71,Savings,Deposit,Groceries,142.22,8676.78,8534.56,19,Tokyo,POS Terminal,Debit Card,0,0
+TXN-100062,CUST-1025,40,Credit,Payment,Electronics,12.61,908.77,896.16,22,Toronto,Mobile App,Wire Transfer,0,0
+TXN-100063,CUST-1209,67,Savings,Payment,Utilities,85.55,9975.43,9889.88,17,Tokyo,Mobile App,Credit Card,1,0
+TXN-100064,CUST-1464,47,Credit,Payment,Travel,35.79,6907.02,6871.23,21,Tokyo,Mobile App,Debit Card,0,0
+TXN-100065,CUST-1330,72,Savings,Deposit,Groceries,187.08,7216.45,7029.37,16,New York,POS Terminal,Credit Card,1,0
+TXN-100066,CUST-1023,72,Savings,Deposit,Entertainment,111.07,4705.27,4594.2,16,Tokyo,POS Terminal,Debit Card,0,0
+TXN-100067,CUST-1061,58,Credit,Payment,Retail,142.5,9439.12,9296.62,20,Tokyo,ATM,UPI / Wallet,0,0
+TXN-100068,CUST-1124,66,Credit,Deposit,Entertainment,54.91,2914.15,3009.24,22,Toronto,Mobile App,Debit Card,0,0
+TXN-100069,CUST-1075,67,Savings,Deposit,Electronics,74.48,1921.64,1847.16,18,Tokyo,Web Browser,UPI / Wallet,0,0
+TXN-100070,CUST-1457,20,Checking,Transfer,Travel,21.65,11895.88,11874.23,6,New York,Web Browser,Debit Card,1,0
+TXN-100071,CUST-1258,25,Credit,Payment,Groceries,46.36,5205.48,5159.12,3,New York,Web Browser,UPI / Wallet,1,0
+TXN-100072,CUST-1173,50,Credit,Deposit,Entertainment,25.99,2205.59,2179.6,22,Toronto,Mobile App,Wire Transfer,0,0
+TXN-100073,CUST-1348,26,Checking,Payment,Entertainment,17.13,10074.92,10057.79,21,Singapore,POS Terminal,UPI / Wallet,0,0
+TXN-100074,CUST-1390,73,Credit,Deposit,Electronics,79.07,3246.0,3166.93,22,New York,Web Browser,Debit Card,0,0
+TXN-100075,CUST-1019,53,Checking,Transfer,Entertainment,10.68,917.18,906.5,21,New York,POS Terminal,Debit Card,0,0
+TXN-100076,CUST-1007,55,Credit,Deposit,Electronics,79.19,2313.4,2234.21,19,Tokyo,Web Browser,UPI / Wallet,0,0
+TXN-100077,CUST-1041,60,Checking,Deposit,Groceries,53.18,17794.96,17741.78,22,Tokyo,Mobile App,Debit Card,0,0
+TXN-100078,CUST-1002,70,Savings,Deposit,Retail,151.09,14151.44,14000.35,14,Tokyo,POS Terminal,Debit Card,1,0
+TXN-100079,CUST-1478,68,Credit,Payment,Retail,30.15,4151.76,4121.61,21,New York,POS Terminal,Credit Card,0,0
+TXN-100080,CUST-1311,61,Credit,Deposit,Entertainment,25.89,3345.56,3319.67,22,Toronto,Mobile App,Wire Transfer,0,0
+TXN-100081,CUST-1156,71,Savings,Deposit,Entertainment,122.63,7650.73,7528.1,19,Tokyo,POS Terminal,Debit Card,0,0
+TXN-100082,CUST-1121,69,Savings,Transfer,Travel,19.62,2907.97,2888.35,15,London,Web Browser,Credit Card,0,0
+TXN-100083,CUST-1379,43,Credit,Transfer,Utilities,18.34,12405.84,12387.5,14,Mumbai,POS Terminal,Credit Card,1,0
+TXN-100084,CUST-1122,21,Savings,Transfer,Travel,13.12,693.8,830.68,0,Mumbai,Web Browser,Debit Card,1,0
+TXN-100085,CUST-1474,70,Checking,Deposit,Entertainment,10.36,8053.73,8043.37,23,Tokyo,Mobile App,Debit Card,0,0
+TXN-100086,CUST-1045,66,Savings,Deposit,Entertainment,219.23,8428.33,8209.1,17,New York,Web Browser,UPI / Wallet,0,0
+TXN-100087,CUST-1144,57,Savings,Deposit,Travel,71.69,15351.43,15279.74,4,Singapore,POS Terminal,Debit Card,1,0
+TXN-100088,CUST-1395,68,Savings,Deposit,Utilities,43.79,14574.18,14530.39,18,Tokyo,Mobile App,Credit Card,1,0
+TXN-100089,CUST-1379,70,Savings,Deposit,Groceries,101.44,8890.76,8789.32,17,Tokyo,Mobile App,Debit Card,0,0
+TXN-100090,CUST-1123,71,Credit,Payment,Travel,41.09,5626.4,5585.31,15,Mumbai,Web Browser,Credit Card,1,0
+TXN-100091,CUST-1341,70,Savings,Payment,Retail,33.58,1660.37,1626.79,15,London,Web Browser,Credit Card,0,0
+TXN-100092,CUST-1140,72,Savings,Deposit,Travel,123.93,14021.99,13898.06,16,Singapore,Mobile App,Credit Card,1,0
+TXN-100093,CUST-1127,54,Credit,Deposit,Electronics,16.72,4123.44,4106.72,23,Toronto,ATM,Wire Transfer,0,0
+TXN-100094,CUST-1016,70,Credit,Payment,Entertainment,104.86,4541.38,4436.52,14,Mumbai,Web Browser,Debit Card,1,0
+TXN-100095,CUST-1047,72,Savings,Deposit,Retail,176.92,8249.91,8072.99,17,Singapore,POS Terminal,Debit Card,1,0
+TXN-100096,CUST-1498,33,Checking,Transfer,Travel,15.46,7202.15,7186.69,18,Singapore,Mobile App,Debit Card,0,0
+TXN-100097,CUST-1013,32,Savings,Payment,Groceries,89.81,4003.23,3913.42,7,Tokyo,POS Terminal,UPI / Wallet,0,0
+TXN-100098,CUST-1244,40,Credit,Withdrawal,Utilities,5.37,177.53,172.16,4,Berlin,Web Browser,Credit Card,0,0
+TXN-100099,CUST-1487,22,Checking,Deposit,Entertainment,13.09,6453.76,6440.67,18,Tokyo,Web Browser,Wire Transfer,0,0
