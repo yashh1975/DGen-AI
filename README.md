@@ -1,16 +1,21 @@
 <div align="center">
 
+<img src="assets/logo.svg" width="120" height="120" alt="DGen AI Logo" />
+
 # 🌌 DGen AI
 ### **Next-Generation Privacy-Preserving Synthetic Banking Data & Fraud ML Platform**
 
-[![Live App](https://img.shields.io/badge/Live_App-Cloudflare_Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dgen-ai.pages.dev)
-[![Backend API](https://img.shields.io/badge/Backend_API-Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white)](https://dgen-ai.up.railway.app/docs)
+[![Live Application](https://img.shields.io/badge/Live_Web_App-dgen--ai.pages.dev-6366f1?style=for-the-badge&logo=cloudflarepages&logoColor=white)](https://dgen-ai.pages.dev)
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.14-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.2+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![React](https://img.shields.io/badge/React-18.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas_Cloud-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+<br/>
+
+### 🚀 **[Open Live Application: https://dgen-ai.pages.dev](https://dgen-ai.pages.dev)**
 
 <p align="center">
   <b>Generative AI (CTGAN & Tabular VAE) • Controlled Fraud Imbalance Augmentation • 6-Point Banking Rule Validation • Distance-to-Closest-Record (DCR) Privacy Defense • Empirical Downstream ML Utility Benchmarking</b>
@@ -20,14 +25,10 @@
 
 ---
 
-## 🌐 Live Deployments
+## 🌐 Live Application Link
 
-| Component | Provider | Live URL | Status |
-| :--- | :--- | :--- | :--- |
-| **Frontend Web App** | **Cloudflare Pages** | [https://dgen-ai.pages.dev](https://dgen-ai.pages.dev) | 🟢 **Operational** |
-| **Backend AI API** | **Railway Cloud** | [https://dgen-ai.up.railway.app](https://dgen-ai.up.railway.app) | 🟢 **Operational** |
-| **Interactive API Docs (Swagger UI)** | **FastAPI** | [https://dgen-ai.up.railway.app/docs](https://dgen-ai.up.railway.app/docs) | 🟢 **Active** |
-| **Database Cluster** | **MongoDB Atlas** | `mongodb+srv://...` | 🟢 **Connected** |
+> **🔗 Production Web App:** **[https://dgen-ai.pages.dev](https://dgen-ai.pages.dev)**  
+> Experience the full suite: Instant 1-Click Demo Login, AI Generation Studio, Basel III Quality Scorecards, Downstream Fraud ML Benchmarking, and Executive ZIP Report Exports.
 
 ---
 
@@ -37,7 +38,7 @@ Financial institutions and FinTech machine learning researchers face three criti
 
 1. **Strict Data Privacy Regulations (GDPR, CCPA, PCI-DSS, Basel III)**: Real customer transaction histories contain sensitive Personally Identifiable Information (PII) and financial balances that cannot be legally shared with third-party researchers, cloud platforms, or cross-border development teams.
 2. **Severe Fraud Class Imbalance**: In legitimate banking networks, fraudulent transactions represent less than **0.1%–1%** of all activity. Standard classifiers trained on such extreme skew suffer from high false-negative rates and poor minority-class recall.
-3. **Flawed Synthetic Data Generators**: Naive statistical samplers and generic random generators create mathematically corrupted transactions (e.g., negative transfer amounts, balance transition contradictions, impossible transaction timestamps), making them unusable for production ML validation.
+3. **Flawed Synthetic Data Generators**: Naive statistical samplers and generic random generators create mathematically corrupted transactions (e.g., negative transfer amounts, balance contradictions, impossible transaction timestamps), making them unusable for production ML validation.
 
 ---
 
@@ -57,22 +58,22 @@ By integrating state-of-the-art Generative AI models (**CTGAN**, custom **PyTorc
 
 ### 🧠 1. Multi-Architecture Generative AI Suite
 * **CTGAN Synthesizer**: Implements Conditional Generative Adversarial Networks with **Mode-Specific Normalization** to resolve continuous numerical multimodality and non-Gaussian skew.
-* **PyTorch Tabular VAE**: A custom deep Variational Autoencoder mapping transaction feature spaces into standard normal latent distributions $\mathcal{N}(\boldsymbol{\mu}, \mathbf{I})$ with joint MSE reconstruction and KL-Divergence optimization.
+* **PyTorch Tabular VAE**: A custom deep Variational Autoencoder mapping transaction feature spaces into standard normal latent distributions with joint MSE reconstruction and KL-Divergence optimization.
 * **Conditional Class Target Ratio Sampler**: Allows explicit user control over fraud ratios (5%–30%) to generate targeted stress-testing datasets.
 * **Gaussian Copula Generator**: Fast multivariate parametric copula modeling for high-speed statistical sampling.
 
 ### 🛡️ 2. 6-Point Banking Business Rule & Constraint Engine
-Enforces domain invariants on every generated synthetic row:
-1. **Transaction Amount Non-Negativity**: $\text{amount} \ge 0.00$.
-2. **Customer Age Range Bounds**: $18 \le \text{age} \le 100$.
-3. **Account Balance Integrity**: $\text{balance\_before} \ge 0.00$ and $\text{balance\_after} \ge 0.00$.
-4. **Mathematical Balance Transition Consistency**: $|\text{balance\_after} - \max(0, \text{balance\_before} - \text{debit})| \le \text{tolerance}$.
-5. **Timestamp & Hour Temporal Validity**: $0 \le \text{hour} \le 23$.
-6. **Binary Fraud Label Invariance**: $\text{is\_fraud} \in \{0, 1\}$.
+Enforces strict domain invariants on every generated synthetic row:
+1. **Transaction Amount Non-Negativity**: `amount >= 0.00`
+2. **Customer Age Range Bounds**: `18 <= age <= 100`
+3. **Account Balance Integrity**: `balance_before >= 0.00` and `balance_after >= 0.00`
+4. **Mathematical Balance Consistency**: `|balance_after - max(0, balance_before - debit_amount)| <= 100.00`
+5. **Timestamp & Hour Temporal Validity**: `0 <= transaction_hour <= 23`
+6. **Binary Fraud Label Invariance**: `is_fraud ∈ {0, 1}`
 
 ### 📊 3. Multi-Dimensional Quality Scorecard & Privacy Audit
-* **Statistical Fidelity Score**: Two-sample Kolmogorov-Smirnov ($KS$) tests, Wasserstein Distance ($W_1$), and Pearson Correlation Matrix Frobenius deltas.
-* **Distance to Closest Record (DCR)**: Euclidean distance evaluation in normalized multidimensional feature space ($\mu_{\text{DCR}}, \text{median}, p_5$).
+* **Statistical Fidelity Score**: Two-sample Kolmogorov-Smirnov (`KS`) tests, Wasserstein Distance, and Pearson Correlation Matrix Frobenius deltas.
+* **Distance to Closest Record (DCR)**: Euclidean distance evaluation in normalized multidimensional feature space.
 * **Zero-Leakage Guarantee**: Exact duplicate matching verification ensuring 0% memorization of real records.
 * **Regulatory Compliance Verifier**: Automated verdict against **Basel III**, **GDPR Art. 89**, and **CCPA** guidelines.
 
@@ -82,7 +83,7 @@ Enforces domain invariants on every generated synthetic row:
   * 🔴 **Model A**: Trained on Real Data Only.
   * 🟣 **Model B**: Trained on Synthetic Data Only.
   * 🟢 **Model C (Augmented)**: Trained on Real Data + Targeted Synthetic Fraud Boost.
-* Reports F1-Score, Precision, Recall, ROC-AUC, and full $2 \times 2$ Confusion Matrices.
+* Reports F1-Score, Precision, Recall, ROC-AUC, and full 2x2 Confusion Matrices.
 
 ### 📦 5. 1-Click Executive Deliverable Package (ZIP Export)
 Generates and downloads a complete package containing:
@@ -176,26 +177,26 @@ Empirical benchmarks evaluated on standard banking transaction sets (10,000+ rec
 
 | Metric / Dimension | Baseline Target | CTGAN Synthesizer | PyTorch Tabular VAE | Conditional Ratio Generator |
 | :--- | :--- | :--- | :--- | :--- |
-| **Overall Quality Score** | $> 80.0 / 100$ | **$87.31 / 100$** | **$84.15 / 100$** | **$89.40 / 100$** |
-| **Statistical Fidelity ($KS$)** | $> 65.0\%$ | **$68.50\%$** | **$64.80\%$** | **$71.20\%$** |
-| **Banking Rule Validity** | $100.0\%$ | **$100.00\%$** | **$99.80\%$** | **$100.00\%$** |
-| **Diversity Score** | $> 95.0\%$ | **$100.00\%$** | **$98.50\%$** | **$100.00\%$** |
-| **Exact Memorization Rate**| $0.00\%$ | **$0.00\%$ (0 copies)** | **$0.00\%$ (0 copies)** | **$0.00\%$ (0 copies)** |
-| **Mean DCR Privacy Distance** | $> 0.150$ | **$0.1863$ (Safe)** | **$0.2104$ (Safe)** | **$0.1925$ (Safe)** |
+| **Overall Quality Score** | > 80.0 / 100 | **87.31 / 100** | **84.15 / 100** | **89.40 / 100** |
+| **Statistical Fidelity (KS)** | > 65.0% | **68.50%** | **64.80%** | **71.20%** |
+| **Banking Rule Validity** | 100.0% | **100.00%** | **99.80%** | **100.00%** |
+| **Diversity Score** | > 95.0% | **100.00%** | **98.50%** | **100.00%** |
+| **Exact Memorization Rate**| 0.00% | **0.00% (0 copies)** | **0.00% (0 copies)** | **0.00% (0 copies)** |
+| **Mean DCR Privacy Distance** | > 0.150 | **0.1863 (Safe)** | **0.2104 (Safe)** | **0.1925 (Safe)** |
 | **Privacy Risk Verdict** | `LOW_RISK` | 🟢 **`LOW_RISK`** | 🟢 **`LOW_RISK`** | 🟢 **`LOW_RISK`** |
-| **Model C Fraud F1-Score** | Gain vs Model A | **$0.9636$ ($+4.1\%$ gain)**| **$0.9412$ ($+1.8\%$ gain)** | **$0.9780$ ($+5.6\%$ gain)** |
+| **Model C Fraud F1-Score** | Gain vs Model A | **0.9636 (+4.1% gain)**| **0.9412 (+1.8% gain)** | **0.9780 (+5.6% gain)** |
 
 ---
 
 ## 🔄 How It Works
 
-```
-  1. Ingestion & Profiling   ➔   2. Architecture Selection   ➔   3. Neural Synthesis
+```text
+  1. Ingestion & Profiling   →   2. Architecture Selection   →   3. Neural Synthesis
   Upload banking CSV or          Choose CTGAN, TVAE, or          Fit models with Mode-Specific
   use preloaded benchmark.       Conditional Fraud Target.       Normalization & Sample N rows.
               │                                                             │
               ▼                                                             ▼
-  6. Deliverable Export         5. Downstream ML Benchmark      4. Quality & Privacy Audit
+  6. Deliverable Export      ←   5. Downstream ML Benchmark   ←   4. Quality & Privacy Audit
   Download ZIP with CSV,         Train 3 Random Forest           Verify KS test, DCR privacy,
   JSON metrics & PNG charts.     models on Real test set.        and 6-point banking rules.
 ```
@@ -206,6 +207,8 @@ Empirical benchmarks evaluated on standard banking transaction sets (10,000+ rec
 
 ```text
 DGen-AI/
+├── assets/
+│   └── logo.svg                  # Official DGen AI vector brand logo
 ├── backend/
 │   ├── app/
 │   │   ├── api/                  # FastAPI REST route controllers
@@ -245,6 +248,7 @@ DGen-AI/
 ├── data/
 │   └── sample_banking_transactions.csv  # Pre-seeded authentic banking benchmark
 ├── Dockerfile                    # Root multi-cloud deployment Dockerfile
+├── LICENSE                       # MIT Open Source License
 └── README.md                     # Comprehensive project documentation
 ```
 
@@ -263,7 +267,7 @@ DGen-AI/
 
 * [ ] **Tabular LLM Integration**: Incorporating Large Language Model tokenizers (e.g., TabLLM / GLaM) for zero-shot transaction narrative synthesis.
 * [ ] **Real-Time Kafka Streaming**: Streaming synthetic transaction generation directly to Apache Kafka topics for live latency stress testing.
-* [ ] **Formal Differential Privacy ($\epsilon, \delta$-DP)**: Integrating DP-SGD training into CTGAN discriminator iterations.
+* [ ] **Formal Differential Privacy (ε, δ-DP)**: Integrating DP-SGD training into CTGAN discriminator iterations.
 * [ ] **Cross-Border AML Pattern Synthesis**: Advanced structuring and smurfing transaction pattern generators for Anti-Money Laundering systems.
 
 ---
@@ -309,7 +313,7 @@ npm run dev
 ## ☁️ Deployment Guide
 
 ### 1. Frontend on Cloudflare Pages
-1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com) $ightarrow$ **Workers & Pages** $ightarrow$ **Create Application** $ightarrow$ **Pages** $ightarrow$ **Connect to Git**.
+1. Go to **Cloudflare Dashboard** → **Workers & Pages** → **Create Application** → **Pages** → **Connect to Git**.
 2. Select repository `yashh1975/DGen-AI`.
 3. Configure build settings:
    * **Framework preset**: `Vite`
@@ -321,7 +325,7 @@ npm run dev
 5. Click **Save and Deploy**.
 
 ### 2. Backend on Railway
-1. Go to [Railway Dashboard](https://railway.app) $ightarrow$ **New Project** $ightarrow$ **Deploy from GitHub repo**.
+1. Go to **Railway Dashboard** → **New Project** → **Deploy from GitHub repo**.
 2. Select `yashh1975/DGen-AI`.
 3. In **Variables**, add:
    * `ENV` = `production`
@@ -329,7 +333,7 @@ npm run dev
    * `JWT_SECRET` = `your-super-secret-jwt-key`
    * `MONGODB_URI` = `mongodb+srv://<username>:<password>@cluster.mongodb.net/?retryWrites=true&w=majority`
    * `MONGODB_DB_NAME` = `dgen_ai`
-4. In **Settings** $ightarrow$ **Networking**, click **Generate Domain** and ensure Port is `8080`.
+4. In **Settings** → **Networking**, click **Generate Domain** and ensure Port is `8080`.
 
 ---
 
