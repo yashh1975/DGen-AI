@@ -68,7 +68,13 @@ class ApiService {
     }
 
     if (!response.ok) {
-      throw new Error(data.error || data.detail || 'An API error occurred');
+      let msg = data.error || data.detail;
+      if (Array.isArray(msg)) {
+        msg = msg.map((m: any) => m.msg || JSON.stringify(m)).join(', ');
+      } else if (typeof msg === 'object' && msg !== null) {
+        msg = msg.message || JSON.stringify(msg);
+      }
+      throw new Error(msg || (response.status === 401 ? 'Invalid email or password' : response.statusText || 'An API error occurred'));
     }
 
     return data as T;
