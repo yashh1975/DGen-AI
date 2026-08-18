@@ -117,24 +117,24 @@ class FraudMLUtilityEngine:
         pos_weight = max(1, n_neg // max(n_pos_tr, 1))
 
         clf = RandomForestClassifier(
-            n_estimators=50,
-            max_depth=8,
+            n_estimators=30,
+            max_depth=6,
             min_samples_leaf=2,
             class_weight={0: 1, 1: pos_weight},
             random_state=42,
             n_jobs=-1
         )
 
-        # Out-of-Fold probability estimation with grid search and minimum recall constraint
+        # Fit model on training set
+        clf.fit(X_tr, y_tr)
+
+        # Fast threshold calibration using internal training probability distribution
         optimal_threshold = 0.25
         try:
-            n_splits = min(3, max(2, n_pos_tr))
-            skf = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
-            oof_probs = cross_val_predict(clf, X_tr, y_tr, cv=skf, method='predict_proba')[:, 1]
-
+            tr_probs = clf.predict_proba(X_tr)[:, 1]
             best_f1, best_t = -1.0, 0.25
-            for t in np.linspace(0.12, 0.42, 31):
-                preds = (oof_probs >= t).astype(int)
+            for t in np.linspace(0.15, 0.40, 26):
+                preds = (tr_probs >= t).astype(int)
                 rec = recall_score(y_tr, preds, zero_division=0)
                 if rec >= 0.10:
                     f = f1_score(y_tr, preds, zero_division=0)
@@ -145,9 +145,6 @@ class FraudMLUtilityEngine:
         except Exception as e:
             logger.warning(f"[FraudML] {exp_name} threshold tuning fallback: {e}")
             optimal_threshold = 0.25
-
-        # Fit final model on full training set
-        clf.fit(X_tr, y_tr)
 
         # Final evaluation on the held-out real test set
         y_prob = clf.predict_proba(X_test)[:, 1]

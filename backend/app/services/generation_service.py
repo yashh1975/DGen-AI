@@ -86,12 +86,12 @@ class GenerationService:
             seed = job["random_seed"]
             fraud_target_ratio = job.get("fraud_target_ratio")
 
-            # 2. Train Generative Engine
+            # 2. Train Generative Engine (optimized for lightning-fast responsive cloud execution)
             if model_type == "vae":
-                engine = VAEModelEngine(epochs=10, batch_size=128, random_seed=seed)
+                engine = VAEModelEngine(epochs=5, batch_size=256, random_seed=seed)
                 engine.fit(raw_df)
             else: # default CTGAN
-                engine = CTGANModelEngine(epochs=8, batch_size=128, random_seed=seed)
+                engine = CTGANModelEngine(epochs=5, batch_size=256, random_seed=seed)
                 engine.fit(raw_df)
 
             # 3. Update status -> generating

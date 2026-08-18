@@ -16,6 +16,11 @@ from app.api.experiments import router as experiments_router
 async def lifespan(app: FastAPI):
     # Startup
     logger.info(f"Starting {settings.APP_NAME} backend...")
+    try:
+        import torch
+        torch.set_num_threads(2)
+    except Exception:
+        pass
     db_manager.connect()
     yield
     # Shutdown
