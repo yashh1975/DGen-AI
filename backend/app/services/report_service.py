@@ -389,11 +389,35 @@ class AcademicReportExporterService:
         zip_filepath = self.reports_dir / zip_filename
 
         # Generate visual infographic scorecard & statistical plot images
-        infographic_png = self._generate_visual_scorecard_infographic_png(report_data, real_df, synthetic_df)
-        heatmap_png = self._generate_correlation_heatmap_png(real_df, synthetic_df)
-        dist_png = self._generate_amount_dist_png(real_df, synthetic_df)
-        ml_png = self._generate_fraud_utility_png(report_data["fraud_ml_utility"])
-        pca_png = self._generate_pca_scatter_png(real_df, synthetic_df)
+        try:
+            infographic_png = self._generate_visual_scorecard_infographic_png(report_data, real_df, synthetic_df)
+        except Exception as e:
+            logger.warning(f"Could not render infographic PNG: {e}")
+            infographic_png = None
+
+        try:
+            heatmap_png = self._generate_correlation_heatmap_png(real_df, synthetic_df)
+        except Exception as e:
+            logger.warning(f"Could not render heatmap PNG: {e}")
+            heatmap_png = None
+
+        try:
+            dist_png = self._generate_amount_dist_png(real_df, synthetic_df)
+        except Exception as e:
+            logger.warning(f"Could not render dist PNG: {e}")
+            dist_png = None
+
+        try:
+            ml_png = self._generate_fraud_utility_png(report_data.get("fraud_ml_utility", {}))
+        except Exception as e:
+            logger.warning(f"Could not render fraud utility PNG: {e}")
+            ml_png = None
+
+        try:
+            pca_png = self._generate_pca_scatter_png(real_df, synthetic_df)
+        except Exception as e:
+            logger.warning(f"Could not render PCA PNG: {e}")
+            pca_png = None
 
         with zipfile.ZipFile(zip_filepath, 'w', zipfile.ZIP_DEFLATED) as zipf:
             # 1. Synthetic CSV Dataset (named with exact matching dataset filename)
@@ -401,16 +425,21 @@ class AcademicReportExporterService:
             zipf.writestr(target_name, csv_str)
 
             # 2. Executive Visual Scorecard Infographic Poster (PNG)
-            zipf.writestr("visual_scorecard_dashboard.png", infographic_png)
+            if infographic_png:
+                zipf.writestr("visual_scorecard_dashboard.png", infographic_png)
 
             # 3. Machine-Readable Scorecard JSON
             zipf.writestr("quality_scorecard.json", json.dumps(report_data, indent=2))
 
             # 4. Rich Visual Statistical PNG Charts
-            zipf.writestr("charts/correlation_matrix_heatmap.png", heatmap_png)
-            zipf.writestr("charts/feature_amount_distribution.png", dist_png)
-            zipf.writestr("charts/fraud_utility_benchmark.png", ml_png)
-            zipf.writestr("charts/pca_feature_space_density.png", pca_png)
+            if heatmap_png:
+                zipf.writestr("charts/correlation_matrix_heatmap.png", heatmap_png)
+            if dist_png:
+                zipf.writestr("charts/feature_amount_distribution.png", dist_png)
+            if ml_png:
+                zipf.writestr("charts/fraud_utility_benchmark.png", ml_png)
+            if pca_png:
+                zipf.writestr("charts/pca_feature_space_density.png", pca_png)
 
         logger.info(f"Exported Visual Deliverable Package ZIP to {zip_filepath}")
         return str(zip_filepath)
