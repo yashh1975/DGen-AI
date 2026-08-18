@@ -2,7 +2,7 @@
 
 <img src="assets/dgen_logo.svg" width="120" height="120" alt="DGen AI Logo" />
 
-# 🌌 DGen AI
+# DGen AI
 ### **Next-Generation Privacy-Preserving Synthetic Banking Data & Fraud ML Platform**
 
 [![Live Application](https://img.shields.io/badge/Live_Web_App-dgen--ai.pages.dev-6366f1?style=for-the-badge&logo=cloudflarepages&logoColor=white)](https://dgen-ai.pages.dev)
@@ -13,14 +13,6 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas_Cloud-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-<br/>
-
-### 🚀 **[Open Live Application: https://dgen-ai.pages.dev](https://dgen-ai.pages.dev)**
-
-<p align="center">
-  <b>Generative AI (CTGAN & Tabular VAE) • Controlled Fraud Imbalance Augmentation • 6-Point Banking Rule Validation • Distance-to-Closest-Record (DCR) Privacy Defense • Empirical Downstream ML Utility Benchmarking</b>
-</p>
-
 </div>
 
 ---
@@ -28,7 +20,7 @@
 ## 🌐 Live Application Link
 
 > **🔗 Production Web App:** **[https://dgen-ai.pages.dev](https://dgen-ai.pages.dev)**  
-> Experience the full suite: Instant 1-Click Demo Login, AI Generation Studio, Basel III Quality Scorecards, Downstream Fraud ML Benchmarking, and Executive ZIP Report Exports.
+> Experience the full suite: Instant 1-Click Login, AI Generation Studio, Basel III Quality Scorecards, Downstream Fraud ML Benchmarking, and Executive ZIP Report Exports.
 
 ---
 
@@ -62,7 +54,7 @@ By integrating state-of-the-art Generative AI models (**CTGAN**, custom **PyTorc
 * **Conditional Class Target Ratio Sampler**: Allows explicit user control over fraud ratios (5%–30%) to generate targeted stress-testing datasets.
 * **Gaussian Copula Generator**: Fast multivariate parametric copula modeling for high-speed statistical sampling.
 
-### 🛡️ 2. 6-Point Banking Business Rule & Constraint Engine
+### 🛡️ 2. Six-Point Banking Business Rule & Constraint Engine
 Enforces strict domain invariants on every generated synthetic row:
 1. **Transaction Amount Non-Negativity**: `amount >= 0.00`
 2. **Customer Age Range Bounds**: `18 <= age <= 100`
@@ -85,7 +77,7 @@ Enforces strict domain invariants on every generated synthetic row:
   * 🟢 **Model C (Augmented)**: Trained on Real Data + Targeted Synthetic Fraud Boost.
 * Reports F1-Score, Precision, Recall, ROC-AUC, and full 2x2 Confusion Matrices.
 
-### 📦 5. 1-Click Executive Deliverable Package (ZIP Export)
+### 📦 5. One-Click Executive Deliverable Package (ZIP Export)
 Generates and downloads a complete package containing:
 * 📄 `synthetic_banking_dataset.csv`
 * 📊 `visual_scorecard_dashboard.png` (Ultra-HD Executive Scorecard Poster)
@@ -96,8 +88,6 @@ Generates and downloads a complete package containing:
 * 📋 `quality_scorecard.json` (Machine-readable audit metrics)
 
 ### 🔐 6. User Access & Self-Healing Cloud Architecture
-* **⚡ 1-Click Instant Demo Login**: Instant one-click sandbox session creation without manual forms.
-* **Self-Serve Password Recovery**: Built-in reset mechanism to regain access anytime.
 * **Ephemeral Cloud Self-Healing**: Resilient dataset regeneration preventing file loss on server container restarts.
 
 ---
@@ -330,8 +320,8 @@ npm run dev
 3. In **Variables**, add:
    * `ENV` = `production`
    * `PORT` = `8080`
-   * `JWT_SECRET` = `your-super-secret-jwt-key`
-   * `MONGODB_URI` = `mongodb+srv://<username>:<password>@cluster.mongodb.net/?retryWrites=true&w=majority`
+   * `JWT_SECRET` = `_________________`
+   * `MONGODB_URI` = `mongodb+srv://____________:____________@cluster.mongodb.net/?retryWrites=true&w=majority`
    * `MONGODB_DB_NAME` = `dgen_ai`
 4. In **Settings** → **Networking**, click **Generate Domain** and ensure Port is `8080`.
 
@@ -362,7 +352,5 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ## 👨‍💻 Author & Academic Credits
 
-* **Author**: Yashwanth Kumar
-* **GitHub**: [@yashh1975](https://github.com/yashh1975)
+* **Author**: Yashwanth Kumar S
 * **Degree**: Bachelor of Engineering (B.E.) — Computer Science & Design
-* **Project**: DGen AI — Enterprise AI-Powered Tabular Synthetic Data Generation Platform
