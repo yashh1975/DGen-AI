@@ -106,7 +106,11 @@ class MockInsertResult:
 
 class DatabaseManager:
     def __init__(self):
-        self.use_mock = settings.USE_MONGO_MOCK
+        mongo_uri = os.environ.get("MONGODB_URI") or os.environ.get("MONGO_URI") or settings.MONGODB_URI
+        self.mongo_uri = mongo_uri
+        self.db_name = os.environ.get("MONGODB_DB_NAME") or settings.MONGODB_DB_NAME
+        has_remote_mongo = bool("mongodb+srv://" in mongo_uri or ("mongodb://" in mongo_uri and "localhost" not in mongo_uri))
+        self.use_mock = False if has_remote_mongo else settings.USE_MONGO_MOCK
         self.mock_store = JSONMockStore(settings.STORAGE_DIR / "db_mock.json")
         self.client = None
         self.db = None
@@ -115,10 +119,10 @@ class DatabaseManager:
         if not self.use_mock:
             try:
                 import pymongo
-                self.client = pymongo.MongoClient(settings.MONGODB_URI, serverSelectionTimeoutMS=2000)
+                self.client = pymongo.MongoClient(self.mongo_uri, serverSelectionTimeoutMS=4000)
                 self.client.server_info()  # Will raise Exception if cannot connect
-                self.db = self.client[settings.MONGODB_DB_NAME]
-                logger.info(f"Connected to MongoDB at {settings.MONGODB_URI}")
+                self.db = self.client[self.db_name]
+                logger.info(f"Connected successfully to MongoDB ({self.db_name})")
                 return
             except Exception as e:
                 logger.warning(f"MongoDB connection failed: {e}. Falling back to JSON Mock Store.")
