@@ -6,7 +6,7 @@ import { api } from '../services/api';
 interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
-  initialMode?: 'login' | 'register';
+  initialMode?: 'login' | 'register' | 'reset';
 }
 
 export const AuthModal: React.FC<AuthModalProps> = ({
@@ -15,7 +15,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   initialMode = 'login',
 }) => {
   const { login } = useAuth();
-  const [mode, setMode] = useState<'login' | 'register'>(initialMode);
+  const [mode, setMode] = useState<'login' | 'register' | 'reset'>(initialMode);
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
@@ -50,6 +50,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         const res = await api.login({ email: email.trim(), password });
         login(res.access_token, res.user);
         onClose();
+      } else if (mode === 'reset') {
+        const res = await api.resetPassword({ email: email.trim(), new_password: password });
+        login(res.access_token, res.user);
+        onClose();
       } else {
         try {
           const res = await api.register({
@@ -61,7 +65,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           login(res.access_token, res.user);
           onClose();
         } catch (regErr: any) {
-          // If already exists, attempt immediate login with provided credentials
           if (regErr.message && (regErr.message.includes('already exists') || regErr.message.includes('exists'))) {
             const loginRes = await api.login({ email: email.trim(), password });
             login(loginRes.access_token, loginRes.user);
@@ -118,10 +121,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             </div>
             <div>
               <h3 className="text-lg font-bold text-white tracking-tight">
-                {mode === 'login' ? 'Welcome Back' : 'Create DGen AI Account'}
+                {mode === 'login' ? 'Welcome Back' : mode === 'register' ? 'Create DGen AI Account' : 'Reset Password'}
               </h3>
               <p className="text-xs text-slate-400">
-                {mode === 'login' ? 'Sign in to access your private synthetic data workspace' : 'Register to manage datasets & model evaluations'}
+                {mode === 'login' 
+                  ? 'Sign in to access your private synthetic data workspace' 
+                  : mode === 'register' 
+                  ? 'Register to manage datasets & model evaluations' 
+                  : 'Set a new password for your account to regain access'}
               </p>
             </div>
           </div>
@@ -135,7 +142,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         </div>
 
         {/* Mode Selector Tabs */}
-        <div className="grid grid-cols-2 gap-1.5 p-1 bg-slate-950/80 rounded-2xl border border-slate-800/80 text-xs font-semibold">
+        <div className="grid grid-cols-3 gap-1 p-1 bg-slate-950/80 rounded-2xl border border-slate-800/80 text-[11px] font-semibold">
           <button
             type="button"
             onClick={() => { setMode('login'); setErrorMsg(null); }}
@@ -156,7 +163,18 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 : 'text-slate-400 hover:text-slate-200'
             }`}
           >
-            Create Account
+            Register
+          </button>
+          <button
+            type="button"
+            onClick={() => { setMode('reset'); setErrorMsg(null); }}
+            className={`py-2 rounded-xl transition ${
+              mode === 'reset' 
+                ? 'bg-brand-600 text-white shadow-lg shadow-brand-600/20' 
+                : 'text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            Reset
           </button>
         </div>
 
@@ -230,7 +248,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           {/* Password */}
           <div className="space-y-1.5">
             <label className="text-[11px] font-bold uppercase tracking-wider text-slate-300 block">
-              Password
+              {mode === 'reset' ? 'New Password' : 'Password'}
             </label>
             <div className="relative">
               <Lock className="w-4 h-4 text-slate-500 absolute left-3.5 top-3" />
@@ -263,7 +281,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               <span>Authenticating...</span>
             ) : (
               <>
-                <span>{mode === 'login' ? 'Sign In to Workspace' : 'Create Account'}</span>
+                <span>
+                  {mode === 'login' 
+                    ? 'Sign In to Workspace' 
+                    : mode === 'register' 
+                    ? 'Create Account' 
+                    : 'Update Password & Sign In'}
+                </span>
                 <ArrowRight className="w-4 h-4" />
               </>
             )}

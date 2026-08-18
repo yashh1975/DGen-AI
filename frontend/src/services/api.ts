@@ -104,6 +104,15 @@ class ApiService {
     return data;
   }
 
+  async resetPassword(payload: { email: string; new_password: string }) {
+    const data = await this.request<{ access_token: string; user: User }>('/auth/reset-password', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    });
+    this.setToken(data.access_token);
+    return data;
+  }
+
   async getMe() {
     return this.request<User>('/auth/me');
   }

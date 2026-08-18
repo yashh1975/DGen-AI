@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 import uuid
 from fastapi import APIRouter, HTTPException, Depends, status
-from app.schemas.auth import UserRegister, UserLogin, UserResponse, TokenResponse
+from app.schemas.auth import UserRegister, UserLogin, UserResetPassword, UserResponse, TokenResponse
 from app.core.security import hash_password, verify_password, create_access_token, get_current_user_payload
 from app.database.mongodb import db_manager
 
@@ -78,3 +78,44 @@ async def get_me(payload: dict = Depends(get_current_user_payload)):
         organization=user.get("organization"),
         created_at=user["created_at"]
     )
+
+@router.post("/reset-password", response_model=TokenResponse)
+async def reset_password(reset_in: UserResetPassword):
+    users_col = db_manager.get_collection("users")
+    email_clean = reset_in.email.lower().strip()
+    user = users_col.find_one({"email": email_clean})
+    hashed_pwd = hash_password(reset_in.new_password)
+    now_str = datetime.now(timezone.utc).isoformat()
+
+    if user:
+        users_col.update_one({"id": user["id"]}, {"$set": {"hashed_password": hashed_pwd}})
+        user_id = user["id"]
+        full_name = user.get("full_name", "User")
+        organization = user.get("organization", "Academic Evaluation")
+        created_at = user.get("created_at", now_str)
+    else:
+        user_id = str(uuid.uuid4())
+        user_doc = {
+            "id": user_id,
+            "email": email_clean,
+            "hashed_password": hashed_pwd,
+            "full_name": email_clean.split("@")[0].capitalize(),
+            "organization": "Academic Evaluation",
+            "created_at": now_str
+        }
+        users_col.insert_one(user_doc)
+        from app.services.dataset_service import dataset_service
+        dataset_service.seed_user_sample_dataset(user_id)
+        full_name = user_doc["full_name"]
+        organization = user_doc["organization"]
+        created_at = now_str
+
+    access_token = create_access_token({"sub": user_id, "email": email_clean})
+    user_response = UserResponse(
+        id=user_id,
+        email=email_clean,
+        full_name=full_name,
+        organization=organization,
+        created_at=created_at
+    )
+    return TokenResponse(access_token=access_token, user=user_response)
