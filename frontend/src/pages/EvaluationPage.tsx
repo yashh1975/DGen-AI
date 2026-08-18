@@ -382,7 +382,23 @@ export const EvaluationPage: React.FC = () => {
             </div>
           </div>
         </div>
-      ) : null}
+      ) : (
+        <div className="glass-panel p-10 rounded-2xl text-center space-y-4 border border-slate-800">
+          <BarChart2 className="w-12 h-12 text-slate-500 mx-auto" />
+          <h3 className="text-lg font-bold text-white">No Evaluation Scorecard Loaded</h3>
+          <p className="text-xs text-slate-400 max-w-md mx-auto">
+            Select a generated synthetic job or a banking dataset above and click <strong>Re-Evaluate</strong> to compute multi-dimensional fidelity, constraints, and privacy metrics.
+          </p>
+          <button
+            onClick={runEvaluation}
+            disabled={isLoading}
+            className="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white rounded-xl text-xs font-semibold inline-flex items-center space-x-2 transition cursor-pointer shadow-lg shadow-brand-500/20"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 ${isLoading ? 'animate-spin' : ''}`} />
+            <span>Compute Quality Scorecard</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 };

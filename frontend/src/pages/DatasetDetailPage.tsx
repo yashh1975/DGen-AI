@@ -69,9 +69,14 @@ export const DatasetDetailPage: React.FC<DatasetDetailPageProps> = ({ datasetId,
       <div className="glass-panel p-8 rounded-xl text-center text-slate-400 space-y-4">
         <AlertCircle className="w-8 h-8 text-rose-400 mx-auto" />
         <p>Dataset details could not be loaded.</p>
-        <button onClick={onBack} className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-semibold">
-          Back to Datasets
-        </button>
+        <div className="flex items-center justify-center space-x-3">
+          <button onClick={() => window.location.reload()} className="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white rounded-lg text-xs font-semibold cursor-pointer">
+            Retry Loading
+          </button>
+          <button onClick={onBack} className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg text-xs font-semibold cursor-pointer">
+            Back to Datasets
+          </button>
+        </div>
       </div>
     );
   }
