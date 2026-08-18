@@ -24,7 +24,7 @@ COPY . .
 # Create persistent storage directories
 RUN mkdir -p storage/datasets storage/models storage/exports
 
-EXPOSE 8000
+EXPOSE 8080 8000
 
 # Run FastAPI backend with dynamic port support
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080}"]
