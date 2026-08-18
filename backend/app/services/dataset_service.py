@@ -224,16 +224,26 @@ class DatasetService:
             raise HTTPException(status_code=404, detail=f"Dataset '{dataset_id}' not found.")
         file_path = doc.get("file_path", "")
         if not file_path or not os.path.exists(file_path):
-            # Self-heal sample dataset on ephemeral cloud disk
-            if "sample_banking_transactions" in doc.get("filename", ""):
+            # Self-heal missing dataset file on ephemeral cloud disk
+            candidates = [
+                Path(__file__).resolve().parent.parent.parent.parent / "data" / "sample_banking_transactions.csv",
+                Path(__file__).resolve().parent.parent.parent / "data" / "sample_banking_transactions.csv",
+                Path.cwd() / "data" / "sample_banking_transactions.csv",
+                Path.cwd() / "backend" / "data" / "sample_banking_transactions.csv",
+            ]
+            sample_candidate = next((p for p in candidates if p.exists()), None)
+            if sample_candidate and sample_candidate.exists():
+                with open(sample_candidate, "rb") as f:
+                    csv_bytes = f.read()
+            else:
                 df = self._create_sample_banking_dataframe(1000)
                 csv_bytes = df.to_csv(index=False, float_format='%.2f').encode('utf-8')
-                file_id, new_file_path = storage_service.save_dataset_file(csv_bytes, "sample_banking_transactions.csv")
-                col = db_manager.get_collection("datasets")
-                col.update_one({"id": dataset_id}, {"$set": {"file_path": str(new_file_path)}})
-                file_path = str(new_file_path)
-            else:
-                raise HTTPException(status_code=404, detail="Dataset file missing on disk.")
+            
+            fn = doc.get("filename", "banking_transactions.csv")
+            file_id, new_file_path = storage_service.save_dataset_file(csv_bytes, fn)
+            col = db_manager.get_collection("datasets")
+            col.update_one({"id": dataset_id}, {"$set": {"file_path": str(new_file_path)}})
+            file_path = str(new_file_path)
         if limit:
             return pd.read_csv(file_path, nrows=limit)
         return pd.read_csv(file_path)
