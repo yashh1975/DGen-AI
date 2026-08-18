@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo.svg" width="120" height="120" alt="DGen AI Logo" />
+<img src="assets/dgen_logo.svg" width="120" height="120" alt="DGen AI Logo" />
 
 # 🌌 DGen AI
 ### **Next-Generation Privacy-Preserving Synthetic Banking Data & Fraud ML Platform**
