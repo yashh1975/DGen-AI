@@ -47,21 +47,52 @@ export const AuthModal: React.FC<AuthModalProps> = ({
 
     try {
       if (mode === 'login') {
-        const res = await api.login({ email, password });
+        const res = await api.login({ email: email.trim(), password });
         login(res.access_token, res.user);
         onClose();
       } else {
-        const res = await api.register({
-          email,
-          password,
-          full_name: fullName,
-          organization: organization || 'Academic Researcher',
-        });
-        login(res.access_token, res.user);
-        onClose();
+        try {
+          const res = await api.register({
+            email: email.trim(),
+            password,
+            full_name: fullName.trim() || 'Research User',
+            organization: organization.trim() || 'Academic Lab',
+          });
+          login(res.access_token, res.user);
+          onClose();
+        } catch (regErr: any) {
+          // If already exists, attempt immediate login with provided credentials
+          if (regErr.message && (regErr.message.includes('already exists') || regErr.message.includes('exists'))) {
+            const loginRes = await api.login({ email: email.trim(), password });
+            login(loginRes.access_token, loginRes.user);
+            onClose();
+          } else {
+            throw regErr;
+          }
+        }
       }
     } catch (err: any) {
       setErrorMsg(err.message || 'Authentication failed. Please check your credentials.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleDemoLogin = async () => {
+    setErrorMsg(null);
+    setIsSubmitting(true);
+    try {
+      const demoEmail = `researcher_${Math.floor(Math.random() * 10000)}@dgen.ai`;
+      const res = await api.register({
+        email: demoEmail,
+        password: 'Password123!',
+        full_name: 'Academic Researcher',
+        organization: 'Fintech AI Lab'
+      });
+      login(res.access_token, res.user);
+      onClose();
+    } catch (err: any) {
+      setErrorMsg(err.message || 'Could not launch instant demo session.');
     } finally {
       setIsSubmitting(false);
     }
@@ -238,6 +269,19 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             )}
           </button>
         </form>
+
+        {/* 1-Click Instant Demo Session Button */}
+        <div className="pt-3 border-t border-slate-800/80 text-center">
+          <button
+            type="button"
+            onClick={handleDemoLogin}
+            disabled={isSubmitting}
+            className="w-full py-2.5 px-4 rounded-xl bg-slate-800/60 hover:bg-slate-800 text-slate-300 hover:text-white text-xs font-semibold border border-slate-700/60 transition flex items-center justify-center space-x-2 cursor-pointer"
+          >
+            <span>⚡ 1-Click Instant Demo Login</span>
+          </button>
+          <p className="text-[10px] text-slate-500 mt-1.5">Instantly launches a full preloaded sandbox session without typing</p>
+        </div>
       </div>
     </div>
   );
