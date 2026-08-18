@@ -35,11 +35,16 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# CORS Configuration - support Cloudflare Pages (*.pages.dev), Render, Vercel, and local development
+# CORS Configuration - support Cloudflare Pages (*.pages.dev), Railway (*.up.railway.app), Render, Vercel, and local development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_origin_regex=r"https?://.*",
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "http://localhost:3000",
+        "https://dgen-ai.pages.dev",
+    ],
+    allow_origin_regex=r"https://.*\.pages\.dev|https://.*\.railway\.app|https://.*\.onrender\.com|https?://localhost.*|https?://127\.0\.0\.1.*",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
