@@ -8,13 +8,20 @@ from datetime import datetime, timezone
 import pandas as pd
 import numpy as np
 
-import matplotlib
-matplotlib.use('Agg')
-matplotlib.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica']
-matplotlib.rcParams['font.family'] = 'sans-serif'
-matplotlib.rcParams['axes.unicode_minus'] = False
-import matplotlib.pyplot as plt
-import seaborn as sns
+try:
+    import matplotlib
+    matplotlib.use('Agg')
+    matplotlib.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Helvetica']
+    matplotlib.rcParams['font.family'] = 'sans-serif'
+    matplotlib.rcParams['axes.unicode_minus'] = False
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    HAS_MATPLOTLIB = True
+except ImportError:
+    HAS_MATPLOTLIB = False
+    plt = None
+    sns = None
+
 from sklearn.decomposition import PCA
 
 from app.core.config import settings
@@ -112,6 +119,8 @@ class AcademicReportExporterService:
 
     def _generate_visual_scorecard_infographic_png(self, report_data: Dict[str, Any], real_df: pd.DataFrame, syn_df: pd.DataFrame) -> bytes:
         """Convert complete JSON scorecard metrics into an ultra-high-definition executive infographic poster."""
+        if not HAS_MATPLOTLIB or plt is None:
+            return b""
         fig = plt.figure(figsize=(15, 9.5), facecolor='#070b14')
         
         # 1. Header Title & Branding
@@ -252,6 +261,8 @@ class AcademicReportExporterService:
 
     def _generate_correlation_heatmap_png(self, real_df: pd.DataFrame, syn_df: pd.DataFrame) -> bytes:
         """Generate high-resolution PNG comparing real vs synthetic correlation matrices."""
+        if not HAS_MATPLOTLIB or plt is None:
+            return b""
         fig, axes = plt.subplots(1, 2, figsize=(10, 4.5), facecolor='#070b14')
         num_cols = [c for c in real_df.select_dtypes(include=[np.number]).columns if c in syn_df.columns][:6]
         if not num_cols:
@@ -277,6 +288,8 @@ class AcademicReportExporterService:
 
     def _generate_amount_dist_png(self, real_df: pd.DataFrame, syn_df: pd.DataFrame) -> bytes:
         """Generate KDE feature distribution density comparison chart."""
+        if not HAS_MATPLOTLIB or plt is None:
+            return b""
         fig, ax = plt.subplots(figsize=(8, 4.2), facecolor='#070b14')
         ax.set_facecolor('#0d1322')
         common_num_cols = [c for c in real_df.select_dtypes(include=[np.number]).columns if c in syn_df.columns]
@@ -311,13 +324,15 @@ class AcademicReportExporterService:
 
     def _generate_fraud_utility_png(self, fraud_res: Dict[str, Any]) -> bytes:
         """Generate downstream Fraud ML Utility F1-score comparison chart."""
+        if not HAS_MATPLOTLIB or plt is None:
+            return b""
         fig, ax = plt.subplots(figsize=(8, 4.2), facecolor='#070b14')
         ax.set_facecolor('#0d1322')
         models = ['Model A\n(Real Only)', 'Model B\n(Synthetic Only)', 'Model C\n(Real + Synthetic)']
         f1_scores = [
-            fraud_res['experiments']['real_only']['f1_score'],
-            fraud_res['experiments']['synthetic_only']['f1_score'],
-            fraud_res['experiments']['real_plus_synthetic']['f1_score']
+            fraud_res.get('experiments', {}).get('real_only', {}).get('f1_score', 0.0),
+            fraud_res.get('experiments', {}).get('synthetic_only', {}).get('f1_score', 0.0),
+            fraud_res.get('experiments', {}).get('real_plus_synthetic', {}).get('f1_score', 0.0)
         ]
 
         bars = ax.bar(models, f1_scores, color=['#64748b', '#6366f1', '#10b981'], width=0.45, edgecolor='#1e293b', linewidth=1.2)
@@ -344,6 +359,8 @@ class AcademicReportExporterService:
 
     def _generate_pca_scatter_png(self, real_df: pd.DataFrame, syn_df: pd.DataFrame) -> bytes:
         """Generate 2D PCA feature space coverage scatter plot."""
+        if not HAS_MATPLOTLIB or plt is None:
+            return b""
         fig, ax = plt.subplots(figsize=(8, 4.2), facecolor='#070b14')
         ax.set_facecolor('#0d1322')
         common_num_cols = [c for c in real_df.select_dtypes(include=[np.number]).columns if c in syn_df.columns]
