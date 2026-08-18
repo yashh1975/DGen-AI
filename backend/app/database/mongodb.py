@@ -1,6 +1,8 @@
 import json
 import os
 import uuid
+import re
+import urllib.parse
 from typing import Dict, List, Any, Optional
 from pathlib import Path
 from app.core.config import settings
@@ -104,12 +106,32 @@ class MockInsertResult:
     def __init__(self, inserted_id):
         self.inserted_id = inserted_id
 
+def _escape_mongo_uri(uri: str) -> str:
+    """Safely escape special characters in MongoDB credentials per RFC 3986."""
+    if not uri:
+        return uri
+    try:
+        proto_match = re.match(r"^(mongodb(?:\+srv)?:\/\/)(.*)$", uri)
+        if proto_match:
+            proto = proto_match.group(1)
+            body = proto_match.group(2)
+            if "@" in body:
+                creds, rest = body.rsplit("@", 1)
+                if ":" in creds:
+                    user, password = creds.split(":", 1)
+                    escaped_user = urllib.parse.quote_plus(urllib.parse.unquote_plus(user))
+                    escaped_pass = urllib.parse.quote_plus(urllib.parse.unquote_plus(password))
+                    return f"{proto}{escaped_user}:{escaped_pass}@{rest}"
+    except Exception:
+        pass
+    return uri
+
 class DatabaseManager:
     def __init__(self):
-        mongo_uri = os.environ.get("MONGODB_URI") or os.environ.get("MONGO_URI") or settings.MONGODB_URI
-        self.mongo_uri = mongo_uri
+        raw_mongo_uri = os.environ.get("MONGODB_URI") or os.environ.get("MONGO_URI") or settings.MONGODB_URI
+        self.mongo_uri = _escape_mongo_uri(raw_mongo_uri.strip())
         self.db_name = os.environ.get("MONGODB_DB_NAME") or settings.MONGODB_DB_NAME
-        has_remote_mongo = bool("mongodb+srv://" in mongo_uri or ("mongodb://" in mongo_uri and "localhost" not in mongo_uri))
+        has_remote_mongo = bool("mongodb+srv://" in self.mongo_uri or ("mongodb://" in self.mongo_uri and "localhost" not in self.mongo_uri))
         self.use_mock = False if has_remote_mongo else settings.USE_MONGO_MOCK
         self.mock_store = JSONMockStore(settings.STORAGE_DIR / "db_mock.json")
         self.client = None
@@ -119,10 +141,10 @@ class DatabaseManager:
         if not self.use_mock:
             try:
                 import pymongo
-                self.client = pymongo.MongoClient(self.mongo_uri, serverSelectionTimeoutMS=4000)
+                self.client = pymongo.MongoClient(self.mongo_uri, serverSelectionTimeoutMS=5000)
                 self.client.server_info()  # Will raise Exception if cannot connect
                 self.db = self.client[self.db_name]
-                logger.info(f"Connected successfully to MongoDB ({self.db_name})")
+                logger.info(f"Connected successfully to MongoDB Atlas ({self.db_name})")
                 return
             except Exception as e:
                 logger.warning(f"MongoDB connection failed: {e}. Falling back to JSON Mock Store.")
