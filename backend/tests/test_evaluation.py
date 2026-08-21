@@ -16,8 +16,8 @@ def test_statistical_fidelity_evaluation():
 
     res = statistical_fidelity_engine.evaluate_fidelity(real_df, synth_df)
     assert res["statistical_fidelity_score"] > 80.0
-    assert "amount" in res["numerical_metrics"]
-    assert "ks_statistic" in res["numerical_metrics"]["amount"]
+    assert "balance" in res["numerical_metrics"]
+    assert "ks_statistic" in res["numerical_metrics"]["balance"]
 
 def test_diversity_evaluation():
     sample_csv_path = Path(__file__).resolve().parent.parent.parent / "data" / "sample_banking_transactions.csv"

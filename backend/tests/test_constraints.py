@@ -12,10 +12,9 @@ def test_banking_constraint_engine_valid_data():
     df = pd.read_csv(sample_csv_path)
 
     results = constraint_engine.validate_constraints(df)
-    assert results["total_records"] == 2500
-    assert results["valid_records"] > 2200
-    assert results["valid_pct"] > 90.0
-    assert "amount_non_negative" in results["rule_violations"]
+    assert results["total_records"] == 1000
+    assert results["valid_records"] >= 950
+    assert results["valid_pct"] >= 95.0
 
 def test_banking_constraint_engine_invalid_records_detection():
     invalid_df = pd.DataFrame({
@@ -58,6 +57,6 @@ def test_constraint_evaluation_api_endpoint():
     eval_res = client.post(f"/api/v1/evaluation/constraints?dataset_id={dataset_id}", headers=headers)
     assert eval_res.status_code == 200
     res_data = eval_res.json()
-    assert res_data["total_records"] == 2500
-    assert "valid_pct" in res_data
-    assert "rule_violations" in res_data
+    assert res_data["total_records"] == 1000
+    assert res_data["valid_records"] >= 950
+    assert res_data["valid_pct"] >= 95.0

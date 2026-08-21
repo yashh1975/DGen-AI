@@ -43,6 +43,7 @@ class AcademicReportExporterService:
         """Compute complete multi-dimensional evaluation report including fraud ML utility."""
         target_name = "Banking Dataset"
         target_id = "default_benchmark"
+        model_arch = "CTGAN"
         if job_id:
             job = generation_service.get_job(job_id)
             if job and job.get("synthetic_dataset_path") and os.path.exists(job.get("synthetic_dataset_path", "")):
@@ -64,6 +65,7 @@ class AcademicReportExporterService:
                 target_id = dataset_id
                 ds = dataset_service.get_dataset(dataset_id)
                 target_name = ds.get("filename", "banking_dataset.csv") if ds else "banking_dataset.csv"
+                model_arch = "Standard Benchmark Dataset"
             except Exception:
                 dataset_id = None
 

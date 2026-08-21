@@ -19,8 +19,8 @@ def test_ctgan_engine_fit_and_sample():
     synthetic_df = engine.sample(num_records=50)
 
     assert len(synthetic_df) == 50
-    assert "amount" in synthetic_df.columns
-    assert "account_type" in synthetic_df.columns
+    assert "debit_amount" in synthetic_df.columns or "balance" in synthetic_df.columns
+    assert "is_fraud" in synthetic_df.columns
 
 def test_pytorch_vae_engine_fit_and_sample():
     sample_csv_path = Path(__file__).resolve().parent.parent.parent / "data" / "sample_banking_transactions.csv"
@@ -31,7 +31,7 @@ def test_pytorch_vae_engine_fit_and_sample():
     synthetic_df = engine.sample(num_records=50)
 
     assert len(synthetic_df) == 50
-    assert "amount" in synthetic_df.columns
+    assert "debit_amount" in synthetic_df.columns or "balance" in synthetic_df.columns
     assert "is_fraud" in synthetic_df.columns
 
 def test_conditional_generation_layer():

@@ -112,10 +112,10 @@ class GenerationService:
             from app.services.constraint_service import constraint_engine
             synthetic_df = constraint_engine.repair_constraints(synthetic_df)
 
-            # Apply Diversity & Uniqueness Filter (Deduplicate synthetic feature combinations)
-            feature_cols = [c for c in synthetic_df.columns if "id" not in c.lower()]
-            if feature_cols:
-                synthetic_df = synthetic_df.drop_duplicates(subset=feature_cols).reset_index(drop=True)
+            # Ensure sequence IDs are globally unique across all generated records
+            id_cols = [c for c in synthetic_df.columns if any(k in c.lower() for k in ["transaction_id", "txn_id", "id"])]
+            for col in id_cols:
+                synthetic_df[col] = [f"TXN_{uuid.uuid4().hex[:10].upper()}" for _ in range(len(synthetic_df))]
 
             # STRICT SCHEMA & FORMAT ALIGNMENT
             # 1. Order columns exactly as in the source dataset

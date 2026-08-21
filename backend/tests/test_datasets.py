@@ -31,7 +31,7 @@ def test_dataset_lifecycle_and_profiling():
     assert upload_res.status_code == 201
     dataset = upload_res.json()
     dataset_id = dataset["id"]
-    assert dataset["row_count"] == 2500
+    assert dataset["row_count"] == 1000
     assert dataset["target_fraud_column"] == "is_fraud"
 
     # 3. List Datasets
@@ -44,16 +44,16 @@ def test_dataset_lifecycle_and_profiling():
     assert sample_res.status_code == 200
     sample_data = sample_res.json()
     assert len(sample_data["rows"]) == 10
-    assert "amount" in sample_data["columns"]
+    assert "balance" in sample_data["columns"]
 
     # 5. Profile Dataset
     profile_res = client.post(f"/api/v1/datasets/{dataset_id}/profile", headers=headers)
     assert profile_res.status_code == 200
     profile = profile_res.json()
-    assert profile["summary"]["total_rows"] == 2500
+    assert profile["summary"]["total_rows"] == 1000
     assert profile["detected_target_column"] == "is_fraud"
-    assert "amount" in profile["numerical_analysis"]
-    assert "account_type" in profile["categorical_analysis"]
+    assert "balance" in profile["numerical_analysis"]
+    assert "merchant_category" in profile["categorical_analysis"]
 
     # 6. Preprocess Dataset
     preprocess_res = client.post(

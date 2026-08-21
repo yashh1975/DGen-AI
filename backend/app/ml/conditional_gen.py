@@ -37,15 +37,28 @@ class ConditionalGeneratorLayer:
         # Resample or synthesize matching distributions for fraud subset
         if len(fraud_subset) < target_fraud_count:
             if len(fraud_subset) > 0:
-                oversampled_fraud = fraud_subset.sample(target_fraud_count, replace=True, random_state=42)
+                base_fraud = fraud_subset.sample(target_fraud_count, replace=True, random_state=42).copy()
+                rng = np.random.default_rng(42)
+                # Perturb continuous numeric features slightly to create diverse, realistic synthetic fraud
+                num_cols = list(base_fraud.select_dtypes(include=[np.number]).columns)
+                for c in num_cols:
+                    if c != target_column and "id" not in c.lower() and "hour" not in c.lower():
+                        std_val = max(1.0, float(base_fraud[c].std() or 1.0))
+                        jitter = rng.normal(0, 0.08 * std_val, size=len(base_fraud))
+                        base_fraud[c] = np.maximum(0.0, np.round(base_fraud[c] + jitter, 2))
+                oversampled_fraud = base_fraud
             else:
                 # Construct realistic high-risk fraud records
-                oversampled_fraud = raw_synthetic.sample(target_fraud_count, replace=True, random_state=42).copy()
-                oversampled_fraud[target_column] = 1
-                if "amount" in oversampled_fraud.columns:
-                    oversampled_fraud["amount"] = np.round(oversampled_fraud["amount"] * 2.5 + 300.0, 2)
-                if "is_international" in oversampled_fraud.columns:
-                    oversampled_fraud["is_international"] = 1
+                base_fraud = raw_synthetic.sample(target_fraud_count, replace=True, random_state=42).copy()
+                base_fraud[target_column] = 1
+                rng = np.random.default_rng(42)
+                if "amount" in base_fraud.columns:
+                    base_fraud["amount"] = np.round(base_fraud["amount"] * rng.uniform(1.8, 3.5, size=len(base_fraud)) + 250.0, 2)
+                if "is_international" in base_fraud.columns:
+                    base_fraud["is_international"] = rng.choice([0, 1], size=len(base_fraud), p=[0.2, 0.8])
+                if "transaction_hour" in base_fraud.columns:
+                    base_fraud["transaction_hour"] = rng.choice([0, 1, 2, 3, 4, 22, 23], size=len(base_fraud))
+                oversampled_fraud = base_fraud
         else:
             oversampled_fraud = fraud_subset.sample(target_fraud_count, replace=False, random_state=42)
 
