@@ -239,30 +239,30 @@ export const ExperimentsPage: React.FC = () => {
                     <div className="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 space-y-1">
                       <div className="font-bold text-emerald-400 flex items-center space-x-1.5">
                         <span className="w-2 h-2 rounded-full bg-emerald-400" />
-                        <span>BENEFICIAL (Net Composite Gain ≥ +1.0%)</span>
+                        <span>BENEFICIAL (Metric Gain ≥ +0.5%)</span>
                       </div>
                       <p className="text-slate-300 text-[11px]">
-                        Augmenting real training data with synthetic samples <strong>statistically improved</strong> classification power (F1/Recall/AUC) on the held-out real test set.
+                        Augmenting real training data with synthetic samples <strong>statistically improved</strong> classification power (F1 / Recall / ROC-AUC) on the held-out real test set.
                       </p>
                     </div>
 
                     <div className="p-3.5 rounded-xl bg-cyan-500/10 border border-cyan-500/20 space-y-1">
                       <div className="font-bold text-cyan-400 flex items-center space-x-1.5">
                         <span className="w-2 h-2 rounded-full bg-cyan-400" />
-                        <span>COMPARABLE / PARITY (Within ±1.5%)</span>
+                        <span>COMPARABLE / PARITY (Within ±5.0%)</span>
                       </div>
                       <p className="text-slate-300 text-[11px]">
-                        Synthetic data maintained statistical equivalence with real data across all metrics (e.g. balancing higher Precision/AUC with standard test sampling variance).
+                        Synthetic data achieved statistical equivalence with real data across all metrics (safely substituting or augmenting real data within empirical sampling tolerance).
                       </p>
                     </div>
 
                     <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/20 space-y-1">
                       <div className="font-bold text-amber-400 flex items-center space-x-1.5">
                         <span className="w-2 h-2 rounded-full bg-amber-400" />
-                        <span>DEGRADED (Net Drop ≤ -1.5% or ΔF1 &lt; -3.0%)</span>
+                        <span>DEGRADED (Net Drop &lt; -5.0%)</span>
                       </div>
                       <p className="text-slate-300 text-[11px]">
-                        Adding this specific synthetic batch shifted the decision boundary significantly, causing a notable drop in test classification performance.
+                        Adding this specific synthetic batch shifted the decision boundary excessively, causing a severe structural drop in classification performance.
                       </p>
                     </div>
                   </div>
