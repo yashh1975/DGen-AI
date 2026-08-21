@@ -296,8 +296,14 @@ export const ExperimentsPage: React.FC = () => {
                             <td className={`py-2.5 px-3 font-bold ${precGain >= 0 ? 'text-emerald-400' : 'text-amber-400'}`}>
                               {precGain > 0 ? `+${(precGain * 100).toFixed(2)}%` : `${(precGain * 100).toFixed(2)}%`}
                             </td>
-                            <td className="py-2.5 px-3 font-sans text-[11px] text-emerald-400">
-                              {precGain >= 0 ? '🟢 Higher alert accuracy (fewer false alarms)' : '🟡 Minor precision variance'}
+                            <td className="py-2.5 px-3 font-sans text-[11px]">
+                              {precGain > 0 ? (
+                                <span className="text-emerald-400">🟢 Higher alert accuracy (fewer false alarms)</span>
+                              ) : precGain === 0 ? (
+                                <span className="text-cyan-300">🔵 Maintained baseline precision (Parity)</span>
+                              ) : (
+                                <span className="text-amber-400">🟡 Minor precision variance</span>
+                              )}
                             </td>
                           </tr>
                           {/* ROC-AUC */}
@@ -305,14 +311,20 @@ export const ExperimentsPage: React.FC = () => {
                             <td className="py-2.5 px-3 font-sans font-bold text-white">ROC-AUC</td>
                             <td className="py-2.5 px-3">{fraudMlResults.experiments.real_only.roc_auc}</td>
                             <td className="py-2.5 px-3 font-bold text-white">{fraudMlResults.experiments.real_plus_synthetic.roc_auc}</td>
-                            <td className={`py-2.5 px-3 font-bold ${aucGain >= 0 ? 'text-emerald-400' : 'text-amber-400'}`}>
+                            <td className={`py-2.5 px-3 font-bold ${aucGain > 0 ? 'text-emerald-400' : aucGain === 0 ? 'text-slate-300' : 'text-amber-400'}`}>
                               {aucGain > 0 ? `+${aucGain}` : `${aucGain}`}
                             </td>
-                            <td className={`py-2.5 px-3 font-bold ${aucGain >= 0 ? 'text-emerald-400' : 'text-amber-400'}`}>
+                            <td className={`py-2.5 px-3 font-bold ${aucGain > 0 ? 'text-emerald-400' : aucGain === 0 ? 'text-slate-300' : 'text-amber-400'}`}>
                               {aucGain > 0 ? `+${(aucGain * 100).toFixed(2)}%` : `${(aucGain * 100).toFixed(2)}%`}
                             </td>
-                            <td className="py-2.5 px-3 font-sans text-[11px] text-emerald-400">
-                              {aucGain >= 0 ? '🟢 Stronger ranking & risk separability' : '🟡 Minor AUC variance'}
+                            <td className="py-2.5 px-3 font-sans text-[11px]">
+                              {aucGain > 0 ? (
+                                <span className="text-emerald-400">🟢 Stronger ranking & risk separability</span>
+                              ) : aucGain === 0 ? (
+                                <span className="text-cyan-300">🔵 Maintained baseline ROC-AUC (Parity)</span>
+                              ) : (
+                                <span className="text-amber-400">🟡 Minor AUC variance</span>
+                              )}
                             </td>
                           </tr>
                           {/* F1 Score */}
@@ -320,14 +332,20 @@ export const ExperimentsPage: React.FC = () => {
                             <td className="py-2.5 px-3 font-sans font-bold text-white">F1 Score</td>
                             <td className="py-2.5 px-3">{fraudMlResults.experiments.real_only.f1_score}</td>
                             <td className="py-2.5 px-3 font-bold text-white">{fraudMlResults.experiments.real_plus_synthetic.f1_score}</td>
-                            <td className={`py-2.5 px-3 font-bold ${f1Gain >= 0 ? 'text-emerald-400' : 'text-amber-400'}`}>
+                            <td className={`py-2.5 px-3 font-bold ${f1Gain > 0 ? 'text-emerald-400' : f1Gain === 0 ? 'text-slate-300' : 'text-amber-400'}`}>
                               {f1Gain > 0 ? `+${f1Gain}` : `${f1Gain}`}
                             </td>
-                            <td className={`py-2.5 px-3 font-bold ${f1Gain >= 0 ? 'text-emerald-400' : 'text-amber-400'}`}>
+                            <td className={`py-2.5 px-3 font-bold ${f1Gain > 0 ? 'text-emerald-400' : f1Gain === 0 ? 'text-slate-300' : 'text-amber-400'}`}>
                               {f1Gain > 0 ? `+${(f1Gain * 100).toFixed(2)}%` : `${(f1Gain * 100).toFixed(2)}%`}
                             </td>
-                            <td className="py-2.5 px-3 font-sans text-[11px] text-cyan-300">
-                              {Math.abs(f1Gain) <= 0.015 ? '🔵 Statistical parity (within ±1.5%)' : f1Gain > 0 ? '🟢 Improved harmonic F1' : '🟠 Reduced F1'}
+                            <td className="py-2.5 px-3 font-sans text-[11px]">
+                              {f1Gain > 0 ? (
+                                <span className="text-emerald-400">🟢 Improved harmonic F1</span>
+                              ) : f1Gain === 0 ? (
+                                <span className="text-cyan-300">🔵 Statistical parity (within ±1.5%)</span>
+                              ) : (
+                                <span className="text-amber-400">🟠 Reduced F1</span>
+                              )}
                             </td>
                           </tr>
                           {/* Recall */}
@@ -335,14 +353,20 @@ export const ExperimentsPage: React.FC = () => {
                             <td className="py-2.5 px-3 font-sans font-bold text-white">Recall</td>
                             <td className="py-2.5 px-3">{fraudMlResults.experiments.real_only.recall}</td>
                             <td className="py-2.5 px-3 font-bold text-white">{fraudMlResults.experiments.real_plus_synthetic.recall}</td>
-                            <td className={`py-2.5 px-3 font-bold ${recallGain >= 0 ? 'text-emerald-400' : 'text-amber-400'}`}>
+                            <td className={`py-2.5 px-3 font-bold ${recallGain > 0 ? 'text-emerald-400' : recallGain === 0 ? 'text-slate-300' : 'text-amber-400'}`}>
                               {recallGain > 0 ? `+${recallGain}` : `${recallGain}`}
                             </td>
-                            <td className={`py-2.5 px-3 font-bold ${recallGain >= 0 ? 'text-emerald-400' : 'text-amber-400'}`}>
+                            <td className={`py-2.5 px-3 font-bold ${recallGain > 0 ? 'text-emerald-400' : recallGain === 0 ? 'text-slate-300' : 'text-amber-400'}`}>
                               {recallGain > 0 ? `+${(recallGain * 100).toFixed(2)}%` : `${(recallGain * 100).toFixed(2)}%`}
                             </td>
-                            <td className="py-2.5 px-3 font-sans text-[11px] text-slate-300">
-                              {recallGain >= 0 ? '🟢 Caught more positive cases' : '🟡 Test set sampling tolerance'}
+                            <td className="py-2.5 px-3 font-sans text-[11px]">
+                              {recallGain > 0 ? (
+                                <span className="text-emerald-400">🟢 Caught more positive cases</span>
+                              ) : recallGain === 0 ? (
+                                <span className="text-cyan-300">🔵 Maintained baseline recall (Parity)</span>
+                              ) : (
+                                <span className="text-amber-400">🟡 Test set sampling tolerance</span>
+                              )}
                             </td>
                           </tr>
                         </tbody>
