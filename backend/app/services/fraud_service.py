@@ -100,7 +100,7 @@ class FraudMLUtilityEngine:
         y_test: pd.Series,
         exp_name: str
     ) -> Dict[str, Any]:
-        """Train a fast RandomForest, pick optimal threshold via constrained out-of-fold search, then evaluate on holdout test set."""
+        """Train a robust RandomForest and evaluate with standard controlled decision threshold on holdout test set."""
         n_pos_tr = int(y_tr.sum())
         if n_pos_tr < 1:
             logger.warning(f"[FraudML] {exp_name}: 0 positive fraud cases in training data, returning zero baseline.")
@@ -109,18 +109,14 @@ class FraudMLUtilityEngine:
                 "precision": 0.0, "recall": 0.0, "f1_score": 0.0, "roc_auc": 0.5,
                 "confusion_matrix": [[int((y_test == 0).sum()), 0], [int((y_test == 1).sum()), 0]],
                 "train_records_count": len(X_tr),
-                "decision_threshold": 0.25
+                "decision_threshold": 0.50
             }
 
-        # Compute class-imbalance ratio for class_weight
-        n_neg = int((y_tr == 0).sum())
-        pos_weight = max(1, n_neg // max(n_pos_tr, 1))
-
         clf = RandomForestClassifier(
-            n_estimators=50,
-            max_depth=8,
+            n_estimators=100,
+            max_depth=10,
             min_samples_leaf=2,
-            class_weight={0: 1, 1: pos_weight},
+            class_weight="balanced",
             random_state=42,
             n_jobs=-1
         )
@@ -128,27 +124,9 @@ class FraudMLUtilityEngine:
         # Fit model on training set
         clf.fit(X_tr, y_tr)
 
-        # Calibrate optimal decision threshold using internal training positive distribution
-        optimal_threshold = 0.25
-        try:
-            tr_probs = clf.predict_proba(X_tr)[:, 1]
-            pos_probs = tr_probs[y_tr == 1]
-            if len(pos_probs) > 0:
-                optimal_threshold = float(np.clip(np.percentile(pos_probs, 15), 0.15, 0.40))
-        except Exception as e:
-            logger.warning(f"[FraudML] {exp_name} threshold tuning fallback: {e}")
-            optimal_threshold = 0.25
-
-        # Final evaluation on the held-out real test set
+        # Evaluate on the held-out real test set with standard 0.50 decision boundary
         y_prob = clf.predict_proba(X_test)[:, 1]
-        y_pred = (y_prob >= optimal_threshold).astype(int)
-
-        # Failsafe: if the decision threshold produced 0 positive alerts on the test set,
-        # calibrate threshold to the top 10% risk quantile to ensure active fraud detection
-        if int(y_pred.sum()) == 0 and len(y_prob) > 0:
-            top_q = float(np.quantile(y_prob, 0.90))
-            y_pred = (y_prob >= top_q).astype(int)
-            optimal_threshold = top_q
+        y_pred = (y_prob >= 0.50).astype(int)
 
         acc  = float(np.round(accuracy_score(y_test, y_pred), 4))
         prec = float(np.round(precision_score(y_test, y_pred, zero_division=0), 4))
@@ -170,7 +148,7 @@ class FraudMLUtilityEngine:
             "roc_auc": auc,
             "confusion_matrix": cm,
             "train_records_count": len(X_tr),
-            "decision_threshold": round(float(optimal_threshold), 4)
+            "decision_threshold": 0.50
         }
 
     def evaluate_fraud_utility(
@@ -209,13 +187,24 @@ class FraudMLUtilityEngine:
             stratify=y_real if len(np.unique(y_real)) > 1 else None
         )
 
-        # Combined Train Set = Real Train + Full Synthetic
-        X_train_combined = pd.concat([X_train_real, X_synth], axis=0).reset_index(drop=True)
-        y_train_combined = pd.concat([y_train_real, y_synth], axis=0).reset_index(drop=True)
+        # Balanced Augmentation (sample up to 2x real training volume to prevent feature dilution across massive synthetic batches)
+        max_synth_aug = min(len(X_synth), max(500, int(len(X_train_real) * 2.0)))
+        if len(X_synth) > max_synth_aug:
+            rng = np.random.RandomState(42)
+            aug_idx = rng.choice(len(X_synth), size=max_synth_aug, replace=False)
+            X_synth_aug = X_synth.iloc[aug_idx]
+            y_synth_aug = y_synth.iloc[aug_idx]
+        else:
+            X_synth_aug = X_synth
+            y_synth_aug = y_synth
+
+        # Combined Train Set = Real Train + Stratified Synthetic Augmentation
+        X_train_combined = pd.concat([X_train_real, X_synth_aug], axis=0).reset_index(drop=True)
+        y_train_combined = pd.concat([y_train_real, y_synth_aug], axis=0).reset_index(drop=True)
 
         logger.info(
             f"[FraudML] Dataset sizes -> Real train: {len(X_train_real)}, "
-            f"Synthetic: {len(X_synth)} (fraud={int(y_synth.sum())}), "
+            f"Synthetic: {len(X_synth)} (used {len(X_synth_aug)} in combined, fraud={int(y_synth_aug.sum())}), "
             f"Combined: {len(X_train_combined)}, Test: {len(X_test_real)} (fraud={int(y_test_real.sum())})"
         )
 
