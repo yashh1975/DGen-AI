@@ -68,8 +68,20 @@ class FraudMLUtilityEngine:
         X_real = r_df.drop(columns=[target_col])
         X_synth = s_df.drop(columns=[target_col])
 
-        # Exclude non-predictive metadata/ID/Date columns
-        id_cols = [c for c in X_real.columns if any(k in c.lower() for k in ["id", "timestamp", "date", "created", "ip"])]
+        # Exclude non-predictive metadata/ID/Date columns safely without dropping genuine financial features
+        def _is_meta_id(col_name: str) -> bool:
+            c = col_name.lower().strip()
+            if any(k in c for k in ["paid", "void", "liquid", "valid", "amount", "score", "risk", "balance", "rate", "count", "duration", "age", "hour", "category", "channel"]):
+                return False
+            if c in ["id", "uuid", "pk", "index", "row_id", "timestamp", "created_at", "updated_at", "date"]:
+                return True
+            if c.endswith("_id") or c.startswith("id_") or (c.endswith("id") and len(c) <= 6):
+                return True
+            if any(k in c for k in ["transaction_id", "customer_id", "account_number", "card_number", "device_id"]):
+                return True
+            return False
+
+        id_cols = [c for c in X_real.columns if _is_meta_id(c)]
         if id_cols:
             X_real = X_real.drop(columns=[c for c in id_cols if c in X_real.columns])
             X_synth = X_synth.drop(columns=[c for c in id_cols if c in X_synth.columns])

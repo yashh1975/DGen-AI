@@ -222,25 +222,27 @@ class VAEModelEngine:
         unscaled = self.scaler.inverse_transform(sampled_tensor)
         synthetic_df = pd.DataFrame(unscaled, columns=self.train_column_names)
 
-        # 1. Inverse transform categorical columns
+        # 1. Inverse transform categorical columns safely
         for col, le in self.encoders.items():
             if col in synthetic_df.columns:
                 classes = le.classes_
-                rounded = np.clip(np.round(synthetic_df[col].values).astype(int), 0, len(classes) - 1)
+                raw_vals = np.nan_to_num(synthetic_df[col].values, nan=0.0)
+                rounded = np.clip(np.round(raw_vals).astype(int), 0, len(classes) - 1)
                 synthetic_df[col] = classes[rounded]
 
         # 2. Restore numeric dtypes, bounds, and strict 2-decimal rounding
         for col, dtype in self.column_dtypes.items():
             if col in synthetic_df.columns and col not in self.encoders:
                 col_lower = col.lower()
+                clean_vals = np.nan_to_num(synthetic_df[col].values, nan=0.0)
                 if col_lower in ["is_fraud", "isfraud", "is_international"]:
-                    synthetic_df[col] = np.clip(np.round(synthetic_df[col].values), 0, 1).astype(int)
+                    synthetic_df[col] = np.clip(np.round(clean_vals), 0, 1).astype(int)
                 elif col_lower in ["transaction_hour", "hour", "customerage", "age", "loginattempts", "transactionduration"]:
-                    synthetic_df[col] = np.clip(np.round(synthetic_df[col].values), 0, 10000).astype(int)
+                    synthetic_df[col] = np.clip(np.round(clean_vals), 0, 10000).astype(int)
                 elif np.issubdtype(dtype, np.integer):
-                    synthetic_df[col] = np.round(synthetic_df[col].values).astype(int)
+                    synthetic_df[col] = np.round(clean_vals).astype(int)
                 elif np.issubdtype(dtype, np.floating):
-                    synthetic_df[col] = synthetic_df[col].round(2)
+                    synthetic_df[col] = np.round(clean_vals, 2)
 
         # 3. Inject synthesized Sequence IDs matching exact original format
         for col in self.sequence_id_cols:

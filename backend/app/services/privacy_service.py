@@ -11,7 +11,19 @@ class PrivacyAssessmentEngine:
         common_cols = [c for c in real_df.columns if c in synthetic_df.columns]
         num_cols = list(real_df[common_cols].select_dtypes(include=["number"]).columns)
 
-        feature_cols = [c for c in common_cols if not any(k in c.lower() for k in ["id", "timestamp", "date", "created"])]
+        def _is_meta_id(col_name: str) -> bool:
+            c = col_name.lower().strip()
+            if any(k in c for k in ["paid", "void", "liquid", "valid", "amount", "score", "risk", "balance", "rate", "count", "duration", "age", "hour", "category", "channel"]):
+                return False
+            if c in ["id", "uuid", "pk", "index", "row_id", "timestamp", "created_at", "updated_at", "date"]:
+                return True
+            if c.endswith("_id") or c.startswith("id_") or (c.endswith("id") and len(c) <= 6):
+                return True
+            if any(k in c for k in ["transaction_id", "customer_id", "account_number", "card_number", "device_id"]):
+                return True
+            return False
+
+        feature_cols = [c for c in common_cols if not _is_meta_id(c)]
         eval_cols = feature_cols if feature_cols else common_cols
 
         is_same_df = real_df.equals(synthetic_df)

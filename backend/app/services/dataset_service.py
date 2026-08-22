@@ -38,14 +38,25 @@ class DatasetService:
 
         file_id, file_path = storage_service.save_dataset_file(content, file.filename)
 
-        # Inspect dataframe
-        try:
-            df = pd.read_csv(file_path)
-        except Exception as e:
+        # Inspect dataframe with robust multi-encoding and separator detection
+        df = None
+        parse_err = None
+        for enc in ["utf-8", "utf-8-sig", "latin-1", "cp1252", "iso-8859-1"]:
+            try:
+                df = pd.read_csv(file_path, encoding=enc, sep=None, engine="python")
+                if len(df.columns) <= 1:
+                    # Retry with standard comma if sniffer failed
+                    df = pd.read_csv(file_path, encoding=enc)
+                break
+            except Exception as e:
+                parse_err = e
+                continue
+
+        if df is None:
             storage_service.delete_file(str(file_path))
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                detail=f"Could not parse CSV file: {str(e)}"
+                detail=f"Could not parse CSV file: {str(parse_err)}"
             )
 
         row_count, column_count = len(df), len(df.columns)

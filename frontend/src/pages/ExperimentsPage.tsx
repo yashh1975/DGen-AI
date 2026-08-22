@@ -342,7 +342,7 @@ export const ExperimentsPage: React.FC = () => {
                               {f1Gain > 0 ? (
                                 <span className="text-emerald-400">🟢 Improved harmonic F1</span>
                               ) : f1Gain === 0 ? (
-                                <span className="text-cyan-300">🔵 Statistical parity (within ±1.5%)</span>
+                                <span className="text-cyan-300">🔵 Maintained baseline F1 (Parity)</span>
                               ) : (
                                 <span className="text-amber-400">🟠 Reduced F1</span>
                               )}

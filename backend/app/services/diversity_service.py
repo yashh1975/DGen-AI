@@ -15,7 +15,19 @@ class DiversityEvaluationEngine:
                 "unique_rows_ratio": 1.0
             }
 
-        feature_cols = [c for c in synthetic_df.columns if not any(k in c.lower() for k in ["id", "timestamp", "date", "created"])]
+        def _is_meta_id(col_name: str) -> bool:
+            c = col_name.lower().strip()
+            if any(k in c for k in ["paid", "void", "liquid", "valid", "amount", "score", "risk", "balance", "rate", "count", "duration", "age", "hour", "category", "channel"]):
+                return False
+            if c in ["id", "uuid", "pk", "index", "row_id", "timestamp", "created_at", "updated_at", "date"]:
+                return True
+            if c.endswith("_id") or c.startswith("id_") or (c.endswith("id") and len(c) <= 6):
+                return True
+            if any(k in c for k in ["transaction_id", "customer_id", "account_number", "card_number", "device_id"]):
+                return True
+            return False
+
+        feature_cols = [c for c in synthetic_df.columns if not _is_meta_id(c)]
         if feature_cols:
             dup_rows = int(synthetic_df.duplicated(subset=feature_cols).sum())
         else:
