@@ -255,6 +255,14 @@ class DatasetService:
             col = db_manager.get_collection("datasets")
             col.update_one({"id": dataset_id}, {"$set": {"file_path": str(new_file_path)}})
             file_path = str(new_file_path)
+        for enc in ["utf-8", "utf-8-sig", "latin-1", "cp1252", "iso-8859-1"]:
+            try:
+                if limit:
+                    return pd.read_csv(file_path, encoding=enc, nrows=limit)
+                return pd.read_csv(file_path, encoding=enc)
+            except Exception:
+                continue
+
         if limit:
             return pd.read_csv(file_path, nrows=limit)
         return pd.read_csv(file_path)
