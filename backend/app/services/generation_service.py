@@ -16,6 +16,19 @@ from app.database.mongodb import db_manager
 from app.utils.logging import logger
 
 class GenerationService:
+    def _is_sequence_id_col(self, col_name: str) -> bool:
+        """Identify sequence ID columns accurately without matching financial columns (like paid_amount, unpaid_balance)."""
+        c = col_name.lower().strip()
+        if any(k in c for k in ["paid", "void", "liquid", "valid", "amount", "score", "risk", "balance", "rate", "count", "duration", "age", "hour", "category", "channel"]):
+            return False
+        if c in ["id", "uuid", "pk", "index", "row_id"]:
+            return True
+        if c.endswith("_id") or c.startswith("id_") or (c.endswith("id") and len(c) <= 6):
+            return True
+        if any(k in c for k in ["transaction_id", "txn_id", "customer_id", "account_number", "device_id"]):
+            return True
+        return False
+
     def _enrich_job_doc(self, job_doc: Dict[str, Any]) -> Dict[str, Any]:
         """Attach dataset filename and output synthetic filename to job response dict."""
         if job_doc:
@@ -114,7 +127,7 @@ class GenerationService:
             synthetic_df = constraint_engine.repair_constraints(synthetic_df)
 
             # Ensure sequence IDs are globally unique across all generated records
-            id_cols = [c for c in synthetic_df.columns if any(k in c.lower() for k in ["transaction_id", "txn_id", "id"])]
+            id_cols = [c for c in synthetic_df.columns if self._is_sequence_id_col(c)]
             for col in id_cols:
                 synthetic_df[col] = [f"TXN_{uuid.uuid4().hex[:10].upper()}" for _ in range(len(synthetic_df))]
 
@@ -257,7 +270,7 @@ class GenerationService:
         from app.services.constraint_service import constraint_engine
         syn_df = constraint_engine.repair_constraints(syn_df)
 
-        id_cols = [c for c in syn_df.columns if any(k in c.lower() for k in ["transaction_id", "txn_id", "id"])]
+        id_cols = [c for c in syn_df.columns if self._is_sequence_id_col(c)]
         for col in id_cols:
             syn_df[col] = [f"TXN_{uuid.uuid4().hex[:10].upper()}" for _ in range(len(syn_df))]
 

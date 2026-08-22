@@ -78,7 +78,19 @@ class BankingConstraintEngine:
             ).astype(int)
 
         # 7. Fraud / Suspicious Binary Integrity (0 or 1)
-        binary_cols = [c for c in df_repaired.columns if any(k in c.lower() for k in ["issuspicious", "is_suspicious", "is_fraud", "isfraud", "fraud", "flag", "target"])]
+        def _is_binary_flag_col(col_name: str) -> bool:
+            c = col_name.lower().strip()
+            # Explicitly guard numerical financial amounts, scores, rates, and totals
+            if any(k in c for k in ["amount", "balance", "score", "rate", "sum", "total", "loss", "cost", "limit", "value", "price", "fee"]):
+                return False
+            # Check for boolean or fraud indicator keywords
+            if any(k in c for k in ["is_fraud", "isfraud", "is_suspicious", "issuspicious", "is_international", "is_chargeback", "is_anomaly", "chargeback_flag", "fraud_flag"]):
+                return True
+            if c in ["fraud", "suspicious", "chargeback", "anomaly", "label", "class", "target", "flag"]:
+                return True
+            return False
+
+        binary_cols = [c for c in df_repaired.columns if _is_binary_flag_col(c)]
         for b_col in binary_cols:
             df_repaired[b_col] = np.where(pd.to_numeric(df_repaired[b_col], errors="coerce").fillna(0) > 0.5, 1, 0).astype(int)
 

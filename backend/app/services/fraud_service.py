@@ -137,7 +137,10 @@ class FraudMLUtilityEngine:
         clf.fit(X_tr, y_tr)
 
         # Evaluate on the held-out real test set with standard 0.50 decision boundary
-        y_prob = clf.predict_proba(X_test)[:, 1]
+        if getattr(clf, "n_classes_", 2) == 1:
+            y_prob = np.zeros(len(X_test)) if clf.classes_[0] == 0 else np.ones(len(X_test))
+        else:
+            y_prob = clf.predict_proba(X_test)[:, 1]
         y_pred = (y_prob >= 0.50).astype(int)
 
         acc  = float(np.round(accuracy_score(y_test, y_pred), 4))
