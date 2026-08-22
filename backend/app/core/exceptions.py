@@ -11,9 +11,6 @@ class DGenException(Exception):
         self.details = details or {}
         super().__init__(self.message)
 
-# Backward-compatible alias
-FinSynthException = DGenException
-
 class DatasetNotFoundException(DGenException):
     def __init__(self, dataset_id: str):
         super().__init__(
@@ -46,8 +43,6 @@ async def dgen_exception_handler(request: Request, exc: DGenException):
         }
     )
 
-# Backward-compatible handler alias
-finsynth_exception_handler = dgen_exception_handler
 
 async def generic_exception_handler(request: Request, exc: Exception):
     logger.exception(f"Unhandled exception on {request.url.path}: {str(exc)}")

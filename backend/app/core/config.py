@@ -29,6 +29,7 @@ class Settings(BaseSettings):
     DATASET_STORAGE_DIR: Path = BASE_DIR / "storage" / "datasets"
     MODEL_STORAGE_DIR: Path = BASE_DIR / "storage" / "models"
     EXPORT_STORAGE_DIR: Path = BASE_DIR / "storage" / "exports"
+    REPORT_STORAGE_DIR: Path = BASE_DIR / "storage" / "reports"
 
     # CORS
     CORS_ORIGINS: List[str] = [
@@ -52,6 +53,7 @@ class Settings(BaseSettings):
         self.DATASET_STORAGE_DIR.mkdir(parents=True, exist_ok=True)
         self.MODEL_STORAGE_DIR.mkdir(parents=True, exist_ok=True)
         self.EXPORT_STORAGE_DIR.mkdir(parents=True, exist_ok=True)
+        self.REPORT_STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 
 settings = Settings()
 settings.init_directories()
