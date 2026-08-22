@@ -41,6 +41,8 @@ class GenerationJobResponse(BaseModel):
     output_filename: Optional[str] = None
     model_type: str
     num_records_requested: int
+    fraud_target_ratio: Optional[float] = None
+    achieved_fraud_ratio: Optional[float] = None
     status: str
     created_at: str
     completed_at: Optional[str] = None
