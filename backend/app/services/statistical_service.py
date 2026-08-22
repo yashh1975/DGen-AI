@@ -86,8 +86,22 @@ class StatisticalFidelityEngine:
             corr_delta = float(np.round(np.mean(corr_diff), 4))
 
         # Compute Real vs Synthetic Distribution Overlays for Recharts visualizations
+        def _is_meta_id(col_name: str) -> bool:
+            c = col_name.lower().strip()
+            if any(k in c for k in ["paid", "void", "liquid", "valid", "amount", "score", "risk", "balance", "rate", "count", "duration", "age", "hour", "category", "channel"]):
+                return False
+            if c in ["id", "uuid", "pk", "index", "row_id", "timestamp", "created_at", "updated_at", "date"]:
+                return True
+            if c.endswith("_id") or c.startswith("id_") or (c.endswith("id") and len(c) <= 6):
+                return True
+            if any(k in c for k in ["transaction_id", "customer_id", "account_number", "card_number", "device_id"]):
+                return True
+            return False
+
         distribution_overlays = {}
         for col in num_cols:
+            if _is_meta_id(col):
+                continue
             real_series = real_df[col].dropna()
             synth_series = synthetic_df[col].dropna()
             if len(real_series) > 0 and len(synth_series) > 0:

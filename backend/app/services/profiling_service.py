@@ -74,7 +74,7 @@ class ProfilingService:
             "numerical_analysis": num_analysis,
             "categorical_analysis": cat_analysis,
             "correlation_matrix": corr_matrix,
-            "detected_target_column": dataset_meta.get("target_fraud_column"),
+            "detected_target_column": dataset_meta.get("target_fraud_column") if dataset_meta else None,
             "missing_values_breakdown": missing_breakdown,
             "duplicate_rows_count": dup_rows
         }

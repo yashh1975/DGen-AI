@@ -310,7 +310,9 @@ export const EvaluationPage: React.FC = () => {
                 <span className={`px-2.5 py-1 rounded-full text-xs font-mono font-bold uppercase ${
                   scorecard.privacy.privacy_risk_level === 'LOW_RISK'
                     ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
-                    : 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
+                    : scorecard.privacy.privacy_risk_level === 'MEDIUM_RISK'
+                    ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
+                    : 'bg-rose-500/20 text-rose-400 border border-rose-500/30'
                 }`}>
                   {scorecard.privacy.privacy_risk_level}
                 </span>

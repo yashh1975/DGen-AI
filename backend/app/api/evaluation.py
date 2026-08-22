@@ -30,12 +30,17 @@ def _get_eval_dfs(dataset_id: Optional[str], job_id: Optional[str], user_id: Opt
 
     if job_id:
         job = generation_service.get_job(job_id)
-        if job and job.get("synthetic_dataset_path") and os.path.exists(job["synthetic_dataset_path"]):
-            synthetic_df = pd.read_csv(job["synthetic_dataset_path"])
+        if job:
+            try:
+                synthetic_df = generation_service.get_synthetic_dataframe(job_id)
+            except Exception:
+                fp = job.get("synthetic_dataset_path", "")
+                synthetic_df = pd.read_csv(fp) if fp and os.path.exists(fp) else dataset_service._create_sample_banking_dataframe(1000)
+
             try:
                 real_df = dataset_service.get_dataset_dataframe(job.get("dataset_id", ""))
             except Exception:
-                real_df = synthetic_df
+                real_df = dataset_service._create_sample_banking_dataframe(1000)
         else:
             datasets = dataset_service.list_datasets(user_id=user_id)
             if datasets:
