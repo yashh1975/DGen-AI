@@ -12,6 +12,8 @@ export const ExperimentsPage: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [fraudMlResults, setFraudMlResults] = useState<any>(null);
   const [benchmarkMatrix, setBenchmarkMatrix] = useState<any>(null);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
   useEffect(() => {
     const initData = async () => {
@@ -46,11 +48,15 @@ export const ExperimentsPage: React.FC = () => {
     if (!jobIdToRun) return;
 
     setIsLoading(true);
+    setErrorMsg(null);
     try {
       const data = await api.evaluateFraudMLUtility(jobIdToRun);
       setFraudMlResults(data);
+      setSuccessMsg('Fraud ML Utility evaluation completed successfully.');
+      setTimeout(() => setSuccessMsg(null), 5000);
     } catch (err: any) {
-      alert('Fraud ML Utility test failed: ' + err.message);
+      setErrorMsg(err.message || 'Fraud ML Utility test failed');
+      setTimeout(() => setErrorMsg(null), 6000);
     } finally {
       setIsLoading(false);
     }
@@ -71,6 +77,22 @@ export const ExperimentsPage: React.FC = () => {
         <h1 className="text-3xl font-extrabold text-white tracking-tight">Downstream Fraud ML & Experiment Hub</h1>
         <p className="text-slate-400 text-sm mt-1">Train baseline vs synthetic-assisted fraud classifiers evaluated on an independent Real test set.</p>
       </div>
+
+      {/* Success Notification Toast */}
+      {successMsg && (
+        <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold flex items-center space-x-2 animate-fade-in">
+          <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
+          <span>{successMsg}</span>
+        </div>
+      )}
+
+      {/* Error Notification Toast */}
+      {errorMsg && (
+        <div className="p-3 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-semibold flex items-center space-x-2 animate-fade-in">
+          <AlertCircle className="w-4 h-4 text-rose-400 shrink-0" />
+          <span>{errorMsg}</span>
+        </div>
+      )}
 
       {/* Target Job Selector Bar */}
       {jobs.length > 0 ? (

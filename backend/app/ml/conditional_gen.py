@@ -41,10 +41,22 @@ class ConditionalGeneratorLayer:
             real_fraud = raw_synthetic[raw_synthetic[target_column] == 1].copy()
             real_non_fraud = raw_synthetic[raw_synthetic[target_column] == 0].copy()
 
+        def _is_jitterable_numeric_col(col_name: str) -> bool:
+            c = col_name.lower().strip()
+            if c == target_column.lower():
+                return False
+            if any(k in c for k in ["hour", "is_international", "is_fraud", "flag"]):
+                return False
+            if c in ["id", "uuid", "pk", "index", "row_id"]:
+                return False
+            if c.endswith("_id") or c.startswith("id_") or (c.endswith("id") and len(c) <= 6):
+                return False
+            return True
+
         # 1. Synthesize High-Fidelity Legitimate (Non-Fraud) Subset
         if len(real_non_fraud) > 0:
             syn_non_fraud = real_non_fraud.sample(target_non_fraud_count, replace=True, random_state=42).copy().reset_index(drop=True)
-            num_cols = [c for c in syn_non_fraud.select_dtypes(include=[np.number]).columns if c != target_column and "id" not in c.lower() and "hour" not in c.lower()]
+            num_cols = [c for c in syn_non_fraud.select_dtypes(include=[np.number]).columns if _is_jitterable_numeric_col(c)]
             for c in num_cols:
                 std_v = float(syn_non_fraud[c].std() or 1.0)
                 jitter = rng.normal(0, 0.04 * std_v, size=len(syn_non_fraud))
@@ -57,7 +69,7 @@ class ConditionalGeneratorLayer:
         # 2. Synthesize High-Fidelity Fraud Subset
         if len(real_fraud) > 0:
             syn_fraud = real_fraud.sample(target_fraud_count, replace=True, random_state=42).copy().reset_index(drop=True)
-            num_cols = [c for c in syn_fraud.select_dtypes(include=[np.number]).columns if c != target_column and "id" not in c.lower() and "hour" not in c.lower()]
+            num_cols = [c for c in syn_fraud.select_dtypes(include=[np.number]).columns if _is_jitterable_numeric_col(c)]
             for c in num_cols:
                 std_v = float(syn_fraud[c].std() or 1.0)
                 jitter = rng.normal(0, 0.05 * std_v, size=len(syn_fraud))
