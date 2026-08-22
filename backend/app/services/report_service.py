@@ -254,7 +254,7 @@ class AcademicReportExporterService:
         ax4.text(0.02, 0.5, regulatory_summary, family='monospace', fontsize=9.5, color='#a7f3d0',
                  va='center', bbox=dict(boxstyle='round,pad=1', facecolor='#06281e', edgecolor='#059669', alpha=0.85, linewidth=1.5))
 
-        plt.tight_layout()
+        fig.subplots_adjust(top=0.92, bottom=0.08, left=0.08, right=0.92, hspace=0.35, wspace=0.35)
         buf = io.BytesIO()
         plt.savefig(buf, format='png', dpi=140, bbox_inches='tight', facecolor=fig.get_facecolor())
         plt.close(fig)
@@ -281,7 +281,7 @@ class AcademicReportExporterService:
         axes[1].tick_params(colors='#cbd5e1', labelsize=8.5)
 
         plt.suptitle('DGen AI — Statistical Correlation Comparison', color='#ffffff', fontsize=13, fontweight='bold', y=0.98)
-        plt.tight_layout()
+        fig.subplots_adjust(top=0.88, bottom=0.12, left=0.08, right=0.92, wspace=0.3)
         buf = io.BytesIO()
         plt.savefig(buf, format='png', dpi=110, bbox_inches='tight', facecolor=fig.get_facecolor())
         plt.close(fig)
@@ -295,7 +295,7 @@ class AcademicReportExporterService:
         fig, ax = plt.subplots(figsize=(8, 4.2), facecolor='#070b14')
         ax.set_facecolor('#0d1322')
         common_num_cols = [c for c in real_df.select_dtypes(include=[np.number]).columns if c in syn_df.columns]
-        target_col = 'amount' if 'amount' in common_num_cols else (common_num_cols[0] if common_num_cols else 'feature')
+        target_col = next((c for c in ['amount', 'debit_amount', 'balance'] if c in common_num_cols), common_num_cols[0] if common_num_cols else 'feature')
 
         try:
             if common_num_cols:

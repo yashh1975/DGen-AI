@@ -50,12 +50,18 @@ async def download_synthetic_dataset(
     if not job:
         raise HTTPException(status_code=404, detail=f"Generation job '{job_id}' not found.")
 
-    if job["status"] != "completed" or not job.get("synthetic_dataset_path"):
+    if job["status"] != "completed":
         raise HTTPException(status_code=400, detail="Synthetic dataset is not ready for download yet.")
 
-    file_path = Path(job["synthetic_dataset_path"])
+    file_path = Path(job.get("synthetic_dataset_path", ""))
     if not file_path.exists():
-        raise HTTPException(status_code=404, detail="Synthetic dataset file missing on disk.")
+        # Auto self-heal synthetic dataset on cloud ephemeral restarts
+        try:
+            generation_service.get_synthetic_dataframe(job_id)
+            updated_job = generation_service.get_job(job_id)
+            file_path = Path(updated_job.get("synthetic_dataset_path", ""))
+        except Exception as heal_err:
+            raise HTTPException(status_code=404, detail=f"Synthetic dataset file missing on disk: {heal_err}")
 
     m_type = job.get("model_type", "ctgan").upper()
     n_rows = job.get("num_records_requested", 1000)

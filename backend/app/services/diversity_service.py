@@ -15,7 +15,12 @@ class DiversityEvaluationEngine:
                 "unique_rows_ratio": 1.0
             }
 
-        dup_rows = int(synthetic_df.duplicated().sum())
+        feature_cols = [c for c in synthetic_df.columns if not any(k in c.lower() for k in ["id", "timestamp", "date", "created"])]
+        if feature_cols:
+            dup_rows = int(synthetic_df.duplicated(subset=feature_cols).sum())
+        else:
+            dup_rows = int(synthetic_df.duplicated().sum())
+
         dup_pct = round((dup_rows / n_rows) * 100.0, 2)
         unique_ratio = round((n_rows - dup_rows) / n_rows, 4)
 

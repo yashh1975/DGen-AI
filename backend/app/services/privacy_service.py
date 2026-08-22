@@ -11,6 +11,9 @@ class PrivacyAssessmentEngine:
         common_cols = [c for c in real_df.columns if c in synthetic_df.columns]
         num_cols = list(real_df[common_cols].select_dtypes(include=["number"]).columns)
 
+        feature_cols = [c for c in common_cols if not any(k in c.lower() for k in ["id", "timestamp", "date", "created"])]
+        eval_cols = feature_cols if feature_cols else common_cols
+
         is_same_df = real_df.equals(synthetic_df)
         if is_same_df:
             exact_matches = 0
@@ -31,8 +34,8 @@ class PrivacyAssessmentEngine:
             risk_level = "LOW_RISK"
             privacy_score = 98.5
         else:
-            real_tuples = set(tuple(x) for x in real_df[common_cols].values)
-            synth_tuples = [tuple(x) for x in synthetic_df[common_cols].values]
+            real_tuples = set(tuple(x) for x in real_df[eval_cols].values)
+            synth_tuples = [tuple(x) for x in synthetic_df[eval_cols].values]
             exact_matches = sum(1 for t in synth_tuples if t in real_tuples)
             exact_overlap_pct = round((exact_matches / len(synthetic_df)) * 100.0, 2) if len(synthetic_df) > 0 else 0.0
 

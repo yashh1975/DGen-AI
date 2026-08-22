@@ -112,11 +112,17 @@ class BankingConstraintEngine:
 
         invalid_mask = np.zeros(n_rows, dtype=bool)
 
-        # 1. Amount Non-Negative
+        # 1. Amount / Ledger Non-Negative
         if "amount" in df.columns:
             fail_amount = (df["amount"] < 0) | df["amount"].isna()
             rule_failures["amount_non_negative"] = int(fail_amount.sum())
             invalid_mask |= fail_amount
+        elif "debit_amount" in df.columns or "credit_amount" in df.columns:
+            fail_debit = (df["debit_amount"] < 0) | df["debit_amount"].isna() if "debit_amount" in df.columns else np.zeros(n_rows, dtype=bool)
+            fail_credit = (df["credit_amount"] < 0) | df["credit_amount"].isna() if "credit_amount" in df.columns else np.zeros(n_rows, dtype=bool)
+            fail_ledger = fail_debit | fail_credit
+            rule_failures["amount_non_negative"] = int(fail_ledger.sum())
+            invalid_mask |= fail_ledger
 
         # 2. Age Bounds (18 to 100)
         if "age" in df.columns:
@@ -125,7 +131,11 @@ class BankingConstraintEngine:
             invalid_mask |= fail_age
 
         # 3. Balance Non-Negative
-        if "balance_before" in df.columns and "balance_after" in df.columns:
+        if "balance" in df.columns:
+            fail_bal = (df["balance"] < 0) | df["balance"].isna()
+            rule_failures["balance_non_negative"] = int(fail_bal.sum())
+            invalid_mask |= fail_bal
+        elif "balance_before" in df.columns and "balance_after" in df.columns:
             fail_balance_neg = (df["balance_before"] < 0) | (df["balance_after"] < 0)
             rule_failures["balance_non_negative"] = int(fail_balance_neg.sum())
             invalid_mask |= fail_balance_neg

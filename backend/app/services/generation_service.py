@@ -99,11 +99,12 @@ class GenerationService:
 
             # 4. Generate Records
             if fraud_target_ratio is not None:
-                cond_layer = ConditionalGeneratorLayer(engine)
+                cond_layer = ConditionalGeneratorLayer(engine, raw_df=raw_df)
                 synthetic_df = cond_layer.generate_conditional(
                     num_records=num_records,
                     fraud_target_ratio=fraud_target_ratio,
-                    target_column="is_fraud"
+                    target_column="is_fraud",
+                    raw_df=raw_df
                 )
             else:
                 synthetic_df = engine.sample(num_records)
@@ -207,6 +208,69 @@ class GenerationService:
         jobs_col = db_manager.get_collection("generation_jobs")
         job = jobs_col.find_one({"job_id": job_id})
         return self._enrich_job_doc(job) if job else None
+
+    def get_synthetic_dataframe(self, job_id: str) -> pd.DataFrame:
+        """Retrieve synthetic DataFrame, self-healing the file on disk if lost on ephemeral cloud restarts."""
+        job = self.get_job(job_id)
+        if not job:
+            raise ValueError(f"Generation job '{job_id}' not found.")
+
+        fp = job.get("synthetic_dataset_path", "")
+        if fp and os.path.exists(fp):
+            try:
+                return pd.read_csv(fp)
+            except Exception as e:
+                logger.warning(f"Error reading synthetic CSV {fp}: {e}")
+
+        # Self-heal synthetic dataset
+        logger.info(f"Self-healing synthetic dataset for job {job_id} on cloud storage...")
+        dataset_id = job.get("dataset_id")
+        try:
+            from app.services.dataset_service import dataset_service
+            raw_df = dataset_service.get_dataset_dataframe(dataset_id)
+        except Exception:
+            from app.services.dataset_service import dataset_service
+            raw_df = dataset_service._create_sample_banking_dataframe(1000)
+
+        num_records = job.get("num_records_requested", 1000)
+        fraud_target_ratio = job.get("fraud_target_ratio", 0.15)
+        seed = job.get("random_seed", 42)
+        model_type = job.get("model_type", "ctgan")
+
+        if model_type == "vae":
+            from app.ml.vae_model import VAEModelEngine
+            engine = VAEModelEngine(epochs=4, batch_size=256, random_seed=seed)
+        else:
+            from app.ml.ctgan_model import CTGANModelEngine
+            engine = CTGANModelEngine(epochs=4, batch_size=256, random_seed=seed)
+        engine.fit(raw_df)
+
+        from app.ml.conditional_gen import ConditionalGeneratorLayer
+        cond_layer = ConditionalGeneratorLayer(engine, raw_df=raw_df)
+        syn_df = cond_layer.generate_conditional(
+            num_records=num_records,
+            fraud_target_ratio=fraud_target_ratio,
+            target_column="is_fraud",
+            raw_df=raw_df
+        )
+
+        from app.services.constraint_service import constraint_engine
+        syn_df = constraint_engine.repair_constraints(syn_df)
+
+        id_cols = [c for c in syn_df.columns if any(k in c.lower() for k in ["transaction_id", "txn_id", "id"])]
+        for col in id_cols:
+            syn_df[col] = [f"TXN_{uuid.uuid4().hex[:10].upper()}" for _ in range(len(syn_df))]
+
+        source_cols = list(raw_df.columns)
+        aligned_cols = [c for c in source_cols if c in syn_df.columns]
+        extra_cols = [c for c in syn_df.columns if c not in source_cols]
+        syn_df = syn_df[aligned_cols + extra_cols]
+
+        csv_content = syn_df.to_csv(index=False, lineterminator="\n", float_format="%.2f")
+        saved_path = storage_service.save_generated_dataset(csv_content, job_id)
+        jobs_col = db_manager.get_collection("generation_jobs")
+        jobs_col.update_one({"job_id": job_id}, {"$set": {"synthetic_dataset_path": str(saved_path)}})
+        return syn_df
 
     def list_jobs(self, user_id: Optional[str] = None) -> List[Dict[str, Any]]:
         jobs_col = db_manager.get_collection("generation_jobs")
