@@ -69,13 +69,15 @@ class PrivacyAssessmentEngine:
                     "p5_dcr": round(float(np.percentile(min_distances, 5)), 4)
                 }
 
-            risk_level = "LOW_RISK"
-            if exact_overlap_pct > 1.0 or dcr_metrics["mean_dcr"] < 0.05:
+            # Accurate Privacy Risk Categorization
+            if exact_overlap_pct > 1.0 or dcr_metrics["p5_dcr"] < 0.001:
                 risk_level = "HIGH_RISK"
-            elif exact_overlap_pct > 0.0 or dcr_metrics["mean_dcr"] < 0.15:
+            elif exact_overlap_pct > 0.0 or dcr_metrics["p5_dcr"] < 0.005:
                 risk_level = "MEDIUM_RISK"
+            else:
+                risk_level = "LOW_RISK"
 
-            privacy_score = round(max(0.0, min(100.0, (1.0 - (exact_overlap_pct / 100.0)) * 100.0 - (0.1 / max(dcr_metrics["mean_dcr"], 0.01)))), 2)
+            privacy_score = round(max(0.0, min(100.0, 100.0 - (exact_overlap_pct * 10.0) - (0.05 / max(dcr_metrics["mean_dcr"], 0.01)))), 2)
 
         return {
             "privacy_risk_level": risk_level,
