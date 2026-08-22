@@ -43,21 +43,16 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# Project Storage & Models (Keep structure, exclude generated binaries)
-storage/datasets/*
-!storage/datasets/.gitkeep
-storage/models/*
-!storage/models/.gitkeep
-storage/exports/*
-!storage/exports/.gitkeep
+# Project Storage & Models (Exclude generated files, keep directory structure)
 backend/storage/datasets/*
 !backend/storage/datasets/.gitkeep
 backend/storage/models/*
 !backend/storage/models/.gitkeep
 backend/storage/reports/*
 !backend/storage/reports/.gitkeep
+backend/storage/exports/*
+!backend/storage/exports/.gitkeep
 backend/storage/db_mock.json
-storage/db_mock.json
 frontend/.env.development
 
 # IDE & OS
