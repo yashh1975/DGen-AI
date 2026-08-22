@@ -15,6 +15,7 @@ export const EvaluationPage: React.FC = () => {
   const [isDownloadingZip, setIsDownloadingZip] = useState<boolean>(false);
   const [scorecard, setScorecard] = useState<any>(null);
   const [evalSuccessMsg, setEvalSuccessMsg] = useState<string | null>(null);
+  const [downloadErrorMsg, setDownloadErrorMsg] = useState<string | null>(null);
 
   useEffect(() => {
     const initData = async () => {
@@ -116,8 +117,11 @@ export const EvaluationPage: React.FC = () => {
       a.click();
       document.body.removeChild(a);
       window.URL.revokeObjectURL(blobUrl);
+      setEvalSuccessMsg(`Successfully downloaded ${filename}`);
+      setTimeout(() => setEvalSuccessMsg(null), 5000);
     } catch (err: any) {
-      alert('Report download error: ' + err.message);
+      setDownloadErrorMsg(err.message || 'Report download failed');
+      setTimeout(() => setDownloadErrorMsg(null), 6000);
     } finally {
       setIsDownloadingZip(false);
     }
@@ -154,6 +158,14 @@ export const EvaluationPage: React.FC = () => {
         <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold flex items-center space-x-2 animate-fade-in">
           <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
           <span>{evalSuccessMsg}</span>
+        </div>
+      )}
+
+      {/* Error Notification Toast */}
+      {downloadErrorMsg && (
+        <div className="p-3 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-semibold flex items-center space-x-2 animate-fade-in">
+          <AlertTriangle className="w-4 h-4 text-rose-400 shrink-0" />
+          <span>{downloadErrorMsg}</span>
         </div>
       )}
 

@@ -26,8 +26,8 @@ export const CorrelationHeatmap: React.FC<CorrelationHeatmapProps> = ({ correlat
             <tr>
               <th className="p-2 border border-slate-800 bg-slate-950 text-slate-400"></th>
               {features.map((f) => (
-                <th key={f} className="p-2 border border-slate-800 bg-slate-900/80 text-slate-300 font-semibold uppercase tracking-wider font-mono">
-                  {f.slice(0, 8)}
+                <th key={f} title={f} className="p-2 border border-slate-800 bg-slate-900/80 text-slate-300 font-semibold uppercase tracking-wider font-mono truncate max-w-[100px]">
+                  {f.length > 14 ? `${f.slice(0, 12)}…` : f}
                 </th>
               ))}
             </tr>
@@ -35,8 +35,8 @@ export const CorrelationHeatmap: React.FC<CorrelationHeatmapProps> = ({ correlat
           <tbody>
             {features.map((rowFeat) => (
               <tr key={rowFeat}>
-                <td className="p-2 border border-slate-800 bg-slate-900/80 text-slate-300 font-semibold uppercase tracking-wider font-mono text-left">
-                  {rowFeat.slice(0, 8)}
+                <td title={rowFeat} className="p-2 border border-slate-800 bg-slate-900/80 text-slate-300 font-semibold uppercase tracking-wider font-mono text-left truncate max-w-[120px]">
+                  {rowFeat.length > 14 ? `${rowFeat.slice(0, 12)}…` : rowFeat}
                 </td>
                 {features.map((colFeat) => {
                   const val = correlationMatrix[rowFeat]?.[colFeat] ?? 0;
